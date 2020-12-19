@@ -85,6 +85,25 @@
     background-color: #2980b9;
     padding: 3px;
 }
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
 </style>
   </head>
   <body>
@@ -109,38 +128,7 @@ window.onclick = function(event) {
   }
 }
 
-//Event Calendar
-var schedules = [ //"schedules" is list for events which have start and end.
-        {
-            end: "2014/05/10 3:00",
-            start: "2014/05/10 1:40",
-            title: "Meeting A"
-        },
-        {
-            end: "2014/05/10 2:41",
-            start: "2014/05/10 2:30",
-            title: "Conference B <br>", //You can use html tags
-            css:{backgroundColor:"#f39c12",height:"100px"}
-           //You can use most of CSS properties.But only pixel is allow for height.
-        }
-    ];
-var events = [ //"events" is list for events which have only one time.
-        {
-            date: "2014/05/10 16:00",
-            title: "tweeted at this time."
-        },
-        {
-            date: "2014/05/10 17:00",
-            title: "You can use media. <br><img src='http://wepia.biz/wlogo.png'/>",
-            css:{height:"302px"}
-            //You can use most of CSS properties.But only pixel is allow for height.
-        };
-    ];
 
-    $('#schedule').graspSchedule({
-    schedules:schedules,
-    events:events
-});
 </script>
 
   <div class="site-wrap">
@@ -154,7 +142,7 @@ var events = [ //"events" is list for events which have only one time.
       <div class="site-mobile-menu-body"></div>
     </div>
 
-    <header class="site-navbar py-3" role="banner">
+    <header class="site-navbar py-3 header" id="siteHeader" role="banner">
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-11 col-xl-2">
@@ -165,8 +153,9 @@ var events = [ //"events" is list for events which have only one time.
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="speakers.html">Speakers</a></li>
-                <!--li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="cfp.html">CFP Committee</a></li>
+                <!--li><a href="contact.html">Contacts</a></li>
                 <li class="cta"><a href="buy-tickets.html">Buy Tickets</a></li-->
                 <li class="cta"><a href="https://cevents.io/jChamps2021">Register</a></li>
               </ul>
@@ -180,7 +169,7 @@ var events = [ //"events" is list for events which have only one time.
 
 
     <div class="site-section site-hero inner">
-      <div class="container">
+      <div class="container content">
         <div class="row align-items-center">
           <div class="col-md-10">
             <span class="d-block mb-3 caption" data-aos="fade-up">Our Speakers</span>
@@ -461,8 +450,39 @@ var events = [ //"events" is list for events which have only one time.
           </div>
         </div>
 
-        <div id="hirtCard" class="row align-items-center speaker">
+        <div id="hernandezCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/1385/large/CesarHeadShot-CodeOne.jpg?1600704735" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Cesar Hernandez</h2>
+            <!-- The Modal -->
+            <div id="hernandez" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Jakarta EE 9 introduces the migration of the javax to jakarta package in the platform, impacting the ecosystem and, therefore, the end-users.
+This session covers code-driven recommendations and strategies to help you navigate the migration of your Java Enterprise applications using Apache TomEE.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('hernandez')" title="Click for Abstract">Session: <a href="#hernandezCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Paving the way with Jakarta EE and Apache TomEE</a>
+            </div>
+            <div class="bio pr-lg-5">
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">César Hernández is a Senior Software Engineer at Tomitribe with experience in Enterprise Java Applications. He is a Java Champion, Duke's Choice Award winner, Apache and Eclipse Committer for Jakarta EE and Microprofile contributor, Open Source advocate, teacher and public speaker. When César is away from a computer, he enjoys spending time with his family, traveling and playing music with the Java Community Band, The Null Pointers.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Cesar &mdash;
+                <a href="https://twitter.com/CesarHgt" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="hirtCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img src="https://pbs.twimg.com/profile_images/907237683805802497/zw2LnVGa_400x400.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -493,7 +513,7 @@ var events = [ //"events" is list for events which have only one time.
         </div>
 
         <div id="horstmannCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2595/large/cay-pfh.jpg?1600369718" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
@@ -524,7 +544,7 @@ var events = [ //"events" is list for events which have only one time.
         </div>
 
         <div id="jiangCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/817/large/Emily-photo.png?1565795958" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -559,7 +579,7 @@ She regularly speaks at conferences, such as Code One, DevNexus, JAX London, Vox
         </div>
 
         <div id="mannCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/160/large/kito-mann-small.jpg?1438802820" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
@@ -592,7 +612,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
         </div>
 
         <div id="mehmandarovCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/905/large/rustam.jpg?1597424794" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -623,7 +643,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
         </div>
 
         <div id="moraesCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/1390/large/avatar-500x500.png?1601296698" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
@@ -654,7 +674,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
         </div>
 
         <div id="morlingCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2601/large/gunnar_morling.jpg?1600711908" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -701,7 +721,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
         </div>
 
         <div id="nanivadekarCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <img src="https://cfp.connectevents.io/system/avatars/884/large/nn.jpeg?1570755889" width="200" height="200" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
@@ -732,7 +752,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
         </div>
 
         <div id="nardonCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img src="https://cfp.connectevents.io/system/avatars/2660/large/fabianeHeadshot.png?1602179513" height="200" width="200" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -763,7 +783,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
         </div>
 
         <div id="raibleCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/588/large/mattraible.jpeg?1574733917" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
@@ -795,7 +815,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
 
 
         <div id="renteaCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2632/large/fata_victor_patrata.JPG?1601504401" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -826,7 +846,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
         </div>
 
         <div id="rocherCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="images/rocher.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
@@ -858,7 +878,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
         </div>
 
         <div id="sevaracCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="images/sevarac.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -889,7 +909,7 @@ Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), s
         </div>
 
         <div id="tamanCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/886/large/New_Face_Pic.png?1599150290" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
@@ -922,7 +942,7 @@ Sr. Enterprise Architect @SiriusXI Beograd, Serbia, a Java Champion, an Oracle G
         </div>
 
         <div id="tremblayCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2596/large/newprofile-220square.png?1600051106" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -953,7 +973,7 @@ Sr. Enterprise Architect @SiriusXI Beograd, Serbia, a Java Champion, an Oracle G
         </div>
 
         <div id="tsangCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://pbs.twimg.com/profile_images/520392325818621952/EpPGuHIY_400x400.jpeg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
@@ -984,7 +1004,7 @@ Sr. Enterprise Architect @SiriusXI Beograd, Serbia, a Java Champion, an Oracle G
         </div>
 
         <div id="verburgCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2587/large/AccessCard_Martijn.jpg?1599560526" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -1016,7 +1036,7 @@ Sr. Enterprise Architect @SiriusXI Beograd, Serbia, a Java Champion, an Oracle G
 
 
         <div id="warburtonCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2578/large/200x200-me.jpg?1599048978" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
@@ -1044,7 +1064,7 @@ Sr. Enterprise Architect @SiriusXI Beograd, Serbia, a Java Champion, an Oracle G
         </div>
 
         <div id="winterhalterCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
             <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2584/large/bewerbungsfoto.jpg?1599426328" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
@@ -1082,388 +1102,7 @@ Sr. Enterprise Architect @SiriusXI Beograd, Serbia, a Java Champion, an Oracle G
       </div>
     </div>
 
-    <div class="site-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-4" data-aos="fade-up">
-            <div class="site-section-heading">
-              <h2>Sessions</h2>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <p>All times are in <a target="_blank" href="https://www.thetimezoneconverter.com/">Eastern Standard Time</a></p>
 
-          </div>
-        </div>
-        <!-- Begin Wednesday, January 13 -->
-        <div class="row align-items-stretch program">
-          <div class="site-section-heading">
-            <h2>Wednesday, January 13 2021</h2>
-          </div>
-          <div class="col-12 border-top border-bottom py-5" data-aos="fade" data-aos-delay="200">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">9:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Duke’s Star Trek with Java 15 Code Challenges</h2>
-                <span>Rafael Del Nero</span>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="300">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Introduction to Micronaut</h2>
-                <span>Graeme Rocher</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="400">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Easy Peasy Cloud-Native Microservice Development with MicroProfile</h2>
-                <span>Emily Jiang</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="500">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">2:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Continuous Profiling in Production: What, Why and How</h2>
-                <span>Richard Warburton</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="600">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">3:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Choose Your Own Adventure with JHipster and Kubernetes</h2>
-                <span>Matt Raible/Ray Tsang</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="700">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">4:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">It's How We Play the Game - JavaFX and GraalVM</h2>
-                <span>Gail & Paul Anderson</span>
-              </div>
-            </div>
-          </div>
-
-        </div> <!-- End Wednesday, January 13 2021 -->
-
-        <!-- Begin Thursday, January 14 -->
-        <div class="row align-items-stretch program">
-          <div class="site-section-heading">
-            <h2>Thursday, January 14 2021</h2>
-          </div>
-          <div class="col-12 border-top border-bottom py-5" data-aos="fade" data-aos-delay="200">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">9:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Let's make a contract: the art of designing a Java API</h2>
-                <span>Mario Fusco</span>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="300">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Paving the way with Jakarta EE and Apache TomEE</h2>
-                <span>Cesar Hernandez</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="400">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">JSR381 - Visual Recognition for Java - A Java-Friendly ML API</h2>
-                <span>Frank Greco & Zoran Sevarac</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="500">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">2:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Building data pipelines with Java and open source</h2>
-                <span>Rustam Mehmandarov</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="600">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">3:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Data Engineering and Machine Learning Engineering for Java Developers</h2>
-                <span>Fabiane Bizinella Nardon</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="700">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">4:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Refactor Together</h2>
-                <span>Henri Tremblay</span>
-              </div>
-            </div>
-          </div>
-
-        </div> <!-- End Thursday, January 14 2021 -->
-
-        <!-- Begin Monday, January 18 -->
-        <div class="row align-items-stretch program">
-          <div class="site-section-heading">
-            <h2>Monday, January 18 2021</h2>
-          </div>
-          <div class="col-12 border-top border-bottom py-5" data-aos="fade" data-aos-delay="200">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">9:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Spring Boot Omakase</h2>
-                <span>Mark Heckler</span>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="300">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">The Diabolical Developer's Guide to choosing your Java</h2>
-                <span>Martijn Verburg</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="400">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Do you use the Optional class as it should be?</h2>
-                <span>Mohamed Taman</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="500">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">2:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Getting Started with Kafka</h2>
-                <span>Nikhil Nanivadekar</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="600">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">3:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Flutter is the new Java - or is it?</h2>
-                <span>Ian Darwin</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="700">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">4:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">GraphQL Distilled</h2>
-                <span>Kito Mann</span>
-              </div>
-            </div>
-          </div>
-
-        </div> <!-- End Monday, January 18 2021 -->
-
-        <!-- Begin Tuesday, January 19 -->
-        <div class="row align-items-stretch program">
-          <div class="site-section-heading">
-            <h2>Tuesday, January 19 2021</h2>
-          </div>
-          <div class="col-12 border-top border-bottom py-5" data-aos="fade" data-aos-delay="200">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">9:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Java & containers: what I wish I knew before I have used it</h2>
-                <span>Elder Moraes</span>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="300">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">JMC 8 and Beyond</h2>
-                <span>Marcus Hirt</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="400">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">The Definitive Guide to Working with Exceptions in Java</h2>
-                <span>Victor Rentea</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="500">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">2:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Looming Changes in Concurrent Programming</h2>
-                <span>Cay Horstmann</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="600">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">3:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Plug-in Architectures for Java With Layrry and the Java Module System</h2>
-                <span>Gunnar Morling and Andres Almiray</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="700">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">4:00</span> <span>PM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Tracing Distributed Microservices</h2>
-                <span>Rafael Winterhalter</span>
-              </div>
-            </div>
-          </div>
-
-        </div> <!-- End Tuesday, January 19 2021 -->
-
-      </div>
-    </div>
-
-
-    <!--div class="site-section" data-aos="fade">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-lg-4 mb-5">
-            <div class="site-section-heading">
-              <h2 class="text-center">Testimonials</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="slide-one-item home-slider owl-carousel">
-
-          <div class="row justify-content-center">
-
-            <div class="testimony text-center col-md-5">
-              <figure>
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
-                <p class="author">&mdash; Emely Peters</p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-           <div class="testimony text-center col-md-5">
-              <figure>
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
-                <p class="author">&mdash; Alex Anchors</p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="testimony text-center col-md-5">
-              <figure>
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
-                <p class="author">&mdash; Aaron Thomas</p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="testimony text-center col-md-5">
-              <figure>
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
-                <p class="author">&mdash; Emely Peters</p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-           <div class="testimony text-center col-md-5">
-              <figure>
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
-                <p class="author">&mdash; Alex Anchors</p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="testimony text-center col-md-5">
-              <figure>
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
-                <p class="author">&mdash; Aaron Thomas</p>
-              </blockquote>
-            </div>
-          </div>
-
-        </div>
-
-
-
-
-
-      </div>
-    </div-->
 
 
 
@@ -1512,6 +1151,21 @@ Sr. Enterprise Architect @SiriusXI Beograd, Serbia, a Java Champion, an Oracle G
     </footer>
 
   </div>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    var header = document.getElementById("siteHeader");
+    var sticky = header.offsetTop;
+
+    function scrollFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>

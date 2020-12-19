@@ -27,6 +27,27 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    .header {
+      padding: 10px 16px;
+      background: #555;
+      color: #f1f1f1;
+    }
+
+    .content {
+      padding: 16px;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky + .content {
+      padding-top: 102px;
+    }
+    </style>
   </head>
   <body>
 
@@ -41,7 +62,7 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-    <header class="site-navbar py-3" role="banner">
+    <header class="site-navbar py-3 header" id="siteHeader" role="banner">
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-11 col-xl-2">
@@ -52,6 +73,8 @@
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="cfp.html">CFP Committee</a></li>
                 <!--li><a href="news.html">News</a></li>
                 <li><a href="contact.html">Contacts</a></li-->
                 <li class="cta"><a href="https://cevents.io/jChamps2021">Register</a></li>
@@ -65,7 +88,7 @@
     </header>
 
     <div class="site-section site-hero">
-      <div class="container">
+      <div class="container content">
         <div class="row align-items-center">
           <div class="col-md-10">
             <span class="d-block mb-3 caption" data-aos="fade-up" data-aos-delay="100">jChampions</span>
@@ -111,8 +134,7 @@ on January 15 will be DawsCon. You can visit <a href="https://www.dawsoncollege.
         </div>
       </div>
       <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
-        <p>Right now there is a call for proposals amongst the Java Champions. We expect to have our schedule in
-place by October 1.</p>
+        Click <a href="schedule.html">here</a> to see the schedule!
     </div>
 
     <div class="col-lg-4" data-aos="fade-up">
@@ -124,312 +146,11 @@ place by October 1.</p>
       <p>Please use <a href="https://cevents.io/jChamps2021">this link</a> to register.</p>
   </div>
 
-        <!--div class="row align-items-stretch program">
-          <div class="col-12 border-top border-bottom py-5" data-aos="fade" data-aos-delay="200">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">8:00</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Design your open source strategy</h2>
-                <span>Chris Mathews</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="300">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">9:30</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Design your open source strategy</h2>
-                <span>Chris Mathews</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="400">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:30</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Design your open source strategy</h2>
-                <span>Chris Mathews</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="500">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:45</span> <span>NOON</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Break With Snacks</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="600">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:30</span> <span>AM</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Design your open source strategy</h2>
-                <span>Chris Mathews</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="700">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">12:00</span> <span>NOON</span></div>
-              <div class="col-md-9">
-                <h2 class="text-white">Break For Lunch</h2>
-              </div>
-            </div>
-          </div>
-
-
-        </div-->
-      </div>
-    </div>
-
-    <!--div class="site-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-4 ">
-            <div class="site-section-heading" data-aos="fade-up">
-              <h2>Sponsors</h2>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.</p>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <img src="images/logo_1.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
-            <img src="images/logo_2.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="400">
-            <img src="images/logo_3.png" alt="Image" class="img-fluid">
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="500">
-            <img src="images/logo_4.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="600">
-            <img src="images/logo_5.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="700">
-            <img src="images/logo_6.png" alt="Image" class="img-fluid">
-          </div>
-
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-12 text-center pt-5">
-            <a href="#" class="btn-custom" data-aos="fade-up" data-aos-delay="800"><span>Be a Sponsor</span></a>
-          </div>
-        </div>
-      </div>
-    </div-->
-
-    <!--div class="site-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-4">
-            <div class="site-section-heading" data-aos="fade-up">
-              <h2>News</h2>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.</p>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry"  data-aos="fade-up" data-aos-delay="200">
-            <a href="#" class="d-block mb-4">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-            </a>
-            <h2 class="mb-4"><a href="#">Design your open source strategy</a></h2>
-            <div class="mb-4 post-meta d-flex align-items-center">
-              <div class="mr-2"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></div>
-              <div><span>By <a href="#">Emely Peters</a></span> &mdash; <span>Sep. 10, 2019</span></div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
-            <a href="#" class="d-block mb-4">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-            </a>
-            <h2 class="mb-4"><a href="#">Design your open source strategy</a></h2>
-            <div class="mb-4 post-meta d-flex align-items-center">
-              <div class="mr-2"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></div>
-              <div><span>By <a href="#">Emely Peters</a></span> &mdash; <span>Sep. 10, 2019</span></div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="400">
-            <a href="#" class="d-block mb-4">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-            </a>
-            <h2 class="mb-4"><a href="#">Design your open source strategy</a></h2>
-            <div class="mb-4 post-meta d-flex align-items-center">
-              <div class="mr-2"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></div>
-              <div><span>By <a href="#">Emely Peters</a></span> &mdash; <span>Sep. 10, 2019</span></div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.
-          </div>
-
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-12 text-center">
-            <a href="#" class="btn-custom" data-aos="fade-up" data-aos-delay="400"><span>More Blog Posts</span></a>
-          </div>
-        </div>
-      </div>
-    </div-->
-    <div class="site-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="site-section-heading">
-              <h2>CFP Committee</h2>
-            </div>
-          </div>
-          <div class="col-lg-5 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <p>The CFP committee is comprised of a small group of Java Champions.</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img src="images/jeanne-headshot.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Jeanne Boyarsky</h2>
-            <div class="bio pr-lg-5">
-              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="https://www.selikoff.net" target="_blank">https://www.selikoff.net</a></span>
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Jeanne Boyarsky is a Java developer for a bank in New York City. She's written a few books about Java Certification. In her free time, she is a moderator at CodeRanch and mentors a FIRST robotics team.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
-                Follow Jeanne &mdash;
-                <a href="https://twitter.com/jeanneboyarsky" class="p-2"><span class="icon-twitter"></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img src="images/radcortez.jpeg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Roberto Cortez</h2>
-            <div class="bio pr-lg-5">
-              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://www.radcortez.com" target="_blank">http://www.radcortez.com</a></span>
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Roberto Cortez is a passionate Java Developer with more than 10 years of experience; mainly the Finance sector. He is involved within the Open Source Community to help other individuals spread the knowledge about Java EE technologies. He is a regular speaker at conferences like JavaOne, Devoxx, JFokus, and others, leads the Coimbra JUG in Portugal and enjoys writing blog posts. When he is not working, he hangs out with friends, play computer games and spends time with family.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
-                Follow Roberto &mdash;
-                <a href="https://twitter.com/radcortez" class="p-2"><span class="icon-twitter"></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img src="images/Ken2019Small3.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Ken Fogel</h2>
-            <div class="bio pr-lg-5">
-              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Expertise: Java Tools & Frameworks, Cloud</span>
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Java Champion, CS teacher, JavaOne/CodeOne/ApacheCon speaker. The organizer of DawsCon, the free one-day software conference for students and new developers, on January 15, 2021, at Dawson College, Montreal. Message me if you want to be involved in DawsCon.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
-                Follow Ken &mdash;
-                <a href="https://twitter.com/omniprof" class="p-2"><span class="icon-twitter"></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img src="images/jj.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Josh Juneau</h2>
-            <div class="bio pr-lg-5">
-              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://jj-blogger.blogspot.com" target="_blank">http://jj-blogger.blogspot.com</a></span>
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Josh Juneau is an Application Developer, Database Administrator, and System Analyst in his day job.  His primary focus is on Java EE, Jakarta EE, and web/enterprise systems, as he has been developing distributed database application systems since the early 2000s. Josh also enjoys working with JavaFX as well as other JVM languages.
-
-He is a member of the JCP, an EE4J committer, an Apache NetBeans developer, Java Champion, and he works on the OSS Initiative for the Chicago Java Users Group.  He has written a number of books for Apress and technical articles for publications such as Java Magazine.  Josh is a usual suspect on the OffHeap podcast.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
-                Follow Josh &mdash;
-                <a href="https://twitter.com/javajuneau" class="p-2"><span class="icon-twitter"></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img src="images/vincent.jpeg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Vincent Mayers</h2>
-            <div class="bio pl-lg-5">
-            <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="http://mayers.io/" target="_blank">http://mayers.io/</a></span>
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Vincent is an Oracle Java Champion, has been a board member of the Atlanta Java Users Group since 2008 and runs some of the USA's premier community technology conferences: http://devnexus.com http://connect.tech http://vueconf.us http://jazzcon.tech http://datascicon.tech http://blockchainconf.tech Vincent has a Degree in 3D Design from the University of Wolverhampton, United Kingdom and; in another life was a full-time athlete competing at World Championship level in whitewater kayaking.</p>
-              <p data-aos="fade-right" data-aos-delay="500">
-                Follow Vincent &mdash;
-                <a href="https://twitter.com/vincentmayers" class="p-2"><span class="icon-twitter"></span></a>
-                <a href="https://github.com/vincentmayers" class="p-2"><span class="icon-github"></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img src="images/rustam.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Rustam Mehmandarov</h2>
-            <div class="bio pl-lg-5">
-              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://mehmandarov.com/" target="_blank">https://mehmandarov.com/</a></span>
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Rustam is a Java Champion and Google Developer Expert (GDE) for Cloud. He lives and works in Oslo, Norway, working as a chief engineer and consultant specializing in Java platform, and a competency network coordinator at work. Previously, he has been leading JavaZone and the Norwegian JUG – javaBin. Rustam is passionate about open source and sharing his knowledge with others. He is a frequent speaker at both national and international conferences and events.</p>
-              <p data-aos="fade-right" data-aos-delay="500">
-                Follow Rustam &mdash;
-                <a href="https://twitter.com/rmehmandarov" class="p-2"><span class="icon-twitter"></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img src="images/henri.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Henri Tremblay</h2>
-            <div class="bio pr-lg-5">
-              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://blog.tremblay.pro/">http://blog.tremblay.pro/</a></span>
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Henri Tremblay is Java Champion. He leads EasyMock and Objenesis and contributes to Ehcache open source projects. When he was young, he made popular class mocking, invented partial mocking and was coding with pragmatism. He has been a developer, CTO, software architect, enterprise architect, startup founder, teacher and performance expert. With pragmatism. He loves optimization and productivity. In Java and in general. He tries to be useful. He is pragmatic.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
-                Follow Henri &mdash;
-                <a href="https://twitter.com/henri_tremblay" class="p-2"><span class="icon-twitter"></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
-
 
       </div>
     </div>
+
+
 
     <footer class="site-footer">
       <div class="container">
@@ -477,6 +198,21 @@ He is a member of the JCP, an EE4J committer, an Apache NetBeans developer, Java
 
 
   </div>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    var header = document.getElementById("siteHeader");
+    var sticky = header.offsetTop;
+
+    function scrollFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>

@@ -14,7 +14,7 @@
     <meta property="og:title" content="JChampions Conference" />
     <meta property="og:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations." />
     <meta property="og:image" content="https://jchampionsconf.com/images/card.png" />
-    
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,6 +27,27 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    .header {
+      padding: 10px 16px;
+      background: #555;
+      color: #f1f1f1;
+    }
+
+    .content {
+      padding: 16px;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky + .content {
+      padding-top: 102px;
+    }
+    </style>
   </head>
   <body>
 
@@ -41,7 +62,7 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-    <header class="site-navbar py-3" role="banner">
+    <header class="site-navbar py-3 header" id="siteHeader" role="banner">
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-11 col-xl-2">
@@ -51,7 +72,12 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li><a href="index.html">Home</a></li>
-
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li class="active"><a href="cfp.html">CFP Committee</a></li>
+                <!--li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contacts</a></li-->
+                <li class="cta"><a href="https://cevents.io/jChamps2021">Register</a></li>
               </ul>
             </nav>
           </div>
@@ -61,118 +87,162 @@
       </div>
     </header>
 
-    <div class="site-section site-hero inner">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-10">
-            <span class="d-block mb-3 caption" data-aos="fade-up">Opens Sept 1st</span>
-            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="100">Call for Proposals</h1>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
 
     <div class="site-section">
-      <div class="container">
+      <div class="container content">
         <div class="row mb-5">
-          <div class="col-lg-4 ">
-            <div class="site-section-heading" data-aos="fade-up" data-aos-delay="100">
-              <h2>Submit a Talk Today</h2>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="site-section-heading">
+              <h2>CFP Committee</h2>
             </div>
           </div>
           <div class="col-lg-5 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <p>The jChampions Conference 2021 call for proposals is now open!<br data-v-58af334c> <br data-v-58af334c>Before submitting, please review these guidelines. Only Java Champions can submit talks for this conference. However, anyone can attend. We will be accepting 1 hour talks or 2 hour workshop proposals.<br data-v-58af334c> <br data-v-58af334c>The conference will be held virtually in January 2021 on Wednesday 1/13. Thursday 1/14, Monday 1/18 and Tuesday 1/19.  <br data-v-58af334c> <br data-v-58af334c>CFP DEADLINE: Monday, October 5  <br data-v-58af334c> <br data-v-58af334c>Notifications for acceptance will go out on a rolling basis; submit early and often!<br data-v-58af334c> <br data-v-58af334c>Rejection notices will go out on October 15 or earlier.<br data-v-58af334c> <br data-v-58af334c>We look forward to reviewing your submissions!<br data-v-58af334c></h2> <h1 data-v-58af334c>PLEASE TAKE 30 SECONDS TO REVIEW THESE GUIDELINES!</h1></p>
+            <p>The CFP committee is comprised of a small group of Java Champions.</p>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400"><span class="text-primary">CFP Instructions</span></div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <p>
-            <div class="list-style" data-v-58af334c><li data-v-58af334c>Once you've signed up on the CFP site, click 'Create New Event'. Make sure you also mark your
-          availability.
-          </li> <li data-v-58af334c> Select the track accordingly in the CFP system.
-
-        </li> <li data-v-58af334c>Presentations (lectures) are 60 mins.  This includes question time. Workshops are 120 mins.
-        </li> <li>Please email <a href="mailto:jchampionsconf@gmail.com">jchampionsconf@gmail.com</a> if you have any questions.</li></div></div>
-
-        <div class="step" data-v-58af334c><div class="half" data-v-58af334c><img src="images/cfp1.png" data-v-58af334c></div> <div class="half" data-v-58af334c> <p data-v-58af334c></p></div></div>
-
-        <div class="step" data-v-58af334c><div class="half" data-v-58af334c><img src="images/cfp2.png" data-v-58af334c></div> <div class="half" data-v-58af334c> <p data-v-58af334c></p></div></div>
-
-          <div class="step" data-v-58af334c><div class="half" data-v-58af334c><img src="images/cfp3.png" data-v-58af334c></div> <div class="half" data-v-58af334c><p data-v-58af334c></p></div></div>
-
-          <div class="step" data-v-58af334c>
-          <div class="half" data-v-58af334c>
-          <img src="images/cfp4.png" data-v-58af334c></div>
-          </div> <br data-v-58af334c> <h1 id="cfplink" data-v-58af334c><a href="https://cfp.connectevents.io/en/jchampsconf2021/cfp/session/new" style="red:white;text-align:center" data-v-58af334c>Click here submit a
-      session!</a></h1></div></div></div></div>
-
-            </p>
-
-            <!--div class="d-flex coordinator align-items-center">
-              <div class="mr-4">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-              </div>
-              <span>By <span class="text-white">Luke Jones</span> <br> Conference Coordinator</span>
-            </div-->
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="images/jeanne-headshot.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Jeanne Boyarsky</h2>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="https://www.selikoff.net" target="_blank">https://www.selikoff.net</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Jeanne Boyarsky is a Java developer for a bank in New York City. She's written a few books about Java Certification. In her free time, she is a moderator at CodeRanch and mentors a FIRST robotics team.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Jeanne &mdash;
+                <a href="https://twitter.com/jeanneboyarsky" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
           </div>
         </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img src="images/radcortez.jpeg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Roberto Cortez</h2>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://www.radcortez.com" target="_blank">http://www.radcortez.com</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Roberto Cortez is a passionate Java Developer with more than 10 years of experience; mainly the Finance sector. He is involved within the Open Source Community to help other individuals spread the knowledge about Java EE technologies. He is a regular speaker at conferences like JavaOne, Devoxx, JFokus, and others, leads the Coimbra JUG in Portugal and enjoys writing blog posts. When he is not working, he hangs out with friends, play computer games and spends time with family.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Roberto &mdash;
+                <a href="https://twitter.com/radcortez" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="images/Ken2019Small3.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Ken Fogel</h2>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Expertise: Java Tools & Frameworks, Cloud</span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Java Champion, CS teacher, JavaOne/CodeOne/ApacheCon speaker. The organizer of DawsCon, the free one-day software conference for students and new developers, on January 15, 2021, at Dawson College, Montreal. Message me if you want to be involved in DawsCon.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Ken &mdash;
+                <a href="https://twitter.com/omniprof" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img src="images/jj.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Josh Juneau</h2>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://jj-blogger.blogspot.com" target="_blank">http://jj-blogger.blogspot.com</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Josh Juneau is an Application Developer, Database Administrator, and System Analyst in his day job.  His primary focus is on Java EE, Jakarta EE, and web/enterprise systems, as he has been developing distributed database application systems since the early 2000s. Josh also enjoys working with JavaFX as well as other JVM languages.
+
+He is a member of the JCP, an EE4J committer, an Apache NetBeans developer, Java Champion, and he works on the OSS Initiative for the Chicago Java Users Group.  He has written a number of books for Apress and technical articles for publications such as Java Magazine.  Josh is a usual suspect on the OffHeap podcast.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Josh &mdash;
+                <a href="https://twitter.com/javajuneau" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="images/vincent.jpeg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Vincent Mayers</h2>
+            <div class="bio pl-lg-5">
+            <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="http://mayers.io/" target="_blank">http://mayers.io/</a></span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Vincent is an Oracle Java Champion, has been a board member of the Atlanta Java Users Group since 2008 and runs some of the USA's premier community technology conferences: http://devnexus.com http://connect.tech http://vueconf.us http://jazzcon.tech http://datascicon.tech http://blockchainconf.tech Vincent has a Degree in 3D Design from the University of Wolverhampton, United Kingdom and; in another life was a full-time athlete competing at World Championship level in whitewater kayaking.</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Vincent &mdash;
+                <a href="https://twitter.com/vincentmayers" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://github.com/vincentmayers" class="p-2"><span class="icon-github"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img src="images/rustam.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Rustam Mehmandarov</h2>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://mehmandarov.com/" target="_blank">https://mehmandarov.com/</a></span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Rustam is a Java Champion and Google Developer Expert (GDE) for Cloud. He lives and works in Oslo, Norway, working as a chief engineer and consultant specializing in Java platform, and a competency network coordinator at work. Previously, he has been leading JavaZone and the Norwegian JUG – javaBin. Rustam is passionate about open source and sharing his knowledge with others. He is a frequent speaker at both national and international conferences and events.</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Rustam &mdash;
+                <a href="https://twitter.com/rmehmandarov" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="images/henri.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Henri Tremblay</h2>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://blog.tremblay.pro/">http://blog.tremblay.pro/</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Henri Tremblay is Java Champion. He leads EasyMock and Objenesis and contributes to Ehcache open source projects. When he was young, he made popular class mocking, invented partial mocking and was coding with pragmatism. He has been a developer, CTO, software architect, enterprise architect, startup founder, teacher and performance expert. With pragmatism. He loves optimization and productivity. In Java and in general. He tries to be useful. He is pragmatic.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Henri &mdash;
+                <a href="https://twitter.com/henri_tremblay" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
 
-
-
-
-
-    <!--div class="site-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-4 ">
-            <div class="site-section-heading" data-aos="fade-up">
-              <h2>Sponsors</h2>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <img src="images/logo_1.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
-            <img src="images/logo_2.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="400">
-            <img src="images/logo_3.png" alt="Image" class="img-fluid">
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="500">
-            <img src="images/logo_4.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="600">
-            <img src="images/logo_5.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="700">
-            <img src="images/logo_6.png" alt="Image" class="img-fluid">
-          </div>
-
-        </div>
-      </div>
-    </div-->
-
-
-
-
     <footer class="site-footer">
       <div class="container">
-        <!--div class="row mb-5">
-          <div class="col-md-4">
-            <h2 class="footer-heading text-uppercase mb-4">About Event</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit aliquid quibusdam fugit architecto.</p>
+        <div class="row mb-5">
+          <div class="col-md-10">
+            <h2 class="footer-heading text-uppercase mb-4">About The Java Champions</h2>
+            <p>To learn more about the Java Champions, please visit the <a href="https://developer.oracle.com/javachampions" target="_blank">informational site</a>.</p>
+            <br/>
+            <p>See a list of Java Champions:
+              <a href="https://apex.oracle.com/champions" target="_blank">https://apex.oracle.com/champions</a>
           </div>
-          <div class="col-md-3 ml-auto">
+          <!--div class="col-md-3 ml-auto">
             <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
             <ul class="list-unstyled">
               <li><a href="#">About Us</a></li>
@@ -189,8 +259,8 @@
               <a href="#" class="p-2"><span class="icon-youtube"></span></a>
               <a href="#" class="p-2"><span class="icon-instagram"></span></a>
             </p>
-          </div>
-        </div-->
+          </div-->
+        </div>
         <div class="row">
 
             <div class="col-md-12 text-center">
@@ -206,7 +276,23 @@
       </div>
     </footer>
 
+
   </div>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    var header = document.getElementById("siteHeader");
+    var sticky = header.offsetTop;
+
+    function scrollFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
