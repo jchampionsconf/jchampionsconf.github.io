@@ -8,7 +8,21 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	
+	const initTimezones = function () {
+		const timezones = moment.tz.names();
+		var items = '';
+		timezones.forEach(value => items += '<a className="dropdown-item" href="#">' + value + '</a>');
+
+		$('#timezoneElements').html(items);
+
+		const userTimezone = moment.tz.guess();
+
+		// ...select this element in the dropdown...
+
+		// ... convert the time in each field from EST to the userTimezone
+		$('.h4').forEach(schedule => schedule.text(moment.tz(schedule.text, "America/Toronto").tz(userTimezone).format()));
+	}
+	initTimezones();
 
 	var siteMenuClone = function() {
 
