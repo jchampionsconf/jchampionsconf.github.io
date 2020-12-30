@@ -114,6 +114,52 @@ window.onclick = function(event) {
   }
 }
 
+// Change the timezone
+function changeTimezones(){
+  let sessionTime = [];
+  sessionTime.push(moment.tz("2021-01-13 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-13 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-13 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-13 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-13 15:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-13 16:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2021-01-14 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-14 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-14 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-14 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-14 15:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-14 16:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2021-01-18 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-18 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-18 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-18 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-18 15:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-18 16:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2021-01-19 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-19 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-19 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-19 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-19 15:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2021-01-19 16:00:00", "America/Toronto"));
+
+  var selectedTimeZone = document.getElementById("timezoneMenuButton");
+
+  var timezoneValue = selectedTimeZone.value;
+  if(timezoneValue === null || timezoneValue === ''){
+    timezoneValue = moment.tz.guess();
+  }
+
+  for(var idx = 1; idx <=24; idx++){
+    var sessionLabel = "session" + idx + "Time";
+    document.getElementById(sessionLabel).innerHTML = sessionTime[idx-1].clone().tz(timezoneValue).format('h:mma z');
+  }
+}
+
+
+
 </script>
 
   <div class="site-wrap">
@@ -162,9 +208,16 @@ window.onclick = function(event) {
             </div>
           </div>
           <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <p>All times are in <a target="_blank" href="https://www.thetimezoneconverter.com/">Eastern Standard Time</a> </p>
-            <p>(EST is UTC -5)</p>
+            <div class="dropdown">
+              Timezone: 
+              <select class="selectpicker dropdown-toggle"
+                      onchange="changeTimezones();"
+                      id="timezoneMenuButton"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
+              </select>
+
+            </div>
           </div>
         </div>
         <!-- Begin Wednesday, January 13 -->
@@ -174,7 +227,7 @@ window.onclick = function(event) {
           </div>
           <div id="delNeroCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">9:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session1Time"></span> </div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="delNero" class="modal">
@@ -198,7 +251,7 @@ window.onclick = function(event) {
 
           <div id="rocherCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session2Time"></span> </div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="rocher" class="modal">
@@ -220,7 +273,7 @@ window.onclick = function(event) {
 
           <div id="jiangCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session3Time"></span> </div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="jiang" class="modal">
@@ -242,7 +295,7 @@ window.onclick = function(event) {
 
           <div id="warburtonCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">2:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session4Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="warburton" class="modal">
@@ -265,7 +318,7 @@ window.onclick = function(event) {
 
           <div id="raibleCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">3:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session5Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="raible" class="modal">
@@ -288,7 +341,7 @@ window.onclick = function(event) {
 
           <div id="andersonGCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">4:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session6Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="andersonG" class="modal">
@@ -318,7 +371,7 @@ window.onclick = function(event) {
           </div>
           <div id="fuscoCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">9:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session7Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="fusco" class="modal">
@@ -341,7 +394,7 @@ window.onclick = function(event) {
 
           <div id="hernandezCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session8Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="hernandez" class="modal">
@@ -365,7 +418,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="grecoCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session9Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="greco" class="modal">
@@ -388,7 +441,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="mehmandarovCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">2:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session10Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="mehmandarov" class="modal">
@@ -411,7 +464,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
            <div id="darwinCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">3:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session11Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="darwin" class="modal">
@@ -434,7 +487,7 @@ This session covers code-driven recommendations and strategies to help you navig
           
           <div id="tremblayCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">4:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session12Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="tremblay" class="modal">
@@ -464,7 +517,7 @@ This session covers code-driven recommendations and strategies to help you navig
           </div>
           <div id="hecklerCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">9:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session13Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="heckler" class="modal">
@@ -487,7 +540,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="verburgCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session14Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="verburg" class="modal">
@@ -509,7 +562,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="tamanCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session15Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="taman" class="modal">
@@ -531,7 +584,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="nanivadekarCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">2:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session16Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="nanivadekar" class="modal">
@@ -554,7 +607,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="nardonCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">3:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session17Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="nardon" class="modal">
@@ -577,7 +630,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="mannCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">4:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session18Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="mann" class="modal">
@@ -607,7 +660,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="moraesCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">9:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session19Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="moraes" class="modal">
@@ -630,7 +683,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="hirtCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">10:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session20Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="hirt" class="modal">
@@ -653,7 +706,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="renteaCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:00</span> <span>AM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session21Time"></div>
               <div class="ml-auto">
 
                 <!-- The Modal -->
@@ -677,7 +730,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="horstmannCard" class="row align-items-center border-top border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch" >
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">2:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session22Time"></div>
               <div class="ml-auto">
                 <!-- The Modal -->
                 <div id="horstmann" class="modal">
@@ -700,7 +753,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="morlingAlmirayCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">3:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session23Time"></div>
               <div class="ml-auto">
                 <div id="morlingAlmiray" class="modal">
 
@@ -743,7 +796,7 @@ This session covers code-driven recommendations and strategies to help you navig
 
           <div id="winterhalterCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-stretch">
-              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">4:00</span> <span>PM</span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4" id="session24Time"></div>
               <div class="ml-auto">
 
                 <!-- The Modal -->
@@ -838,6 +891,10 @@ This session covers code-driven recommendations and strategies to help you navig
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
+
+  <script src="js/moment.min.js"></script>
+  <script src="js/moment-timezone-with-data-10-year-range.js"></script>
+
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
@@ -846,8 +903,10 @@ This session covers code-driven recommendations and strategies to help you navig
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
 
-
   <script src="js/main.js"></script>
+  <script>
+    window.onload=changeTimezones;
+  </script>
 
   </body>
 </html>
