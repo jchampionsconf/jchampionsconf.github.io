@@ -10,17 +10,21 @@ jQuery(document).ready(function($) {
 
 	const initTimezones = function () {
 		const timezones = moment.tz.names();
-		var items = '';
-		timezones.forEach(value => items += '<a className="dropdown-item" href="#">' + value + '</a>');
 
-		$('#timezoneElements').html(items);
 
 		const userTimezone = moment.tz.guess();
 
 		// ...select this element in the dropdown...
 
 		// ... convert the time in each field from EST to the userTimezone
-		$('.h4').forEach(schedule => schedule.text(moment.tz(schedule.text, "America/Toronto").tz(userTimezone).format()));
+
+    var timezone = moment.tz.names();
+      $('select').append('<option value="' + userTimezone + '">' + userTimezone + '</option>');
+      for (var i = 0; i < timezone.length; i++) {
+        $('select').append('<option value="' + timezone[i] + '">' + timezone[i] + '</option>');
+      }
+
+		//$('.h4').forEach(schedule => schedule.text(moment.tz(schedule.text, "America/Toronto").tz(userTimezone).format()));
 	}
 	initTimezones();
 
@@ -33,11 +37,11 @@ jQuery(document).ready(function($) {
 
 
 		setTimeout(function() {
-			
+
 			var counter = 0;
       $('.site-mobile-menu .has-children').each(function(){
         var $this = $(this);
-        
+
         $this.prepend('<span class="arrow-collapse collapsed">');
 
         $this.find('.arrow-collapse').attr({
@@ -63,8 +67,8 @@ jQuery(document).ready(function($) {
       } else {
         $this.addClass('active');
       }
-      e.preventDefault();  
-      
+      e.preventDefault();
+
     });
 
 		$(window).resize(function() {
@@ -89,7 +93,7 @@ jQuery(document).ready(function($) {
 				$('body').addClass('offcanvas-menu');
 				$this.addClass('active');
 			}
-		}) 
+		})
 
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
@@ -100,7 +104,7 @@ jQuery(document).ready(function($) {
 				}
 	    }
 		});
-	}; 
+	};
 	siteMenuClone();
 
 
@@ -240,7 +244,7 @@ jQuery(document).ready(function($) {
 		    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
 		    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
 		});
-				
+
 	};
 	siteCountDown();
 
