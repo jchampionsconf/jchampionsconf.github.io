@@ -10,7 +10,7 @@
 <b><P class="p0 ft0">JChampions Conference Schedule</P></b>
 <P class="p1 ft1">The URL will take you to the session stream on YouTube.</P>
 <br>
-  <u><b><P class="p2 ft1">Wednesday, January 13 2021</P></b></u>
+<b><P class="p2 ft1"><u>Wednesday, January 13 2021</u></P></b>
 <P class="p3 ft2">9:00am EST</P>
 <P class="p4 ft2">Spring Boot Omakase</P>
 <P class="p5 ft2">Mark Heckler</P>
@@ -33,7 +33,7 @@
 <P class="p11 ft3">https://youtu.be/dGdzM4K1zoQ</P>
 <br>
 <br>
-<u><b><P class="p15 ft1">Thursday, January 14 2021</P></b></u>
+<b><P class="p15 ft1">Thursday, January 14 2021</P></b>
 <P class="p16 ft2">9:00am EST</P>
 <P class="p17 ft5">Let's make a contract: the art of designing a Java API Mario Fusco</P>
 <P class="p18 ft3"><NOBR>https://youtu.be/6yW-Va1tfLI</NOBR></P>
@@ -55,7 +55,7 @@
 <P class="p26 ft3">https://youtu.be/hTnrEepswjc</P>
 <br>
 <br>
-<u><b><P class="p15 ft1">Monday, January 18 2021</P></b></u>
+<b><P class="p15 ft1">Monday, January 18 2021</P></b>
 <P class="p27 ft2">9:00am EST</P>
 <P class="p28 ft5">Duke’s Star Trek with Java 15 Code Challenges Rafael Del Nero</P>
 <P class="p18 ft3">https://youtu.be/Poy4cQbo4_g</P>
@@ -77,7 +77,7 @@
 <P class="p26 ft3">https://youtu.be/sYEB_SDiHqM</P>
 <br>
 <br>
-<u><b><P class="p15 ft1">Tuesday, January 19 2021</P></b></u>
+<b><P class="p15 ft1">Tuesday, January 19 2021</P></b>
 <P class="p16 ft2">9:00am EST</P>
 <P class="p34 ft5">Java & containers: what I wish I knew before I have used it Elder Moraes</P>
 <P class="p18 ft3">https://youtu.be/4nPZS3uYsXw</P>
