@@ -33,7 +33,7 @@
 <P class="p11 ft3">https://youtu.be/dGdzM4K1zoQ</P>
 <br>
 <br>
-<P class="p15 ft1">Thursday, January 14 2021</P>
+<b><P class="p15 ft1">Thursday, January 14 2021</P></b>
 <P class="p16 ft2">9:00am EST</P>
 <P class="p17 ft5">Let's make a contract: the art of designing a Java API Mario Fusco</P>
 <P class="p18 ft3"><NOBR>https://youtu.be/6yW-Va1tfLI</NOBR></P>
@@ -53,16 +53,9 @@
 <P class="p19 ft2">Refactor Together</P>
 <P class="p25 ft2">Henri Tremblay</P>
 <P class="p26 ft3">https://youtu.be/hTnrEepswjc</P>
-</DIV>
-<DIV id="id2_2">
-</DIV>
-</DIV>
-<DIV id="page_3">
-<DIV id="p3dimg1">
-
-
-<DIV id="id3_1">
-<P class="p15 ft1">Monday, January 18 2021</P>
+<br>
+<br>
+<b><P class="p15 ft1">Monday, January 18 2021</P></b>
 <P class="p27 ft2">9:00am EST</P>
 <P class="p28 ft5">Duke’s Star Trek with Java 15 Code Challenges Rafael Del Nero</P>
 <P class="p18 ft3">https://youtu.be/Poy4cQbo4_g</P>
@@ -82,16 +75,9 @@
 <P class="p19 ft2">GraphQL Distilled</P>
 <P class="p25 ft2">Kito Mann</P>
 <P class="p26 ft3">https://youtu.be/sYEB_SDiHqM</P>
-</DIV>
-<DIV id="id3_2">
-</DIV>
-</DIV>
-<DIV id="page_4">
-<DIV id="p4dimg1">
-
-
-<DIV id="id4_1">
-<P class="p15 ft1">Tuesday, January 19 2021</P>
+<br>
+<br>
+<b><P class="p15 ft1">Tuesday, January 19 2021</P><b/>
 <P class="p16 ft2">9:00am EST</P>
 <P class="p34 ft5">Java & containers: what I wish I knew before I have used it Elder Moraes</P>
 <P class="p18 ft3">https://youtu.be/4nPZS3uYsXw</P>
