@@ -77,7 +77,7 @@
 <P class="p26 ft3">https://youtu.be/sYEB_SDiHqM</P>
 <br>
 <br>
-<b><P class="p15 ft1">Tuesday, January 19 2021</P><b/>
+<b><P class="p15 ft1">Tuesday, January 19 2021</P></b>
 <P class="p16 ft2">9:00am EST</P>
 <P class="p34 ft5">Java & containers: what I wish I knew before I have used it Elder Moraes</P>
 <P class="p18 ft3">https://youtu.be/4nPZS3uYsXw</P>
