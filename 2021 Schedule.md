@@ -18,7 +18,7 @@
 <P class="p7 ft4">10:00am EST Introduction to Micronaut Graeme Rocher</P>
 <P class="p8 ft3">https://youtu.be/zyrp9BstEyE</P>
 <P class="p5 ft2">11:00am EST</P>
-<P class="p9 ft5">Easy Peasy <NOBR>Cloud-Native</NOBR> Microservice Development with MicroProfile Emily Jiang</P>
+<P class="p9 ft5">Easy Peasy <NOBR>Cloud-Native</NOBR> Microservice Development with MicroProfile - Emily Jiang</P>
 <P class="p10 ft3"><NOBR>https://youtu.be/g-XYsb882ME</NOBR></P>
 <P class="p5 ft2">2:00pm EST</P>
 <P class="p5 ft2">Continuous Profiling in Production: What, Why and How</P>
