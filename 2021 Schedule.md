@@ -7,7 +7,7 @@
 
 
 <DIV id="id1_1">
-<P class="p0 ft0">JChampions Conference Schedule</P>
+  <b><P class="p0 ft0">JChampions Conference Schedule</P></b>
 <P class="p1 ft1">The URL will take you to the session stream on YouTube.</P>
 <P class="p2 ft1">Wednesday, January 13 2021</P>
 <P class="p3 ft2">9:00am EST</P>
