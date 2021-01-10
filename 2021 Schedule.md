@@ -7,9 +7,10 @@
 
 
 <DIV id="id1_1">
-  <b><P class="p0 ft0">JChampions Conference Schedule</P></b>
+<b><P class="p0 ft0">JChampions Conference Schedule</P></b>
 <P class="p1 ft1">The URL will take you to the session stream on YouTube.</P>
-<P class="p2 ft1">Wednesday, January 13 2021</P>
+<br>
+<b><P class="p2 ft1">Wednesday, January 13 2021</P></b>
 <P class="p3 ft2">9:00am EST</P>
 <P class="p4 ft2">Spring Boot Omakase</P>
 <P class="p5 ft2">Mark Heckler</P>
@@ -30,15 +31,8 @@
 <P class="p5 ft2">It's How We Play the Game - JavaFX and GraalVM</P>
 <P class="p5 ft2">Gail & Paul Anderson</P>
 <P class="p11 ft3">https://youtu.be/dGdzM4K1zoQ</P>
-</DIV>
-<DIV id="id1_2">
-</DIV>
-</DIV>
-<DIV id="page_2">
-<DIV id="p2dimg1">
-
-
-<DIV id="id2_1">
+<br>
+<br>
 <P class="p15 ft1">Thursday, January 14 2021</P>
 <P class="p16 ft2">9:00am EST</P>
 <P class="p17 ft5">Let's make a contract: the art of designing a Java API Mario Fusco</P>
