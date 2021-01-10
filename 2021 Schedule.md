@@ -30,11 +30,6 @@
 <P class="p5 ft2">It's How We Play the Game - JavaFX and GraalVM</P>
 <P class="p5 ft2">Gail & Paul Anderson</P>
 <P class="p11 ft3">https://youtu.be/dGdzM4K1zoQ</P>
-<TABLE cellpadding=0 cellspacing=0 class="t0">
-<TR>
-	<TD class="tr0 td0"><P class="p13 ft7">JChampions Schedule</P></TD>
-</TR>
-</TABLE>
 </DIV>
 <DIV id="id1_2">
 </DIV>
@@ -64,11 +59,6 @@
 <P class="p19 ft2">Refactor Together</P>
 <P class="p25 ft2">Henri Tremblay</P>
 <P class="p26 ft3">https://youtu.be/hTnrEepswjc</P>
-<TABLE cellpadding=0 cellspacing=0 class="t1">
-<TR>
-	<TD class="tr0 td0"><P class="p13 ft7">JChampions Schedule</P></TD>
-</TR>
-</TABLE>
 </DIV>
 <DIV id="id2_2">
 </DIV>
@@ -98,11 +88,6 @@
 <P class="p19 ft2">GraphQL Distilled</P>
 <P class="p25 ft2">Kito Mann</P>
 <P class="p26 ft3">https://youtu.be/sYEB_SDiHqM</P>
-<TABLE cellpadding=0 cellspacing=0 class="t2">
-<TR>
-	<TD class="tr0 td0"><P class="p13 ft7">JChampions Schedule</P></TD>
-</TR>
-</TABLE>
 </DIV>
 <DIV id="id3_2">
 </DIV>
@@ -134,11 +119,6 @@
 <P class="p19 ft2">Tracing Distributed Microservices</P>
 <P class="p25 ft2">Rafael Winterhalter</P>
 <P class="p26 ft3">https://youtu.be/HZq7vqZ5p8A</P>
-<TABLE cellpadding=0 cellspacing=0 class="t1">
-<TR>
-	<TD class="tr0 td0"><P class="p13 ft7">JChampions Schedule</P></TD>
-</TR>
-</TABLE>
 </DIV>
 <DIV id="id4_2">
 </DIV>
