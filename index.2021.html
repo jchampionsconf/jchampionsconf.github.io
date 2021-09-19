@@ -27,109 +27,29 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-
     <style>
+    .header {
+      padding: 10px 16px;
+      background: #555;
+      color: #f1f1f1;
+    }
 
+    .content {
+      padding: 16px;
+    }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #e4e4e4;
-  color: black;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 3px solid #888;
-  width: 70%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Event Calendar CSS */
-.schedule{
-    position: absolute;
-    width: 400px;
-    background-color: #c0392b;
-    border: #ecf0f1 solid 1px;
-    padding: 3px;
-}
-.event{
-    position: absolute;
-    margin-left: 40px;
-    width: 350px;
-    background-color: #2980b9;
-    padding: 3px;
-}
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-</style>
+    .sticky + .content {
+      padding-top: 102px;
+    }
+    </style>
   </head>
   <body>
-
-    <script>
-
-// When the user clicks on the button, open the modal
-var modal;
-
-// When the user clicks the button, open the modal
-openAbstract = function(modalid) {
-  modal = document.getElementById(modalid);
-  modal.style.display = "block";
-}
-
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
-</script>
 
   <div class="site-wrap">
 
@@ -151,13 +71,14 @@ window.onclick = function(event) {
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="speakers.html">Speakers</a></li>
-                <!--li><a href="schedule.html">Schedule</a></li-->
-                <li><a href="cfp.html">CFP Committee</a></li>
-                <!--li><a href="contact.html">Contacts</a></li>
-                <li class="cta"><a href="buy-tickets.html">Buy Tickets</a></li-->
-                <!--li class="cta"><a href="https://cevents.io/jChamps2021">Register</a></li-->
+                <li ><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.2021.html">2021 Conference</a></li>
+                <li><a href="speakers.2021.html">2021 Speakers</a></li>
+                <li><a href="schedule.2021.html">2021 Session Videos</a></li>
+                <li><a href="cfp.2021.html">2021 CFP Committee</a></li>
+                <!--li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contacts</a></li-->
+
               </ul>
             </nav>
           </div>
@@ -166,32 +87,80 @@ window.onclick = function(event) {
       </div>
     </header>
 
-
-    <div class="site-section site-hero inner">
+    <div class="site-section site-hero">
       <div class="container content">
         <div class="row align-items-center">
           <div class="col-md-10">
-            <span class="d-block mb-3 caption" data-aos="fade-up">Our Speakers</span>
-            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="100">Speakers</h1>
-            <h3>* Click session title for abstract</h3>
+            <span class="d-block mb-3 caption" data-aos="fade-up" data-aos-delay="100">jChampions</span>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="200">Conference 2021</h1>
+            <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="300">Virtually Everywhere.  Online Wed 1/13/2021, Thur 1/14/2021, Mon 1/18/2021, and Tues 1/19/2021</span>
+            <!--a href="#" class="btn-custom" data-aos="fade-up" data-aos-delay="400"><span>Buy Tickets</span></a-->
           </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="site-section-heading">
+              <h2>The jChampions Conference</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <p>Java Champions are developers from around the world who are recognized for the contributions to the
+Java community. Champions are about sharing their knowledge with developers. This coming January
+will be the first conference organized by Champions and featuring Champions in the presentations. Our
+audience is the 14 million Java developers world wide.
+          </div>
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="site-section-heading">
+              <h2>What type of conference will this be?</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <p>The J Champions Conference was held for four days in January 2021 on Wed 1/13, Thurs 1/14, Mon 1/18, &amp; Tues 1/19.
+          </div>
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="site-section-heading">
+              <h2>What was the schedule?</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            Click <a href="schedule.2021.html">here</a> to see the 2021 schedule!
+          </div>
+
+
+
         </div>
       </div>
     </div>
 
     <div class="site-section">
       <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4 ">
+            <div class="site-section-heading" data-aos="fade-up">
+              <h2>2021 Conference Sponsored By:</h2>
+            </div>
+          </div>
 
-          <!-- Start Speaker Cards -->
+        </div>
+        <div class="row">
 
-        Check back soon!
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <img src="images/logo_oracle2.png" alt="Image" class="img-fluid">
+          </div>
+           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <a href="https://www.dawsoncollege.qc.ca/dawscon/" target="_blank"><img src="images/dawscon.jpg" alt="Image" class="img-fluid"></a>
+          </div>
 
-        <!-- end of speakers -->
-
+        </div>
       </div>
     </div>
-
-
 
 
 
@@ -209,6 +178,9 @@ window.onclick = function(event) {
             <br/>
             <p>See a list of Java Champions:
               <a href="https://apex.oracle.com/champions" target="_blank">https://apex.oracle.com/champions</a>
+            </p>
+            <br/>
+
           </div>
           <!--div class="col-md-3 ml-auto">
             <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
@@ -231,8 +203,8 @@ window.onclick = function(event) {
         </div>
         <div class="row">
 
-            <div class="col-md-12 text-center">
-              <div class="border-top pt-5">
+          <div class="col-md-12 text-center">
+            <div class="border-top pt-5">
               <p>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
@@ -244,13 +216,14 @@ window.onclick = function(event) {
       </div>
     </footer>
 
+
   </div>
 
   <script>
     window.onscroll = function() {scrollFunction()};
 
-    var header = document.getElementById("siteHeader");
-    var sticky = header.offsetTop;
+    const header = document.getElementById("siteHeader");
+    const sticky = header.offsetTop;
 
     function scrollFunction() {
       if (window.pageYOffset > sticky) {
@@ -272,8 +245,6 @@ window.onclick = function(event) {
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/jquery.graspSchedule.js"></script>
 
   <script src="js/main.js"></script>
 

@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jChampions Conference</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@JChampionsConf">
+    <meta name="twitter:creator" content="@JChampionsConf">
+    <meta name="twitter:title" content="JChampions Conference">
+    <meta name="twitter:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations.">
+    <meta name="twitter:image" content="https://jchampionsconf.com/images/card.png">
+    <meta property="og:title" content="JChampions Conference" />
+    <meta property="og:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations." />
+    <meta property="og:image" content="https://jchampionsconf.com/images/card.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e4e4e4;
+  color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 3px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Event Calendar CSS */
+.schedule{
+    position: absolute;
+    width: 400px;
+    background-color: #c0392b;
+    border: #ecf0f1 solid 1px;
+    padding: 3px;
+}
+.event{
+    position: absolute;
+    margin-left: 40px;
+    width: 350px;
+    background-color: #2980b9;
+    padding: 3px;
+}
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+  </head>
+  <body>
+
+    <script>
+
+// When the user clicks on the button, open the modal
+var modal;
+
+// When the user clicks the button, open the modal
+openAbstract = function(modalid) {
+  modal = document.getElementById(modalid);
+  modal.style.display = "block";
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+</script>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar py-3 header" id="siteHeader" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">jChampions<span class="text-primary">Conference</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.2021.html">2021 Conference Home</a></li>
+                <!--li ><a href="speakers.html">Speakers</a></li-->
+                 <!--li class="active"><a href="schedule.html">Schedule</a></li-->
+                 <!--li><a href="cfp.html">CFP Committee</a></li-->
+                <!--li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li class="cta"><a href="buy-tickets.html">Buy Tickets</a></li-->
+                <!--li class="cta"><a href="https://cevents.io/jChamps2021">Register</a></li-->
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="site-section site-hero inner">
+      <div class="container content">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <span class="d-block mb-3 caption" data-aos="fade-up">Our Speakers</span>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="100">Speakers</h1>
+            <h3>* Click session title for abstract</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+
+          <!-- Start Speaker Cards -->
+
+          <div id="almirayCard" class="row align-items-center speaker">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+              <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/729/large/aalmiray-portrait_3.jpg?1581366279" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-6 ml-auto">
+              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Andres Almiray</h2>
+              <!-- The Modal -->
+              <div id="almiray" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <h3 style="color: red;">Abstract</h3>
+                  <br/>
+                  <p>The Java Module System lays the foundation for building modularized applications on the JVM. It doesn't concern itself though with resolving module versions and obtaining modules from repositories.
+
+                    This is where Layrry comes in: an API and launcher for modularized Java applications which takes a descriptor of the module layer(s) to assemble, fetches the modules and starts up the application.
+
+                    Join us for this session and learn how to
+                    <ul>
+                    <li>
+                    build Java applications using layers, e.g. providing isolation between different versions of one module.
+                    </li>
+                    <li>
+                    use jbang to launch your layered apps in no time.
+                    </li>
+                    <li>
+                    create plug-in based rich-client applications using JavaFX and Layrry, allowing to dynamically reconfigure and update your layer hierarchy, no restarts required.
+                    </li>
+                    <li>
+                    create your own customized Layrry launcher if needed
+                    </li>
+                    </ul>
+                    This session is code-centered, be ready to see the Java Module System, Layrry, and JavaFX in action!
+                    </p>
+                </div>
+
+              </div>
+              <div onclick="openAbstract('almiray')" title="Click for Abstract">Session: <a href="#almirayCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Plug-in Architectures for Java With Layrry and the Java Module System</a>
+              </div>
+              <div class="bio pl-lg-5">
+
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Andres is a Java/Groovy developer and a Java Champion. Founding member of the Griffon framework and Hackergarten community event.</p>
+                <p data-aos="fade-right" data-aos-delay="500">
+                  Follow Andres &mdash;
+                  <a href="https://twitter.com/aalmiray" class="p-2"><span class="icon-twitter"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        <div id="andersonGCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/941/large/Gail_Anderson.png?1600628560" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Gail Anderson</h2>
+            <!-- The Modal -->
+            <div id="andersonG" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>The popularity of JavaFX has steadily increased since it was unbundled from the JDK and open-sourced. The latest JavaFX toolkit offers a rich set of visually appealing UI controls, a flexible property binding mechanism for event handling, and a powerful concurrency API. Our session shows you how to develop a JavaFX mobile application and deploy the same JavaFX codebase to mobile devices as native executables using Gluon Substrate and GraalVM. The session covers the workflow from JavaFX program concept to uploading native images to both the IOS App Store and Android Google Play. The demo is a game that is available in the Apple App Store (iOS) and Google Play (Android) - for free!
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('andersonG')" title="Click for Abstract">Session: <a href="#andersonGCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">It's How We Play the Game - JavaFX and GraalVM</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Gail C. Anderson is an Oracle Groundbreaker Ambassador and Java Champion. She is the Director of Training and founding member of the Anderson Software Group, a leading provider of training courses in Java, Python, Go, and other programming languages. She has developed numerous course materials for the Anderson Software Group and specializes in researching new technologies. She is the co-author of eight textbooks on software programming.</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Gail &mdash;
+                <a href="http://twitter.com/gail_asgteach" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="andersonPCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2600/large/PaulAnderson.jpg?1600542418" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Paul Anderson</h2>
+            <!-- The Modal -->
+            <div id="andersonP" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>The popularity of JavaFX has steadily increased since it was unbundled from the JDK and open-sourced. The latest JavaFX toolkit offers a rich set of visually appealing UI controls, a flexible property binding mechanism for event handling, and a powerful concurrency API. Our session shows you how to develop a JavaFX mobile application and deploy the same JavaFX codebase to mobile devices as native executables using Gluon Substrate and GraalVM. The session covers the workflow from JavaFX program concept to uploading native images to both the IOS App Store and Android Google Play. The demo is a game that is available in the Apple App Store (iOS) and Google Play (Android) - for free!
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('andersonP')" title="Click for Abstract">Session: <a href="#andersonPCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">It's How We Play the Game - JavaFX and GraalVM</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Paul L. Anderson is an Oracle Groundbreaker Ambassador and Java Champion. He is the Director of Training and founding member of the Anderson Software Group, a leading provider of training courses in Java, Python, Go, and other programming languages. Paul is an experienced speaker and specializes in making the technical aspects of software engineering fun and understandable. He is the co-author of eight textbooks on software programming.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Paul &mdash;
+                <a href="http://twitter.com/paul_asgteach" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="darwinCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2594/large/Ian.jpeg?1605585122" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Ian Darwin</h2>
+            <!-- The Modal -->
+            <div id="darwin" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Want real cross-platform development from a single codebase? Does Java still fit that bill? Flutter is Google's new cross-platform toolkit that targets Android, iOS, Windows, Mac, Linux and the browser from a single codebase. Come and see it in action and judge for yourself.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('darwin')" title="Click for Abstract">Session: <a href="#darwinCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Flutter is the new Java - or is it?</a>
+            </div>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="http://www.darwinsys.com/java/">http://www.darwinsys.com/java/</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Ian Darwin is a founding member of the Sun/Oracle Java Champions advocacy program, a Certified Java Programmer and Certified Java Web Component Developer, and the author of several textbooks and courses on Java: The Java Cookbook provides information on using Java effectively for those who already know the language. Checking Java Programs covers a number of tools that perform additional code verification on Java software. The Android Cookbook offers (mostly) Java solutions to writing mobile applications for the ubiquitous Android platform.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="delNeroCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://pbs.twimg.com/profile_images/1057405379871674369/cDYVGGiA_400x400.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Rafael del Nero</h2>
+            <!-- The Modal -->
+            <div id="delNero" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Duke needs your help in navigating through the Delta Quadrant. Join us on this incredible journey visiting new features of the JDK 15 system as well as the best features of previous versions of Java. During this journey, you can improve your craft as an engineer. These short challenges will keep your katas going at warp speed! Solve the puzzles to learn the full power of the Java language. Apply the techniques, and develop concise code where bugs will have a hard time hiding. Come to this session to boldly go where no Duke has gone before!
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('delNero')" title="Click for Abstract">Session: <a href="#delNeroCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Duke’s Star Trek with Java 15 Code Challenges</a>
+            </div>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://nobugsproject.com/">https://nobugsproject.com/</a></span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Rafael Del Nero is Brazilian, creator of NoBugsProject, author of "No Bugs, No Stress - Create a Life-Changing Software Without Destroying Your Life". Rafael believes that there are many things involved to create high-quality software and most times developers are not even aware of them. His life's purpose is to help Java developers use better programming practices to code quality software for stress-free projects with fewer bugs.</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Rafael &mdash;
+                <a href="https://www.facebook.com/rafaChinelatoDelNero" class="p-2"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/RafaDelNero" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="fuscoCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2590/large/mario.png?1599671279" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Mario Fusco</h2>
+            <!-- The Modal -->
+            <div id="fusco" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>An API is what developers use to achieve some task. More precisely it establishes a contract between them and the designers of the software exposing its services through that API. In this sense we're all API designers: our software doesn't work in isolation, but becomes useful only when it interacts with other software written by other developers. When writing software we're not only consumers, but also providers of one or more API and that's why every developer should know the features of a good API. During this presentation we will go through real-world examples, also taken from the standard Java API, of good and bad API and comment them in order to show the dos and don'ts of API design. More in general we will discuss the characteristics of an easy and pleasant to use API, like consistency, discoverability and understandability, together with some basic concepts like the principle of least astonishment, and find out how to achieve them.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('fusco')" title="Click for Abstract">Session: <a href="#fuscoCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Let's make a contract: the art of designing a Java API</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://github.com/mariofusco/">https://github.com/mariofusco/</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Mario is a principal software engineer at Red Hat working as Drools project lead. Among his interests there are also functional programming and Domain Specific Languages. He is also a Java Champion, the JUG Milano coordinator a frequent speaker and the co-author of "Modern Java in Action" published by Manning.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Mario &mdash;
+                <a href="https://twitter.com/mariofusco" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="grecoCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="images/Frank-headshot.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Frank Greco</h2>
+            <!-- The Modal -->
+            <div id="greco" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Learn about JSR381, Visual Recognition for Java, which is a Java-friendly machine learning API to detecting objects.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('greco')" title="Click for Abstract">Session: <a href="#grecoCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">JSR381 - Visual Recognition for Java - A Java-Friendly ML API</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Frank Greco is the Founder and CEO of Crossroads Technologies.  He is a senior technology consultant and enterprise architect working on cloud and AI/ML tools for developers.  He is a Java Champion, Chairman of the NYJavaSIG (first JUG ever), and runs the International Machine Learning for the Enterprise conference in Europe.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="hecklerCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/1181/large/MarkHeckler2019Jpg.jpg?1599511252" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Mark Heckler</h2>
+            <!-- The Modal -->
+            <div id="heckler" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>This session is an omakase, a "chef's choice" of key points and latest/coolest capabilities for developers in the Spring Boot ecosystem. Known by French chefs as "m’étonner" ("Astonish me!"), the goal is to combine useful patterns and new possibilities in one fast-paced live-coding adventure from which everyone leaves with something tasty to chew on. Come for the apps, stay for dessert, leave satisfied & excited for the next "course" of production software!</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('heckler')" title="Click for Abstract">Session: <a href="#hecklerCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Spring Boot Omakase</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://www.thehecklers.com">https://www.thehecklers.com</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Mark Heckler is a Professional Problem Solver and Spring Developer & Advocate at VMware, conference speaker, published author, & Java Champion focusing upon developing innovative production-ready software at velocity for the Cloud. He has worked with key players in the manufacturing, retail, medical, scientific, telecom, and financial industries and various public sector organizations to develop and deliver critical capabilities on time and on budget. Mark is an open source contributor and author/curator of a developer-focused blog (https://www.thehecklers.com) and an occasionally interesting Twitter account (@mkheck).
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Mark &mdash;
+                <a href="https://twitter.com/mkheck" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="hernandezCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/1385/large/CesarHeadShot-CodeOne.jpg?1600704735" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Cesar Hernandez</h2>
+            <!-- The Modal -->
+            <div id="hernandez" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Jakarta EE 9 introduces the migration of the javax to jakarta package in the platform, impacting the ecosystem and, therefore, the end-users.
+This session covers code-driven recommendations and strategies to help you navigate the migration of your Java Enterprise applications using Apache TomEE.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('hernandez')" title="Click for Abstract">Session: <a href="#hernandezCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Paving the way with Jakarta EE and Apache TomEE</a>
+            </div>
+            <div class="bio pr-lg-5">
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">César Hernández is a Senior Software Engineer at Tomitribe with experience in Enterprise Java Applications. He is a Java Champion, Duke's Choice Award winner, Apache and Eclipse Committer for Jakarta EE and Microprofile contributor, Open Source advocate, teacher and public speaker. When César is away from a computer, he enjoys spending time with his family, traveling and playing music with the Java Community Band, The Null Pointers.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Cesar &mdash;
+                <a href="https://twitter.com/CesarHgt" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="hirtCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="https://pbs.twimg.com/profile_images/907237683805802497/zw2LnVGa_400x400.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Marcus Hirt</h2>
+            <!-- The Modal -->
+            <div id="hirt" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>By the time this talk is held, JMC 8 is close to being released. This talk will be about all the new cool features in JMC 8, and the roadmap ahead. We will also demo some of the new features, including new and exciting ways of visualizing aggregations of stacktraces, the new rules/heuristics framework, improvements to the parser, the JMC agent, support for new exciting events in recent JDKs, and more.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('hirt')" title="Click for Abstract">Session: <a href="#hirtCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">JMC 8 and Beyond</a>
+            </div>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://hirt.se/blog">http://hirt.se/blog</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Marcus is a Java nerd with a focus on production time profiling and diagnostics. Once upon the time he was one of the co-founders of Appeal Virtual Machines, the company that created the JRockit Virtual Machine. He is currently an engineering director at Datadog, but remains involved with various open source projects, such as OpenJDK (project lead for JDK Mission Control) and Robo4J (Duke's choice award). Marcus has contributed articles, white papers, tutorials, and webinars to the Java community, and has been an appreciated speaker at various conferences (e.g. Code One Star). He also once co-authored a book about JVM technology before that became a cool thing to do (https://tinyurl.com/jrockitbook). Marcus holds an M.Sc. in Comp. Sci. & Engineering from the Royal Institute of Technology in Stockholm.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Marcus &mdash;
+                <a href="https://twitter.com/hirt" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="horstmannCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2595/large/cay-pfh.jpg?1600369718" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Cay Horstmann</h2>
+            <!-- The Modal -->
+            <div id="horstmann" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Project Loom, which will become a part of the core platform, upends our thinking about concurrency. If blocking is cheap, is there still any benefit to reactive patterns? If you can have a humongous number of threads, what is the value of thread locals? Is it time to say goodbye to some features of the Java 1.0 thread API? In this presentation, I review the changes that Loom brings and contrast them with the way that Java concurrency has been traditionally explained and taught, and I present a path to a more modern approach.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('horstmann')" title="Click for Abstract">Session: <a href="#horstmannCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Looming Changes in Concurrent Programming</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://horstmann.com/">https://horstmann.com/</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">I grew up in Northern Germany and attended the Christian-Albrechts-Universität in Kiel, a harbor town at the Baltic sea. I received a M.S. in computer science from Syracuse University, and a Ph.D. in mathematics from the University of Michigan in Ann Arbor. I taught computer science at San Jose State University for almost thirty years and held visiting appointments at universities in Germany, Switzerland, Vietnam, and Macau. I was a “serial entrepreneur” before that was a thing, including a stint as VP and CTO of a dot com startup that went from three people in a tiny office to a public company. In my copious spare time I write books and develop online courses for beginning and professional programmers.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Cay &mdash;
+                <a href="https://twitter.com/cayhorstmann" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="jiangCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/817/large/Emily-photo.png?1565795958" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Emily Jiang</h2>
+            <!-- The Modal -->
+            <div id="jiang" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Have you ever wondered how to easily develop your cioud-native microservices with the aim of only concentrating on your business logics? Better still, your microservices are not vendor locked in and it can move among nearly dozen runtimes. Learn once and never need to worry about migration headaches. Come to this session to learn the defacto standard of developing cloud-native microservices using MicroProfile with a live demo!</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('jiang')" title="Click for Abstract">Session: <a href="#jiangCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Easy Peasy Cloud-Native Microservice Development with MicroProfile Emily Jiang</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Emily Jiang is a Java Champion. She is Liberty Microservices Architect and Advocate, STSM in IBM, based at Hursley Lab in the UK. Emily is a senior MicroProfile lead and has been working on MicroProfile since 2016 and leads the specifications of MicroProfile Config, Fault Tolerance and Service Mesh. She is CDI Expert Group member.
+
+She has worked on the WebSphere Application Server since 2006 and is heavily involved in Java EE and MicroProfile implementation in Liberty releases.
+
+She regularly speaks at conferences, such as Code One, DevNexus, JAX London, Voxxed, Devoxx US, Devoxx Belgium, Devoxx UK, Devoxx France, EclipseCon, etc. </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Emily &mdash;
+                <a href="https://twitter.com/emilyfhjiang" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="mannCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/160/large/kito-mann-small.jpg?1438802820" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Kito Mann</h2>
+            <!-- The Modal -->
+            <div id="mann" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>REST is all about endpoints that perform specific queries or operations. This works fine, but the client is limited by which queries have been exposed. What if the back-end exposed the data, but the client could decide which subset of data it needed, or how to interact with that data? That’s the promise of GraphQL — simplify the back-end, give the client more power, and make it easier to evolve APIs. In this talk, we’ll explain what GraphQL is, how it works, and look at a JavaScript client and a Java back-end.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('mann')" title="Click for Abstract">Session: <a href="#mannCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">GraphQL Distilled</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+Kito D. Mann is the Principal Consultant at Virtua, Inc. (http://virtua.tech), specializing in enterprise application architecture, training, development, and mentoring with Web Components, Angular, and Jakarta/Java EE technologies. He is also the co-host of the Stacked Podcast (http://stackdpodcast.com), and the author of JavaServer Faces in Action (Manning). Mann has participated in several Java Community Process expert groups (including CDI, JSF, and Portlets) and is an internationally recognized speaker. He is also a Java Champion and Google Developer Expert in Web Technologies. He holds a BA in Computer Science from Johns Hopkins University.
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Kito &mdash;
+                <a href="https://twitter.com/kito99" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="mehmandarovCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/905/large/rustam.jpg?1597424794" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Rustam Mehmandarov</h2>
+            <!-- The Modal -->
+            <div id="mehmandarov" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>A few years ago, moving data between applications and data stores included expensive monolithic stacks from large software vendors with little flexibility. Now, with frameworks such as Apache Beam and Apache Airflow, we can schedule and run data processing jobs for both streaming and batch with the same underlying code. This presentation demonstrates the concepts of how this can glue your applications together and shows how we can run data pipelines as Java code, the use cases for such pipelines, and how we can move them from local machines to the cloud solutions by changing just a few lines of Java in our Apache Beam code.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('mehmandarov')" title="Click for Abstract">Session: <a href="#mehmandarovCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Building data pipelines with Java and open source</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://mehmandarov.com/">https://mehmandarov.com/</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Rustam lives and works in Oslo, Norway, working as a chief engineer and consultant specializing in Java platform, and a competency network coordinator at work. In his spare time, he contributes to several local developer communities. Previously, he has been leading JavaZone and the Norwegian JUG – javaBin. Rustam is passionate about open source and sharing his knowledge with others. He is a frequent speaker at both national and international conferences and events. You can find Rustam on Twitter as @RMehmandarov.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Rustam &mdash;
+                <a href="https://twitter.com/rmehmandarov" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="moraesCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/1390/large/avatar-500x500.png?1601296698" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Elder Moraes</h2>
+            <!-- The Modal -->
+            <div id="moraes" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>They told you that using Java with containers were great, but they never mentioned that wouldn't be that easy, right? Luckily there are have some best practices that will rescue your application from failing. Come to this session and learn them.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('moraes')" title="Click for Abstract">Session: <a href="#moraesCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Java & containers: what I wish I knew before I have used it</a>
+              <!--span class="popuptext" id="moraes">Abstract: <br/>They told you that using Java with containers were great, but they never mentioned that wouldn't be that easy, right? Luckily there are have some best practices that will rescue your application from failing. Come to this session and learn them.</span-->
+            </div>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://eldermoraes.com">https://eldermoraes.com</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Elder helps Java developers to build and deliver secure, available, and fast server-side applications. He is the author of the “Jakarta EE Cookbook“ and a board member at SouJava, one of the biggest JUGs in the world. As a Developer Advocate, Elder shares experiences and best practices through online content and at international events like The Developers Conference, QCon, Oracle Code One, Campus Party, and Devnexus.</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Elder &mdash;
+                <a href="https://twitter.com/elderjava" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="morlingCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2601/large/gunnar_morling.jpg?1600711908" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Gunnar Morling</h2>
+            <!-- The Modal -->
+            <div id="morling" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>The Java Module System lays the foundation for building modularized applications on the JVM. It doesn't concern itself though with resolving module versions and obtaining modules from repositories.
+
+                  This is where Layrry comes in: an API and launcher for modularized Java applications which takes a descriptor of the module layer(s) to assemble, fetches the modules and starts up the application.
+
+                  Join us for this session and learn how to
+                  <ul>
+                  <li>
+                  build Java applications using layers, e.g. providing isolation between different versions of one module.
+                  </li>
+                  <li>
+                  use jbang to launch your layered apps in no time.
+                  </li>
+                  <li>
+                  create plug-in based rich-client applications using JavaFX and Layrry, allowing to dynamically reconfigure and update your layer hierarchy, no restarts required.
+                  </li>
+                  <li>
+                  create your own customized Layrry launcher if needed
+                  </li>
+                  </ul>
+                  This session is code-centered, be ready to see the Java Module System, Layrry, and JavaFX in action!
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('morling')" title="Click for Abstract">Session: <a href="#morlingCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Plug-in Architectures for Java With Layrry and the Java Module System</a>
+            </div>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://www.morling.dev/">https://www.morling.dev/</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Gunnar Morling is a software engineer and open-source enthusiast by heart. He’s leading the Debezium project, a platform for change data capture. Gunnar is the spec lead for Bean Validation 2.0 (JSR 380) and a long-time committer to different Hibernate projects. In his spare time, he contributes to the Deptective and MapStruct projects. Prior to joining Red Hat, he worked on a wide range of Java EE projects in the logistics and retail industries. He’s based in Hamburg, Germany.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="nanivadekarCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img src="https://cfp.connectevents.io/system/avatars/884/large/nn.jpeg?1570755889" width="200" height="200" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Nikhil Nanivadekar</h2>
+            <!-- The Modal -->
+            <div id="nanivadekar" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Apache Kafka has been one of the leading streaming platforms in recent years. It is highly versatile in its application. This session explains the basic concepts of zookeeper, publisher, subscriber, topic, partitions. You will witness the creation of a reference implementation comprising a publisher and a subscriber. The reference implementation will demonstrate the key features of the publisher and subscriber. The session is designed to be an interactive hands-on session without any slides.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('nanivadekar')" title="Click for Abstract">Session: <a href="#nanivadekarCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Getting Started with Kafka</a>
+              <!--span class="popuptext" id="moraes">Abstract: <br/>They told you that using Java with containers were great, but they never mentioned that wouldn't be that easy, right? Luckily there are have some best practices that will rescue your application from failing. Come to this session and learn them.</span-->
+            </div>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://medium.com/@nikhilnanivadekar">https://medium.com/@nikhilnanivadekar</a></span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Nikhil Nanivadekar is a Director and Senior Principle Architect in Application Development, BNY Mellon. Nikhil has more than 7 years of experience building mission critical applications for financial institutions. Prior to joining BNY Mellon, he was a Vice President in Private Wealth Management at Goldman Sachs Engineering. Nikhil was selected as a 2018 Java Champion, is an Oracle Groundbreaker Ambassador, and is the active project lead for the open-source Eclipse Collections framework. He is a regular on the speaker circuit and hosts several workshops at prestigious conferences teaching robotics for kids such as JCrete4Kids, JavaOne4Kids, and Devoxx4Kids. Nikhil holds a Bachelor's degree in Mechanical Engineering from the University of Pune, and a Master's of Science in Mechanical Engineering with specialization in robotics and controls from the University of Utah.</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Nikhil &mdash;
+                <a href="https://twitter.com/NikhilNanivade" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="nardonCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="https://cfp.connectevents.io/system/avatars/2660/large/fabianeHeadshot.png?1602179513" height="200" width="200" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Fabiane Nardon</h2>
+            <!-- The Modal -->
+            <div id="nardon" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>How Java developers can use their architecture skills and Java toolsets to solve Data Engineering and Machine Learning engineering problems to take Data Science projects to the next level.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('nardon')" title="Click for Abstract">Session: <a href="#nardonCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Data Engineering and Machine Learning Engineering for Java Developers</a>
+              <!--span class="popuptext" id="moraes">Abstract: <br/>They told you that using Java with containers were great, but they never mentioned that wouldn't be that easy, right? Luckily there are have some best practices that will rescue your application from failing. Come to this session and learn them.</span-->
+            </div>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://www.tail.digital">http://www.tail.digital</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Fabiane is a computer scientist who is passionate about creating software that will positively change the world we live in. She was chief architect of the Sao Paulo Healthcare Information System, considered the largest JavaEE application in the world and winner of the 2005 Duke's Choice Award. She led several communities, including the JavaTools Community at java.net, where 800+ open source projects were born. She is a frequent speaker at conferences in Brazil and abroad, including JavaOne, OSCON, Jfokus, JustJava, QCon, DockerCon and more. She’s also the author of several technical articles and member of the program committee of several conferences as JavaOne, OSCON, TDC and QCon. She was chosen a Java Champion by Sun Microsystems as a recognition of her contribution to the Java ecosystem. Currently, she works as a Chief Scientist at TailTarget where she is helping to shape new disruptive Data Science based services.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Fabiane &mdash;
+                <a href="https://twitter.com/fabianenardon" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="raibleCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/588/large/mattraible.jpeg?1574733917" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Matt Raible</h2>
+            <!-- The Modal -->
+            <div id="raible" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Remember the choose your own adventure books that you used to read as a kid? This session is a reincarnation of a choose your own adventure book as a conference talk!
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('raible')" title="Click for Abstract">Session: <a href="#raibleCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Choose Your Own Adventure with JHipster and Kubernetes</a>
+            </div>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://raibledesigns.com/">http://raibledesigns.com/</a></span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Matt Raible is a well-known figure in the Java community and has been building web applications for most of his adult life. For over 20 years, he has helped developers learn and adopt open source frameworks and use them effectively. He's a web developer, Java Champion, and Developer Advocate at Okta. Matt has been a speaker at many conferences worldwide, including Devoxx Belgium, Devoxx France, Jfokus, and JavaOne. He is the author of The JHipster Mini-Book, Spring Live, and contributed to Pro JSP. He is a frequent contributor to open source and a member of the JHipster development team.</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Matt &mdash;
+                <a href="https://twitter.com/mraible" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="renteaCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2632/large/fata_victor_patrata.JPG?1601504401" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Victor Rentea</h2>
+            <!-- The Modal -->
+            <div id="rentea" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Learn the best practices of using Exceptions in Java today.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('rentea')" title="Click for Abstract">Session: <a href="#renteaCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">The Definitive Guide to Working with Exceptions in Java</a>
+            </div>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://victorrentea.ro">https://victorrentea.ro</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Victor Rentea is Java Champion and one of the top Independent Trainers in Romania, having trained by now 1500+ developers in 30+ companies. He is Lead Architect at IBM, where he practices Pair Programming, Clean Code and Refactoring every day. For the community, he organized the largest 3 Bucharest Java User Group meetups in history, and last year he founded the Bucharest Software Craftsmanship Community in which he runs free webinars about clean code, refactoring and TDD. As a speaker, Victor is now regularly invited at the top international conferences: his live-coding sessions are insane, lightning-fast but well crafted, full of enthusiasm, deep insights and take-away tips.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Victor &mdash;
+                <a href="https://twitter.com/VictorRentea" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="rocherCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="images/rocher.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Graeme Rocher</h2>
+            <!-- The Modal -->
+            <div id="rocher" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>In this talk Graeme Rocher (Micronaut creator and architect at Oracle) will provide an introduction to Micronaut 2.0, the innovative new framework that precomputes your framework infrastructure in a reflection free manner and provides integration with GraalVM Native Image.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('rocher')" title="Click for Abstract">Session: <a href="#rocherCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Introduction to Micronaut</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+              Graeme Rocher is the creator of several popular Open Source projects including Grails (https://grails.org) and Micronaut (https://Micronaut.io) and co-author of "The Definitive Guide to Grails" (Apress - http://apress.com/book/view/1590599950). Graeme currently works as an Architect at Oracle Labs. Graeme is a member of the Java Champions (https://twitter.com/java_champions) and 2018 was awarded the Groundbreaker award by Oracle (https://developer.oracle.com/groundbreakers/) for his work on Open Source.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Graeme &mdash;
+                <a href="https://twitter.com/graemerocher" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="sevaracCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="images/sevarac.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Zoran Sevarac</h2>
+            <!-- The Modal -->
+            <div id="sevarac" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Learn about JSR381, Visual Recognition for Java, which is a Java-friendly machine learning API to detecting objects.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('sevarac')" title="Click for Abstract">Session: <a href="#sevaracCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">JSR381 - Visual Recognition for Java - A Java-Friendly ML API</a>
+            </div>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://www.zoransevarac.com">http://www.zoransevarac.com</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Zoran Sevarac is associate professor at University of Belgrade, Java Champion and artificial intelligence researcher. His main interests include deep learning, software engineering and Java technologies. He is an open source enthusiast, a NetBeans contributor and founder of the open source educational neural network software Neuroph. He is also CEO and co-founder of startup Deep Netts which is building a next generation deep learning platform.He is an open source enthusiast and founder of the educational open source Java neural network software Neuroph. He is also CEO and co-founder of startup Deep Netts which is building a next generation deep learning platform.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Zoran &mdash;
+                <a href="https://twitter.com/zsevarac" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tamanCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/886/large/New_Face_Pic.png?1599150290" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Mohamed Taman</h2>
+            <!-- The Modal -->
+            <div id="taman" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Java Optional class is a potent tool at hand that we use every day or we deal with when using Stream APIs. But do you use the Optional class correctly and effectively as it should? If you didn't intuit that the code that will go into production is still open for NPE. Even if the code passed the testing phase as well, the best way to use things is to exploit them for what they have been created and tested for in the first place. In this session, we will learn how to use the Optional class the way it was intended? So, let's tackle this topic with 25+ recipes that try to address Optional in your code through an elegant and painless approach covering all the methods.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('taman')" title="Click for Abstract">Session: <a href="#tamanCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Do you use the Optional class as it should be?</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+Sr. Enterprise Architect @SiriusXI Beograd, Serbia, a Java Champion, an Oracle Groundbreaker Ambassador, Java/ Mobile/ Web / Big Data / Cloud / Blockchain (HashGraph) / DevOps Architect, JCP, Duke Award winner 3 times, International Speaker, Books & Videos Author
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Mohamed &mdash;
+                <a href="https://twitter.com/_tamanm" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tremblayCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2596/large/newprofile-220square.png?1600051106" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Henri Tremblay</h2>
+            <!-- The Modal -->
+            <div id="tremblay" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Refactoring is an art. During this workshop, I propose that we play with some code in order to improve it using common refactoring practice.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('tremblay')" title="Click for Abstract">Session: <a href="#tremblayCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Refactor Together</a>
+            </div>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="http://blog.tremblay.pro">http://blog.tremblay.pro</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Henri Tremblay is Java Champion. He leads EasyMock and Objenesis and contributes to Ehcache open source projects. When he was young, he made popular class mocking, invented partial mocking and was coding with pragmatism. He has been a developer, CTO, software architect, enterprise architect, startup founder, teacher and performance expert. With pragmatism. He loves optimization and productivity. In Java and in general. He tries to be useful. He is pragmatic.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Henri &mdash;
+                <a href="https://twitter.com/henri_tremblay" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tsangCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://pbs.twimg.com/profile_images/520392325818621952/EpPGuHIY_400x400.jpeg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Ray Tsang</h2>
+            <!-- The Modal -->
+            <div id="tsang" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Remember the choose your own adventure books that you used to read as a kid? This session is a reincarnation of a choose your own adventure book as a conference talk!
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('tsang')" title="Click for Abstract">Session: <a href="#tsangCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Choose Your Own Adventure with JHipster and Kubernetes</a>
+            </div>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300"><a href="https://saturnism.me">https://saturnism.me</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Ray is a Developer Advocate for the Google Cloud Platform. Ray had extensive hands on cross-industry enterprise systems integration delivery and management experiences during his time at Accenture, managed full stack application development, DevOps, and ITOps. Ray specialized in middleware, big data, and PaaS products during his time at Red Hat while contributing to open source projects, such as Infinispan. Aside from technology, Ray enjoys traveling and adventures.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Ray &mdash;
+                <a href="https://twitter.com/saturnism" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="verburgCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2587/large/AccessCard_Martijn.jpg?1599560526" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Martijn Verburg</h2>
+            <!-- The Modal -->
+            <div id="verburg" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>In the past few years we've had the Oracle Java licensing change and the new release cadence come in. For many folks, there's now more choices but also more confusion. The Diabolical Developer loves legal documents and comparison charts and in less than an hour will take you through which Java Provider is the right one for you!</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('verburg')" title="Click for Abstract">Session: <a href="#verburgCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">The Diabolical Developer's Guide to choosing your Java</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://martijnverburg.blogspot.com/">https://martijnverburg.blogspot.com/</a></span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Principal Software Engineering Group Manager for Java at Microsoft - aka The Diabolical Developer</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Martijn &mdash;
+                <a href="https://twitter.com/karianna" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="warburtonCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2578/large/200x200-me.jpg?1599048978" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Richard Warburton</h2>
+            <!-- The Modal -->
+            <div id="warburton" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Everyone wants to understand what their application is really doing in production, but this information is normally invisible to developers. Profilers tell you what code your application is running but few developers profile and mostly on their development environments. Thankfully production profiling is now a practical reality that can help you solve and avoid performance problems. This talk will help you understand the ins and outs of profiling in a production system. You’ll learn about different techniques and approaches that help you understand what’s really happening with your system. This helps you to solve new performance problems, regressions and undertake capacity planning exercises.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('warburton')" title="Click for Abstract">Session: <a href="#warburtonCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Continuous Profiling in Production: What, Why and How</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Richard is an empirical technologist and solver of deep-dive technical problems and works independently as a Software Engineer and Trainer. He has written the book on Java 8 Lambdas for O’Reilly and helps developers learn via http://iteratrlearning.com and http://www.pluralsight.com/author/richard-warburton. He’s worked as a developer in diverse areas including Low Latency Trading Systems, Statistical Analytics, Static Analysis, Compilers and Network Protocols. He is a leader in the London Java Community. Richard is also a well known conference speaker, having talked at Devoxx, Javazone, QCon SF, JavaOne, JFokus, Devoxx UK, Geecon, Oredev, JAX London, JEEConf, Codemotion Rome, JProfessionals and Voxxed Days Luxembourg. He obtained a PhD in Computer Science from The University of Warwick and currently resides in London.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="webberCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://pbs.twimg.com/profile_images/912498924245499904/Gspa7VxQ_400x400.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Paul Webber</h2>
+            <!-- The Modal -->
+            <div id="webber" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Duke needs your help in navigating through the Delta Quadrant. Join us on this incredible journey visiting new features of the JDK 15 system as well as the best features of previous versions of Java. During this journey, you can improve your craft as an engineer. These short challenges will keep your katas going at warp speed! Solve the puzzles to learn the full power of the Java language. Apply the techniques, and develop concise code where bugs will have a hard time hiding. Come to this session to boldly go where no Duke has gone before!
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('webber')" title="Click for Abstract">Session: <a href="#webberCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Duke’s Star Trek with Java 15 Code Challenges</a>
+            </div>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="http://www.sdjug.org/">http://www.sdjug.org/</a></span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Over 25 years experience in software development along with management capabilities for leading a fully functional software development team utilizing agile practices. Technical capabilities include experience in Java and the Android platform along with supporting development tools such as Eclipse and JIRA. Over ten years as President of the San Diego Java User’s Group and a Java Champion member.</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Paul &mdash;
+                <a href="https://twitter.com/CaptainWebber" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="winterhalterCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/2584/large/bewerbungsfoto.jpg?1599426328" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Rafael Winterhalter</h2>
+            <!-- The Modal -->
+            <div id="winterhalter" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>With the ascent of distributed architecture, modern software increasingly unwinds into networks of micro(-service) components. While this approach to building software - if done correctly - can improve a system's maintainability and scalability, distributed applications also introduce challenges for operations. Where monolithic applications typically offered direct access to extensive monitoring dashbords, such easy overview is no longer available when a multitude of services is connected loosly on a network. But how to keep track of a system of such dynamic state? Distributed tracing is a method of connecting interaction of different services on a network. Collecting and processing such tracing information again allows for the observation of a distributed system in its entirety. This talk shares the presenter's insights gained by working on the JVM-support of distributed tracing for the APM tool Instana. Doing so, it introduces the landscape of distributed tracing on the JVM, discussing popular approaches such as Dapper, Zipkin or Brave/OpenTracing. In the process, it is discussed how byte code instrumentation can be used to capture systems without requiring a user to set up the software under observation. The presentation finishes with a discussion of typical problems of distributed tracing solutions and carefully examines the performance penalties APM tools entail.</p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('winterhalter')" title="Click for Abstract">Session: <a href="#winterhalterCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Tracing distributed microservices</a>
+            </div>
+
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Rafael works as a software consultant in Oslo, Norway. He is a proponent of static typing and a JVM enthusiast with particular interest in code instrumentation, concurrency and functional programming. Rafael blogs about software development, regularly presents at conferences and was pronounced a JavaOne Rock Star. When coding outside of his work place, he contributes to a wide range of open source projects and often works on Byte Buddy, a library for simple runtime code generation for the Java virtual machine. For his work, Rafael received a Duke's Choice award, an Oracle groundbreaker award and was elected a Java Champion.
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Rafael &mdash;
+                <a href="https://twitter.com/rafaelcodes" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- end of speakers -->
+
+      </div>
+    </div>
+
+
+
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-10">
+            <p><a href="https://docs.google.com/document/d/1ma8aDpZILxLRN1QE4q5T9WxSrTFhpXPpcsGcO5LcgXI" target="_blank">jChampions Conference Code of Conduct</a>
+            <br/>
+            <a href="https://docs.google.com/document/d/185mhjUBM5PJkAJkMvyehsZzqHlIoEWcAQyxPwnhkdaE" target="_blank">jChampions Conference Privacy Policy</a>
+            </p>
+            <br/>
+            <h2 class="footer-heading text-uppercase mb-4">About The Java Champions</h2>
+            <p>To learn more about the Java Champions, please visit the <a href="https://developer.oracle.com/javachampions" target="_blank">informational site</a>.</p>
+            <br/>
+            <p>See a list of Java Champions:
+              <a href="https://apex.oracle.com/champions" target="_blank">https://apex.oracle.com/champions</a>
+          </div>
+          <!--div class="col-md-3 ml-auto">
+            <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Speakers</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+            <p>
+              <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+              <a href="#" class="p-2"><span class="icon-youtube"></span></a>
+              <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+            </p>
+          </div-->
+        </div>
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+              <div class="border-top pt-5">
+              <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    var header = document.getElementById("siteHeader");
+    var sticky = header.offsetTop;
+
+    function scrollFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.graspSchedule.js"></script>
+
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
