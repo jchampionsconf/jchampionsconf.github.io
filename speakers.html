@@ -70,21 +70,6 @@
   cursor: pointer;
 }
 
-/* Event Calendar CSS */
-.schedule{
-    position: absolute;
-    width: 400px;
-    background-color: #c0392b;
-    border: #ecf0f1 solid 1px;
-    padding: 3px;
-}
-.event{
-    position: absolute;
-    margin-left: 40px;
-    width: 350px;
-    background-color: #2980b9;
-    padding: 3px;
-}
 .header {
   padding: 10px 16px;
   background: #555;
@@ -104,6 +89,7 @@
 .sticky + .content {
   padding-top: 102px;
 }
+
 </style>
   </head>
   <body>
@@ -127,6 +113,55 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Change the timezone
+function changeTimezones(){
+  let sessionTime = [];
+  sessionTime.push(moment.tz("2022-01-20 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2022-01-21 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2022-01-25 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2022-01-26 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 15:00:00", "America/Toronto"));
+
+  var selectedTimeZone = document.getElementById("timezoneMenuButton");
+
+  var timezoneValue = selectedTimeZone.value;
+  if(timezoneValue === null || timezoneValue === ''){
+    timezoneValue = moment.tz.guess();
+  }
+
+  for(var idx = 1; idx <=28; idx++){
+    var sessionLabel = "session" + idx + "Time";
+    document.getElementById(sessionLabel).innerHTML = sessionTime[idx-1].clone().tz(timezoneValue).format('h:mma z');
+  }
+}
+
 
 
 </script>
@@ -154,10 +189,10 @@ window.onclick = function(event) {
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="speakers.html">Speakers</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
+                <!--li><a href="schedule.html">Schedule</a></li-->
                 <li><a href="cfp.html">CFP Committee</a></li>
                 <li><a href="steering.html">Steering Committee</a></li>
-                <!--li><a href="contact.html">Contacts</a></li>
-                <li class="cta"><a href="buy-tickets.html">Buy Tickets</a></li-->
+                <li><a href="index.2021.html">2021 Conference</a></li>
                 <li class="cta"><a href="https://www.eventbrite.com/e/jchampions-conference-2022-tickets-231766418597" target="_blank">Register</a></li>
               </ul>
             </nav>
@@ -166,7 +201,6 @@ window.onclick = function(event) {
         </div>
       </div>
     </header>
-
 
     <div class="site-section site-hero inner">
       <div class="container content">
@@ -1204,56 +1238,57 @@ With a deep background in high-volume server processing, Alan was the first U.K.
 
 
 
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-10">
+              <p><a href="https://docs.google.com/document/d/1ma8aDpZILxLRN1QE4q5T9WxSrTFhpXPpcsGcO5LcgXI" target="_blank">jChampions Conference Code of Conduct</a>
+              <br/>
+              <a href="https://docs.google.com/document/d/185mhjUBM5PJkAJkMvyehsZzqHlIoEWcAQyxPwnhkdaE" target="_blank">jChampions Conference Privacy Policy</a>
+              </p>
+              <br/>
+              <h2 class="footer-heading text-uppercase mb-4">About The Java Champions</h2>
+              <p>To learn more about the Java Champions, please visit the <a href="https://developer.oracle.com/javachampions" target="_blank">informational site</a>.</p>
+              <br/>
+              <p>See a list of Java Champions:
+                <a href="http://www.javachampions.org/" target="_blank">http://www.javachampions.org/</a>
+              </p>
+              <br/>
 
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-10">
-            <p><a href="https://docs.google.com/document/d/1ma8aDpZILxLRN1QE4q5T9WxSrTFhpXPpcsGcO5LcgXI" target="_blank">jChampions Conference Code of Conduct</a>
-            <br/>
-            <a href="https://docs.google.com/document/d/185mhjUBM5PJkAJkMvyehsZzqHlIoEWcAQyxPwnhkdaE" target="_blank">jChampions Conference Privacy Policy</a>
-            </p>
-            <br/>
-            <h2 class="footer-heading text-uppercase mb-4">About The Java Champions</h2>
-            <p>To learn more about the Java Champions, please visit the <a href="https://developer.oracle.com/javachampions" target="_blank">informational site</a>.</p>
-            <br/>
-            <p>See a list of Java Champions:
-              <a href="http://www.javachampions.org/" target="_blank">http://www.javachampions.org/</a>
-            </p>
+            </div>
+            <!--div class="col-md-3 ml-auto">
+              <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+              <p>
+                <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="p-2"><span class="icon-youtube"></span></a>
+                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+              </p>
+            </div-->
           </div>
-          <!--div class="col-md-3 ml-auto">
-            <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
-            <ul class="list-unstyled">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Speakers</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
-            <p>
-              <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
-              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
-              <a href="#" class="p-2"><span class="icon-youtube"></span></a>
-              <a href="#" class="p-2"><span class="icon-instagram"></span></a>
-            </p>
-          </div-->
-        </div>
-        <div class="row">
+          <div class="row">
 
             <div class="col-md-12 text-center">
               <div class="border-top pt-5">
-              <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>
+                <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
   </div>
 
@@ -1276,6 +1311,10 @@ With a deep background in high-volume server processing, Alan was the first U.K.
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
+
+  <script src="js/moment.min.js"></script>
+  <script src="js/moment-timezone-with-data-10-year-range.js"></script>
+
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
@@ -1283,10 +1322,11 @@ With a deep background in high-volume server processing, Alan was the first U.K.
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/jquery.graspSchedule.js"></script>
 
   <script src="js/main.js"></script>
+  <script>
+    window.onload=changeTimezones;
+  </script>
 
   </body>
 </html>
