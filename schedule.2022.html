@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jChampions Conference</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@JChampionsConf">
+    <meta name="twitter:creator" content="@JChampionsConf">
+    <meta name="twitter:title" content="JChampions Conference">
+    <meta name="twitter:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations.">
+    <meta name="twitter:image" content="https://jchampionsconf.com/images/card.png">
+    <meta property="og:title" content="JChampions Conference" />
+    <meta property="og:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations." />
+    <meta property="og:image" content="https://jchampionsconf.com/images/card.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e4e4e4;
+  color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 3px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  </head>
+  <body>
+
+    <script>
+
+// When the user clicks on the button, open the modal
+var modal;
+
+// When the user clicks the button, open the modal
+openAbstract = function(modalid) {
+  modal = document.getElementById(modalid);
+  modal.style.display = "block";
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Change the timezone
+function changeTimezones(){
+  let sessionTime = [];
+  sessionTime.push(moment.tz("2022-01-20 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2022-01-21 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2022-01-25 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2022-01-26 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 15:00:00", "America/Toronto"));
+
+  var selectedTimeZone = document.getElementById("timezoneMenuButton");
+
+  var timezoneValue = selectedTimeZone.value;
+  if(timezoneValue === null || timezoneValue === ''){
+    timezoneValue = moment.tz.guess();
+  }
+
+  for(var idx = 1; idx <=28; idx++){
+    var sessionLabel = "session" + idx + "Time";
+    document.getElementById(sessionLabel).innerHTML = sessionTime[idx-1].clone().tz(timezoneValue).format('h:mma z');
+  }
+}
+
+
+
+</script>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar py-3 header" id="siteHeader" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">jChampions<span class="text-primary">Conference</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.2022.html">2022 Conference Home</a></li>
+                <!--li><a href="contact.html">Contacts</a></li>
+                <li class="cta"><a href="buy-tickets.html">Buy Tickets</a></li-->
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-section ">
+      <div class="container content">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="site-section-heading">
+              <h2>Sessions</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="dropdown">
+              Timezone:
+              <select class="selectpicker dropdown-toggle"
+                      onchange="changeTimezones();"
+                      id="timezoneMenuButton"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+              </select>
+
+            </div>
+          </div>
+        </div>
+        <!-- Begin Thursday, January 20 -->
+        <div class="row align-items-stretch program">
+          <div class="site-section-heading">
+            <h2>Thursday, January 20 2022</h2>
+          </div>
+
+          <div id="grzsikCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session1Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="Grzesik" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>It's 2021, long gone are the days of ceremony and Java development should be productivity, simplicity, Let's look at how we make it happen, in context of startup going FAST.
+                      </p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('Grzesik')" title="Click for Abstract"><h2 class="text-white"><a href="#grzesikCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Simple, modern Java microservices in the cloud</a>
+                </div>
+                <p style="padding-left: 20px">Andrzej Grzesik</p>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/LyJjyXkleb0" target="_blank>">https://youtu.be/LyJjyXkleb0</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="blewittCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session2Time"></span> </div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="blewitt" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Ever wondered how microprocessors work under the hood? Do you want to find out about the importance of cache-aligned and sized data structures? Want to know how to coax performance metrics out of your CPUs hidden performance counters? Then this talk is for you.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('blewitt')" title="Click for Abstract"><h2 class="text-white"><a href="#blewittCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Understanding CPU Microarchitecture</a>
+                </div>
+                <span style="padding-left: 20px">Alex Blewitt</span>
+                  <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/Pa_l3aHCoGc" target="_blank>">https://youtu.be/Pa_l3aHCoGc</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="vilaCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session3Time"></span> </div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="vila" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Java is the only tool we need in the Cloud ... it's the Swiss army knife that can help us in every stage when we go to cloud native approach.
+                    </p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('vila')" title="Click for Abstract"><h2 class="text-white"><a href="#vilaCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">By the power of Java : Main of the Cloud-ivers !!!</a>
+                </div>
+                <span style="padding-left: 20px">Jonathan Vila</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/vjAZ4CTFBjs" target="_blank>">https://youtu.be/vjAZ4CTFBjs</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="tamanCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session4Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="taman" class="modal">
+                <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>Starting from Java SE 9+, a significant release for the Java programming language and the Java virtual machine. And java works fast to cope with the new technology era, and we see this every six months; Java SE 16 and 17 include many changes. The library additions and the new language features we will look at here are all reasonably significant. They’re beneficial in your day-to-day work.
+
+          So, let’s take a tour of the new features in Java SE 16, powered by code, the platform designed to support faster learning and more productive Java development.</p>
+              </div>
+
+            </div>
+            <div style="padding-left: 20px" onclick="openAbstract('taman')" title="Click for Abstract"><h2 class="text-white"><a href="#tamanCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Effective Java SE 9 through 16 APIs/Lang features, makes your life easier</a>
+            </div>
+                <span style="padding-left: 20px">Mohamed Taman</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/gm-PdNZfh1M" target="_blank>">https://youtu.be/gm-PdNZfh1M</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="drotbohmCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session5Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="drotbohm" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Projecting architectural concepts into code is still a challenge in Java applications, just like the separation of business code and application framework. The talk gives an overview about the API of jMolecules and shows, how developers can use the provided abstractions to express architectural concepts. Beyond that, integration with ubiquitous technologies and the generation of boilerplate code and documentation will be shown as well.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('drotbohm')" title="Click for Abstract"><h2 class="text-white"><a href="#drotbohmCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Architecturally Evident Java Applications with jMolecules</a>
+                </div>
+                <span style="padding-left: 20px">Oliver Drotbohm</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/IzLHmPNmLLw" target="_blank>">https://youtu.be/IzLHmPNmLLw</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="williamsonCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session6Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="williamson" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Serverless computing is a powerful way to reduce the infrastructure burden on the enterprise, by publishing "functions" that react to API requests, events from a queue or triggers from a timer. We'll go over how to get started and lay down best principals/practices. You may never deploy to an application server again!</p>
+                    <p>Example Source Listing: <a href="https://github.com/a1anw2/jchampionconf2022" target="_blank">https://github.com/a1anw2/jchampionconf2022</a></p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('williamson')" title="Click for Abstract"><h2 class="text-white"><a href="#williamsonCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Getting Started with Serverless Java</a>
+                </div>
+                <span style="padding-left: 20px">Alan Williamson</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/CxrwIphxsgM" target="_blank>">https://youtu.be/CxrwIphxsgM</a></p>
+                <p style="padding-left: 20px">Example Source Listing: <a href="https://github.com/a1anw2/jchampionconf2022" target="_blank">https://github.com/a1anw2/jchampionconf2022</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="kousenCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session7Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="kousen" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>This talk covers how functional programming concepts are implemented in the object-oriented languages Java, Kotlin, and Groovy.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('kousen')" title="Click for Abstract"><h2 class="text-white"><a href="#kousenCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Functional Programming in Java, Kotlin, and Groovy</a>
+                </div>
+                <span style="padding-left: 20px">Ken Kousen</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/3ENintpjAIY" target="_blank>">https://youtu.be/3ENintpjAIY</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- End Thursday, January 20 2022 -->
+
+        <!-- Begin Friday, January 21 -->
+        <div  class="row align-items-stretch program">
+          <div class="site-section-heading">
+            <h2>Friday, January 21 2022</h2>
+          </div>
+
+          <div id="jiangCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session8Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="jiang" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>MicroProfile 4.1 was released in July and 5.0 is around the corner. This session will bring you up to date with the latest release of MicroProfile with a live demo and show case the latest release of MicroProfile. Finally, Emily will discuss the future direction of MicroProfile.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('jiang')" title="Click for Abstract"><h2 class="text-white"><a href="#jiangCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">MicroProfile 4.1, 5.0 and Beyond</a>
+                </div>
+                <span style="padding-left: 20px">Emily Jiang</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/pI1mOeMqwz8" target="_blank>">https://youtu.be/pI1mOeMqwz8</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="kabutzCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session9Time"></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="kabutz" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Everyone is talking about how Project Loom will make concurrency child's play. Instead of reactive or asynchronous systems, we make a gazillion virtual threads. This should be simpler, but it also has dangers. For example, what happens if one task takes longer than expected? Or if it blocks forever? How can we force a task to stop? Has Project Loom made the ordinary ConcurrentHashMap slower?
+
+    In this talk, we will show a brief introduction to Project Loom. We then look at how we can prepare our code bases so that the migration to Loom is easier. We show how long-running tasks impact the liveness of our system. We look at what type of code we will need to refactor so that it is ready when Loom lands.
+    </p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('kabutz')" title="Click for Abstract"><h2 class="text-white"><a href="#kabutzCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Prepare for what "Loom"s ahead</a>
+                </div>
+                <span style="padding-left: 20px">Heinz Kabutz</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/MuxiaGyidNA" target="_blank>">https://youtu.be/MuxiaGyidNA</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div id="renteaCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session10Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="rentea" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Learn to write code faster so that you can experiment more with the design and find the simplest solution to your problem.
+                    </p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('rentea')" title="Click for Abstract"><h2 class="text-white"><a href="#renteaCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">The Secrets of the Fastest Java Developers on Earth</a>
+                </div>
+                <span style="padding-left: 20px">Victor Rentea</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/cK19rE2V9UY" target="_blank>">https://youtu.be/cK19rE2V9UY</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="lawreyCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session11Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="lawrey" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>In our open source for OpenHFT we use some novel constructs some hard core Java developers might find interesting.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('lawrey')" title="Click for Abstract"><h2 class="text-white"><a href="#lawreyCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Novel uses of Core Java</a>
+                </div>
+
+                <span style="padding-left: 20px">Peter Lawrey</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/GZgZ3AyygGI" target="_blank>">https://youtu.be/GZgZ3AyygGI</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+           <div id="mehmandarovCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session12Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="mehmandarov" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Cloud is great and cloud-native is really nice. However, we are often met with some misconceptions and terms that are being thrown around. In this session we will try to bust a few myths about cloud-native development and help to develop better and more modern applications.</p>
+                  </div>
+
+                </div>
+
+                <div style="padding-left: 20px" onclick="openAbstract('mehmandarov')" title="Click for Abstract"><h2 class="text-white"><a href="#mehmandarovCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">5 tips on creating modern, cloud-native applications</a>
+                </div>
+
+                <span style="padding-left: 20px">Rustam Mehmandarov</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/6qOsBys7jhQ" target="_blank>">https://youtu.be/6qOsBys7jhQ</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="pepperdineCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session13Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="pepperdine" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>High Density refers to the use of virtualization to run more applications on each server/machine to increase processor usage and reduce idle time" – source now in witness protection. Can we simply spin up more virtual machines on a piece of hardware and we will increase CPU utilization and consequently reduce wasteful idle time? Is it that easy? Well, it would be if the CPU was the only resource our applications relied on but alas, computing is not only about the CPU, we annoyingly have other bits of hardware and services that are used and how we use these can have some interesting effects on our ability to saturate a CPU. And this turns the discussion to the performance antipattern – Revolving Door. Code built in the spirit of this pattern can and will exhaust these other resource and that will prevent you from increasing your processor usage and reducing idle time. Join in and lets talk about how to recognize this pattern and possible solutions.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('pepperdine')" title="Click for Abstract"><h2 class="text-white"><a href="#pepperdineCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">The Revolving Door Performance Anti-Pattern</a>
+                </div>
+                <span style="padding-left: 20px">Kirk Pepperdine</span>
+                  <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/sBXfiO_a3Lc" target="_blank>">https://youtu.be/sBXfiO_a3Lc</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="santanaCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session14Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="santana" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Let's be very honest, cloud computing cannot be learned in one day. There are several architectural challenges to deploying your application, such as which framework to choose, reflection or reflectionless, native or non-naive. We also have the operational challenges such as backups, CI/CD, and much more.
+    This presentation explains how to make some of these design choices and the tradeoffs to consider when building applications to run in a virtual cloud environment.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('santana')" title="Click for Abstract"><h2 class="text-white"><a href="#santanaCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Survival Guide for the Java Architect in the Cloud Era</a>
+                </div>
+                <span style="padding-left: 20px">Otavio Santana</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/gvPS6Ri78tM" target="_blank>">https://youtu.be/gvPS6Ri78tM</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- End Friday, January 21 2022 -->
+
+        <!-- Begin Monday, January 24 -->
+        <div  class="row align-items-stretch program">
+          <div class="site-section-heading">
+            <h2>Monday, January 24 2022</h2>
+          </div>
+           <div id="horstmannCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session15Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="horstmann" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>As Java evolves, the language is getting bigger and arguably more complex. On the flip side, modern features such as lambdas, records, and pattern matching can provide a simpler entrypoint into the language. I discuss how the evolution of Java impacts how it can/should be taught. This presentation should be of interest to anyone who trains or hires Java programmers.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('horstmann')" title="Click for Abstract"><h2 class="text-white"><a href="#horstmannCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Java 17 and beyond--what does it mean for teaching and learning Java?</a>
+                </div>
+                <span style="padding-left: 20px">Cay Horstmann</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/N1gFn07CzA0" target="_blank>">https://youtu.be/N1gFn07CzA0</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="morlingCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session16Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="morling" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Functional unit and integration tests are a common practice to detect and prevent regressions within a software component or application’s behavior.
+
+    Things look different, though, when it comes to performance-related aspects: how to identify an application is slower than it used to be? How to spot higher memory consumption than before? How to find out about sub-optimal SQL queries that sneaked in? Any performance tests based on metrics like wall-clock time or through-put are not portable. They are subject to a specific execution environment such as a developer laptop, CI, or production-like environment.
+
+    Welcome JfrUnit: based on the JDK Flight Recorder (JFR), it allows you to implement assertions based on all kinds of JFR events emitted by the JVM or your application. JfrUnit makes it very easy to identify potential performance issues by asserting metrics that may impact your application’s performance, like an increased object allocation rate, retrieval of redundant data from the database, loading of unneeded classes, and much more.
+
+    Come and join us for this code-centric session to learn about:
+
+    <li>Using JDK Flight Recorder and JfrUnit for implementing performance regression tests</li>
+    <li>Emitting JFR events from 3rd party libraries using JMC Agent </li>
+    <li>Analyzing performance regressions in JDK Mission Control</li>
+                      </p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('morling')" title="Click for Abstract"><h2 class="text-white"><a href="#morlingCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Continuous Performance Regression Testing with JfrUnit</a>
+                </div>
+                <span style="padding-left: 20px">Gunnar Morling</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/OS7yZJQ2Q-0" target="_blank>">https://youtu.be/OS7yZJQ2Q-0</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="grimstadCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session17Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="grimstad" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Get the latest update of what's coming in Jakarta EE 10!
+                    </p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('grimstad')" title="Click for Abstract"><h2 class="text-white"><a href="#grimstadCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Get Ready for Jakarta EE 10!</a>
+                </div>
+                <span style="padding-left: 20px">Ivar Grimstad</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/RKOzytp1riQ" target="_blank>">https://youtu.be/RKOzytp1riQ</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="delNeroCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session18Time"></span></div>
+              <div class="col-lg-6">
+
+                  <!-- Modal content -->
+                  <div id="delNero" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <h3 style="color: red;">Abstract</h3>
+                      <br/>
+                      <p>Duke needs your help in navigating through the Delta Quadrant. Join us on this incredible journey visiting new features of the JDK 17 system as well as the best features of previous versions of Java. During this journey, you can improve your craft as an engineer. These short challenges will keep your katas going at warp speed! Solve the puzzles to learn the full power of the Java language. Apply the techniques, and develop concise code where bugs will have a hard time hiding. Come to this session to boldly go where no Duke has gone before!
+                      </p>
+                    </div>
+
+                  </div>
+                  <div style="padding-left: 20px" onclick="openAbstract('delNero')" title="Click for Abstract"><h2 class="text-white"><a href="#delNeroCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Duke’s Star Trek with Java 17 Code Challenges</a>
+                  </div>
+                <span style="padding-left: 20px">Rafael del Nero & Paul Webber</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/FMdV9R1zjbI" target="_blank>">https://youtu.be/FMdV9R1zjbI</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div id="mihalceanuCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session19Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="Mihalceanu" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>What is different from in the way we used to work with the development and deployment of our applications? What can we do to create modern applications?</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('Mihalceanu')" title="Click for Abstract"><h2 class="text-white"><a href="#mihalceanuCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">(Mis)Understanding Cloud Native (Two Speakers)</a>
+                </div>
+
+                <span style="padding-left: 20px">Rustam Mehmandarov & Ana-Maria Mihalceanu</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/u244zthwsC0" target="_blank>">https://youtu.be/u244zthwsC0</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+          <div id="nurkiewiczCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session20Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="nurkiewicz" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Project Loom is an effort to bring lightweight threads to the JVM. Such threads have low memory and scheduling footprint so that you can create millions of them. Forget about thread pools. Start creating new threads per each request or user. Without worrying about memory footprint.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('nurkiewicz')" title="Click for Abstract"><h2 class="text-white"><a href="#nurkiewiczCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Project Loom: Revolution in concurrency or obscure implementation detail?</a>
+                  <!--span class="popuptext" id="moraes">Abstract: <br/>They told you that using Java with containers were great, but they never mentioned that wouldn't be that easy, right? Luckily there are have some best practices that will rescue your application from failing. Come to this session and learn them.</span-->
+                </div>
+                <span style="padding-left: 20px">Tomasz Nurkiewicz</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/n_XRUljffu0" target="_blank>">https://youtu.be/n_XRUljffu0</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="grygleskiCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session21Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="grygleski" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>MQTT has become the de facto standard for Internet of Things messaging. What is it that has made MQTT the protocol of choice for IoT apps and why can't HTTP be the one. We will examine the benefits of MQTT and look at a popular Java-based MQTT broker, and a few other alternative brokers in the marketplace.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('grygleski')" title="Click for Abstract"><h2 class="text-white"><a href="#grygleskiCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Benefits of MQTT for IoT Apps and Beyond</a>
+                </div>
+                <span style="padding-left: 20px">Mary Grygleski</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/AzqA4ZwknW4" target="_blank>">https://youtu.be/AzqA4ZwknW4</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- End Monday, January 24 2022 -->
+
+        <!-- Begin Tuesday, January 25 -->
+        <div class="row align-items-stretch program">
+          <div class="site-section-heading">
+            <h2>Tuesday, January 25 2022</h2>
+          </div>
+
+          <div id="liCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session22Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="li" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Eclipse Jifa is a web application，open-sourced under Eclipse Foundation, which provides various online diagnostic services to troubleshoot Java applications in the cloud.
+
+    In this session, we will describe the high-level architecture of the Eclipse Jifa project and how we build it based on the core library of the MAT. We will also introduce the audiences to the end-to-end demo of how the developers can deploy and use Eclipse Jifa in their cloud environment to troubleshoot the related issues.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('li')" title="Click for Abstract"><h2 class="text-white"><a href="#liCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Eclipse Jifa: Tools for Troubleshooting Java Application in the Cloud</a>
+                </div>
+
+                <span style="padding-left: 20px">Sanhong Li</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/4nxCQHfJwy8" target="_blank>">https://youtu.be/4nxCQHfJwy8</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div id="muskallaCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session23Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="muskalla" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>CodeQL enables you to query your codebase as though it were data. Engineers and architects can leverage CodeQL to find security vulnerabilities using either CodeQL directly or using the deep integration with GitHub.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('muskalla')" title="Click for Abstract"><h2 class="text-white"><a href="#muskallaCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Query your codebase using CodeQL</a>
+
+                <span style="padding-left: 20px">Benjamin Muskalla</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/rn7tAZytyBc" target="_blank>">https://youtu.be/rn7tAZytyBc</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div id="ruizCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session24Time"></span></div>
+              <div class="col-lg-6">
+
+                <!-- The Modal -->
+                <div id="ruiz" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Change is inevitable and we need to move forward. One step at the time.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 40px" onclick="openAbstract('ruiz')" title="Click for Abstract"><h2 class="text-white"><a href="#ruizCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Upside Down</a>
+                </div>
+
+                <span style="padding-left: 20px">Ixchel Ruiz</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/ZcTH4XTfI7w" target="_blank>">https://youtu.be/ZcTH4XTfI7w</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="mannCard" class="row align-items-center border-top border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker" >
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session25Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="mann" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>In the span of several weeks, we took a legacy app that had been running in production for 12 years, moved it to git, mavenized it, upgraded from Java 6 to Java 8, and upgraded from Java EE 5 to Java EE 7. Oh, and did I mention that it uses SOAP, JSP, and JSF 1.2? We did all this with a relatively minor amount of code changes, thanks to the backward compatibility of Java 8 and Java EE. Come to this session to learn how we did it, what issues we ran into, which app server we were using, and why we didn't move to a newer JDK, Java EE 8, or Jakarta EE</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('mann')" title="Click for Abstract"><h2 class="text-white"><a href="#mannCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Upgrading a Legacy Java EE App with Style</a>
+                </div>
+
+                <span style="padding-left: 20px">Kito Mann</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/rQSVcp96Pis" target="_blank>">https://youtu.be/rQSVcp96Pis</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="andersonCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session26Time"></span></div>
+              <div class="col-lg-6">
+                <div id="andersonP" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Traditional full-stack development often results in web-based frontends with all the inherent volatility of JavaScript toolkits. Instead, how about keeping the entire stack in Java? This session demonstrates using JavaFX for your UI with Spring Boot to manage the middle and backend tiers. Demos include a RESTful web service with Spring Boot and JPA database persistence. This approach gives you a roadmap for an all-Java solution that combines the JavaFX runtime with a Spring Boot application.
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('andersonP')" title="Click for Abstract"><h2 class="text-white"><a href="#andersonPCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Front and Center!  JavaFX with Spring Boot</a>
+                </div>
+                <span style="padding-left: 20px">Paul & Gail Anderson</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/ypb07LA7hU4" target="_blank>">https://youtu.be/ypb07LA7hU4</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="manicoCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session27Time"></span></div>
+              <div class="col-lg-6">
+
+                <!-- The Modal -->
+                <div id="manico" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>The OWASP Top 10 is a standard awareness document for web developers and web application security professionals. It represents a broad consensus about the most critical security risks to web applications.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('manico')" title="Click for Abstract"><h2 class="text-white"><a href="#manicoCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">OWASP Top Ten 2021</a>
+                </div>
+                <span style="padding-left: 20px">Jim Manico</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/pLsH-TT26Mo" target="_blank>">https://youtu.be/pLsH-TT26Mo</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="longCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session28Time"></span></div>
+              <div class="col-lg-6">
+
+                <!-- The Modal -->
+                <div id="long" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Spring is all about helping developers get to production quickly and safely. These days, "production" is all but guaranteed to mean Kubernetes, and Spring has you covered. Join me, Spring Developer Advocate Josh Long (@starbuxman), and we'll look at how Spring Boot makes writing blisteringly fast, cloud-native, and scalable services more effortless than ever.</p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px" onclick="openAbstract('long')" title="Click for Abstract"><h2 class="text-white"><a href="#longCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Kubernetes Native Java</a>
+                </div>
+                <span style="padding-left: 20px">Josh Long</span>
+                <p style="padding-left: 20px">Session URL: <a href="https://youtu.be/U-4RQ7LXZUk" target="_blank>">https://youtu.be/U-4RQ7LXZUk</a></p>
+                <br/>
+
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- End Tuesday, January 25 2022 -->
+
+      </div>
+
+
+
+
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-10">
+              <p><a href="https://docs.google.com/document/d/1ma8aDpZILxLRN1QE4q5T9WxSrTFhpXPpcsGcO5LcgXI" target="_blank">jChampions Conference Code of Conduct</a>
+              <br/>
+              <a href="https://docs.google.com/document/d/185mhjUBM5PJkAJkMvyehsZzqHlIoEWcAQyxPwnhkdaE" target="_blank">jChampions Conference Privacy Policy</a>
+              </p>
+              <br/>
+              <h2 class="footer-heading text-uppercase mb-4">About The Java Champions</h2>
+              <p>To learn more about the Java Champions, please visit the <a href="https://developer.oracle.com/javachampions" target="_blank">informational site</a>.</p>
+              <br/>
+              <p>See a list of Java Champions:
+                <a href="http://www.javachampions.org/" target="_blank">http://www.javachampions.org/</a>
+              </p>
+              <br/>
+
+            </div>
+            <!--div class="col-md-3 ml-auto">
+              <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+              <p>
+                <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="p-2"><span class="icon-youtube"></span></a>
+                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+              </p>
+            </div-->
+          </div>
+          <div class="row">
+
+            <div class="col-md-12 text-center">
+              <div class="border-top pt-5">
+                <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  </div>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    var header = document.getElementById("siteHeader");
+    var sticky = header.offsetTop;
+
+    function scrollFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+
+  <script src="js/moment.min.js"></script>
+  <script src="js/moment-timezone-with-data-10-year-range.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    window.onload=changeTimezones;
+  </script>
+
+  </body>
+</html>
