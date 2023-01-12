@@ -257,31 +257,36 @@ function changeTimezones(){
             </div>
           </div>
 
-
-
-          <div id="kabutzCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+          <div id="mihalyiCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
-              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session2Time"></span> </div>
+              <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session2Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="kabutz" class="modal">
+                <div id="mihalyi" class="modal">
 
                   <!-- Modal content -->
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>In 2003, Heinz was asked to fix bugs and add features to a bowl of spaghetti code. It was a dismal task. He had heard of IntelliJ IDEA's supernatural analyzing powers. At the end of his 30 day trial, he purchased his first IntelliJ license. Often after his talks, instead of asking about the topic he spoke about, curious onlookers wanted to know how he had performed his IntelliJ magic. Here are your answers.
+                    <p>For years, we’ve been told that Java suffers from cold starts in AWS Lambda and Serverless in general. Believe it not. Java is extremely fast to start, the simplest Java program starts in milliseconds. It’s the Java frameworks and libraries that slow things down in general. But not all of them…
+    <br/>
+    In this session, I want to show you the truth about Serverless Java and cold starts, what’s slow, what’s fast and why it matters. We’ll go through what a cold start is, how cold starts in AWS Lambda impact your application responsiveness and cloud costs, and what are the options to optimize both. We’ll explore and compare Quarkus and Piranha Cloud, the most modern and fastest Jakarta EE frameworks. We’ll test the limits of what they are capable of, how fast they start and whether we even need to think about any optimizations. Then I’ll explain what optimizations may help if you need to go further, like tuning the JVM, using a custom JVM runtime or building a OS-native binary with GraalVM. However, there are also a few limitations and cost implications of these optimizations, which we'll also explain.
+    <br/>
+    I’ll show and tell, with very few slides. You’ll see live for yourselves how Java AWS Lambda functions built with Jakarta EE can start fast and decrease the cold starts to the absolute minimum which you can barely notice
+                    </p>
                   </div>
 
                 </div>
-                <div style="padding-left: 20px" onclick="openAbstract('kabutz')" title="Click for Abstract"><h2 class="text-white"><a href="#kabutzCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">IntelliJ Super Productivity in 45 Minutes</a>
+                <div style="padding-left: 20px" onclick="openAbstract('mihalyi')" title="Click for Abstract"><h2 class="text-white"><a href="#mihalyiCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Afraid of Java cold starts in serverless?  Fear not, Java is super fast!</a>
                 </div>
-                <span style="padding-left: 20px">Heinz Kabutz</span>
-                  <br/>
+                <span style="padding-left: 20px">Ondro Mihályi</span>
+                <br/>
 
               </div>
             </div>
           </div>
+
+
 
           <div id="greensteinCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
@@ -646,34 +651,31 @@ In this session, Anton introduces OpenTelementry and what's the current status i
            </div>
          </div>
 
-         <div id="mihalyiCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+         <div id="kabutzCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
            <div class="row align-items-center speaker">
-             <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session16Time"></span></div>
+             <div class="col-md-3 text-white mb-3 mb-md-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4" id="session16Time"></span> </div>
              <div class="col-lg-6">
                <!-- The Modal -->
-               <div id="mihalyi" class="modal">
+               <div id="kabutz" class="modal">
 
                  <!-- Modal content -->
                  <div class="modal-content">
                    <h3 style="color: red;">Abstract</h3>
                    <br/>
-                   <p>For years, we’ve been told that Java suffers from cold starts in AWS Lambda and Serverless in general. Believe it not. Java is extremely fast to start, the simplest Java program starts in milliseconds. It’s the Java frameworks and libraries that slow things down in general. But not all of them…
-   <br/>
-   In this session, I want to show you the truth about Serverless Java and cold starts, what’s slow, what’s fast and why it matters. We’ll go through what a cold start is, how cold starts in AWS Lambda impact your application responsiveness and cloud costs, and what are the options to optimize both. We’ll explore and compare Quarkus and Piranha Cloud, the most modern and fastest Jakarta EE frameworks. We’ll test the limits of what they are capable of, how fast they start and whether we even need to think about any optimizations. Then I’ll explain what optimizations may help if you need to go further, like tuning the JVM, using a custom JVM runtime or building a OS-native binary with GraalVM. However, there are also a few limitations and cost implications of these optimizations, which we'll also explain.
-   <br/>
-   I’ll show and tell, with very few slides. You’ll see live for yourselves how Java AWS Lambda functions built with Jakarta EE can start fast and decrease the cold starts to the absolute minimum which you can barely notice
-                   </p>
+                   <p>In 2003, Heinz was asked to fix bugs and add features to a bowl of spaghetti code. It was a dismal task. He had heard of IntelliJ IDEA's supernatural analyzing powers. At the end of his 30 day trial, he purchased his first IntelliJ license. Often after his talks, instead of asking about the topic he spoke about, curious onlookers wanted to know how he had performed his IntelliJ magic. Here are your answers.
                  </div>
 
                </div>
-               <div style="padding-left: 20px" onclick="openAbstract('mihalyi')" title="Click for Abstract"><h2 class="text-white"><a href="#mihalyiCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Afraid of Java cold starts in serverless?  Fear not, Java is super fast!</a>
+               <div style="padding-left: 20px" onclick="openAbstract('kabutz')" title="Click for Abstract"><h2 class="text-white"><a href="#kabutzCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">IntelliJ Super Productivity in 45 Minutes</a>
                </div>
-               <span style="padding-left: 20px">Ondro Mihályi</span>
-               <br/>
+               <span style="padding-left: 20px">Heinz Kabutz</span>
+                 <br/>
 
              </div>
            </div>
          </div>
+
+
 
          <div id="dominguezCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
            <div class="row align-items-center speaker">
