@@ -146,9 +146,8 @@ window.onclick = function(event) {
                 <li><a href="schedule.html">Schedule</a></li>
                 <li><a href="cfp.html">CFP Committee</a></li>
                 <li><a href="steering.html">Steering Committee</a></li>
-                <li><a href="index.2022.html">2022 Conference</a></li>
-                <li><a href="index.2021.html">2021 Conference</a></li>
-                <li class="cta"><a href="https://www.eventbrite.com/e/jchampions-conference-2023-tickets-477610735567" target="_blank">Register</a></li>
+                <li><a href="past.html">Previous Years</a></li>
+                <li class="cta"><a href="https://cevents.io/JChampions24" target="_blank">Register</a></li>
               </ul>
             </nav>
           </div>
@@ -175,363 +174,341 @@ window.onclick = function(event) {
 
 <!-- Start Speaker Cards -->
 
-          <div id="drotbohmCard" class="row align-items-center speaker">
-            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-              <img width="200" height="200" src="https://sessionize.com/image/6f32-0o0o0-3hb8hUY1jRDtBuCLu4AEEo.jpg?download=oliver-drotbohm.jpg" alt="Image" class="img-fluid">
+          <div id="ritterCard" class="row align-items-center speaker">
+            <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+              <img width="200" height="200" src="https://sessionize.com/image/0236-400o400o1-d1-5754-4459-a8d5-6dd2f5619874.c0440890-dfee-4165-8fdb-b439238711c9.jpg" alt="Image" class="img-fluid">
             </div>
             <div class="col-lg-6 ml-auto">
-              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Oliver Drotbohm</h2>
+              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Simon Ritter</h2>
               <!-- The Modal -->
-              <div id="Drotbohm" class="modal">
+              <div id="ritter" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
                   <h3 style="color: red;">Abstract</h3>
                   <br/>
-                  <p>The architecture and design of an application significantly influences its maintainability, testability, and quality in general. Spring has always been a versatile tool that supports architects implementing the practices and patterns that have emerged to align technical building blocks in their code bases with domain concepts and boundaries. It lets developers build applications that clearly reflect architectural ideas and that are ultimately more amendable and maintainable. Key aspects of that are code organization for encapsulation, the Spring bean relationship arrangement, and how to use domain events to decouple logically individual parts of the application even within a singular artifact.
-
-This talk discusses those patterns and approaches to introduce libraries, such as jMolecules and Moduliths to, in turn, show how they uniquely position Spring developers to build better structured, more maintainable applications.</p>
-                </div>
+                  <p>
+                    Java bytecodes and class files deliver on the original vision of “write once, run anywhere”.  Using a Just-in-Time (JIT) compiler allows JVM-based applications to compile only the code that’s being used frequently and optimise it precisely for how it is being used.  Using techniques like speculative optimisation can often deliver better performance than static, Ahead-of-Time (AOT) compiled code.
+                    <br/>
+                    However, this flexibility and performance comes at a cost.  Each time the JVM starts an application, it must perform the same analysis to find hot spots of code and compile them.  This is referred to as the application warmup time.
+                    <br/>
+                    In this session, we’ll look at several approaches to how this problem can be alleviated or even eliminated.  Specifically:
+                    <br/>
+                    <ul>
+                    <li>Generating a JIT compiler profile of a running, warmed-up application that can be reused when the same application is restarted, eliminating the need for much of the JIT compilation.</li>
+                    <li>Decoupling the JIT compiler from the JVM for a Cloud environment.  Providing a centralised JIT-as-a-Service allows caching of compiled code and offloading the compilation work when new code must be compiled.</li>
+                    <li>Creating a checkpoint of a running application.  This includes all application state (heap, stack, etc.) in addition to the JIT-compiled code.  Project CRaC will be used as an example.</li>
+                    </ul>
+                    <br/>
+                    At the end of the session, you’ll be all set to keep your Java hot!
+                  </p>
+                  </div>
 
               </div>
-              <div onclick="openAbstract('Drotbohm')" title="Click for Abstract">Session: <a href="#drotbahmCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Spring for the Architecturally Curious Developer</a>
+              <div onclick="openAbstract('ritter')" title="Click for Abstract">Session: <a href="#ritterCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Keeping Your Java Hot by Solving the JVM Warmup Problem</a>
               </div>
               <div class="bio pl-lg-5">
 
-                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">CEO and Head of Product for SF AppWorks
-                <br/>
-                Oliver Drotbohm is member of the Spring engineering team at VMware, Java Champion and member of the JPA 2.1 expert group. He has been into developing enterprise applications and open-source projects for over 15 years now. His work focused on software architecture, DDD, REST, and persistence technologies. Oliver is regularly speaking at German and international conferences and the author of technology articles. The new book “Modulithic Applications with Spring” is due to release in 2022.</p>
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Simon Ritter is the Deputy CTO of Azul Systems.  Simon has been in the IT business since 1984 and holds a Bachelor of Science degree in Physics from Brunel University in the U.K.
+
+Simon joined Sun Microsystems in 1996 and started working with Java technology from JDK 1.0; he has spent time working in both Java development and consultancy.  Having moved to Oracle as part of the Sun acquisition, he managed the Java Evangelism team for the core Java platform, Java for client applications and embedded Java.  Now at Azul, he continues to help people understand Java as well as Azul’s JVM technologies and products.  Simon has twice been awarded Java Rockstar status at JavaOne and is a Java Champion.  He currently represents Azul on the JCP Executive Committee and on the Java SE Expert Group (JSR 379, 383 and 384).
+                </p>
                 <p data-aos="fade-right" data-aos-delay="500">
-                  Follow Oliver &mdash;
-                  <a href="https://twitter.com/odrotbohm" class="p-2"><span class="icon-twitter"></span></a>
+                  Follow Simon &mdash;
+                  <a href="https://twitter.com/speakjava" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
                 </p>
               </div>
             </div>
           </div>
 
-          <!------  Durand ---->
+          <!------  Naftalin ---->
 
-          <div id="durandCard" class="row align-items-center speaker">
+          <div id="naftalinCard" class="row align-items-center speaker">
             <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-              <img width="200" height="200" src="https://cache.sessionize.com/image/5288-0o0o0-R4AybWsm7Hika58tdubrQd.jpg?download=antoine-sabot-durand.jpg" alt="Image" class="img-fluid">
+              <img width="200" height="200" src="https://sessionize.com/image/1b1f-400o400o1-c6-1351-4a1d-8ac9-a81b96bd6307.ba5a6ebf-350a-4983-a9c5-6ba54b9d385b.jpg" alt="Image" class="img-fluid">
             </div>
             <div class="col-lg-6 ml-auto">
-              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Antoine Sabot-Durand</h2>
+              <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Maurice Naftalin</h2>
               <!-- The Modal -->
-              <div id="Durand" class="modal">
+              <div id="naftalin" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
                   <h3 style="color: red;">Abstract</h3>
                   <br/>
-                  <p>Our industry is rather amnesic. Today, most young Java developers ignore what happened during the early 2000’s that led us with the frameworks and tools we are using today.
-That’s too bad because this knowledge would help them to be better developers by understanding the long and winding road, we went thru during these last 20 years.
-<br/>
-In this session I’ll go back on the major events of this story with a trolling level at the minimum possible.
-<br/>
-We will travel in time to understand the EJB curse and see the Spring 1.0 birth. Then we’ll explain EJB 3.0 reinvention, CDI emergence and Spring Boot launch.
-The temporary end of the story will lead us to talk about MicroProfile, Quarkus and Spring Native.
-<br/>
-During our journey we’ll try to understand the naming malediction that turned J2EE in Java EE and then Jakarta EE (and no, JEE doesn’t exists). We’ll also try to explore most Spring attempt to build a profitable business model.
-<br/>
-At the end of this talk you should have a better overview of the Java Enterprise ecosystem and understand why you should remove J2EE or Java EE (and of course JEE) from your CV if you only are a Spring expert.
-                    </p>
+                  <p>
+                    The classes of the Java Collections Framework are arguably the most heavily used data structures on the planet. In their 25-year lifetime, they’ve become part of the everyday vocabulary of millions of programmers. But, actually, how good are they? And how have they changed, to fit with the changing direction of the language towards a more functional style?
+                    <br/><br/>
+                    To answer these questions, this session will preview some of the material in the upcoming second edition of Java Generics and Collections: the sequenced collections introduced in Java 21, use cases for the unmodifiable collections of Java 9, best practices for using the framework, and a design retrospective distilling the experience of a quarter-century’s use of the Framework. This session should give you a better understanding of the design forces that shaped the Framework, and an improved ability to get the very best out of it.
+                  </p>
                 </div>
 
               </div>
-              <div onclick="openAbstract('Durand')" title="Click for Abstract">Session: <a href="#durandCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Has the J2EE vs Spring Infinity War reached an End Game? A short history of Java for the enterprise</a>
+              <div onclick="openAbstract('naftalin')" title="Click for Abstract">Session: <a href="#naftalinCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Return to Planet Collections</a>
               </div>
               <div class="bio pl-lg-5">
 
-                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Consultant and Java expert at SCIAM
-<br/>
-Antoine is a Java Champion and the Former Jakarta EE CDI spec lead. He was part of the Quarkus launch team at Red Hat and worked on major MicroProfile specs such as Fault Tolerance or Health Check. Today, Antoine is architect and technical expert in SCIAM. He is working on challenging projects with most of the technology he contributed t in the past.</p>
-                <p data-aos="fade-right" data-aos-delay="500">
-                  Follow Antoine &mdash;
-                  <a href="https://twitter.com/antoine_sd" class="p-2"><span class="icon-twitter"></span></a>
+                <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Developer, author, teacher. Forty years in computing. Co-author “Java Generics and Collections”, author “Mastering Lambdas”. Java Champion, JavaOne Rockstar, frequent conference speaker.
+              </p><p data-aos="fade-left" data-aos-delay="500">
+                  Follow Maurice &mdash;
+                  <a href="https://twitter.com/mauricenaftalin" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
                 </p>
               </div>
             </div>
           </div>
 
-          <!------  Rodriguez ---->
+          <!------  Dominguez ---->
 
-          <div id="rodriguezCard" class="row align-items-center speaker">
-            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-              <img width="200" height="200" src="https://cache.sessionize.com/image/68c7-0o0o0-Mty9GrG6GmZaNqraHb6gt9.jpg?download=anton-rodriguez.jpg" alt="Image" class="img-fluid">
+          <div id="dominguezCard" class="row align-items-center speaker">
+            <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+              <img width="200" height="200" src="https://sessionize.com/image/7432-400o400o1-DUKbXgquhqWK8QfNpY6jse.png" alt="Image" class="img-fluid">
             </div>
             <div class="col-lg-6 ml-auto">
-              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Antón Rodríguez</h2>
+              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">María Arias de Reyna Dominguez</h2>
               <!-- The Modal -->
-              <div id="rodriguez" class="modal">
+              <div id="dominguez" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
                   <h3 style="color: red;">Abstract</h3>
                   <br/>
-                  <p>This talk shows you how to produce telemetry from your Java services using an open standard to retain control of data. OpenTelemetry allows you to instrument your application code through vendor-neutral APIs, libraries, and tools. It provides the tools necessary for you to gain visibility into the performance of your services and overall latency.
-
-In this session, Anton introduces OpenTelementry and what's the current status in Java. He will show some real examples and all the required resources to start taking advantage of OpenTelemetry to monitor Java applications.
-                    </p>
+                  <p>
+                    Here we are, creating a whole new project from scratch and no legacy hindering us. But wait, should I use Spring Boot, Quarkus, Micronaut,... What is happening in the Java ecosystem? What do I do?
+                    <br/><br/>
+                    On this talk we are going to create a (simple) app on those frameworks and compare pros and cons. We will build the native version, compare the source code and dependencies, and, probably, find out that the real treasure is the code we made along the way.
+                  </p>
                 </div>
 
               </div>
-              <div onclick="openAbstract('rodriguez')" title="Click for Abstract">Session: <a href="#rodriguezCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Instrumenting Java applications with OpenTelemetry</a>
+              <div onclick="openAbstract('dominguez')" title="Click for Abstract">Session: <a href="#dominguezCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">The chaos incarnated: Micro-Quarkus Boot!</a>
               </div>
               <div class="bio pl-lg-5">
 
-                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Principal Software Engineer at New Relic
-<br/>
-Antón is a Principal Software Engineer focused on Data in motion. He has a passion for building high-throughput streaming systems and solving the challenges that come with them. He’s also a JUG organiser, blogger, podcaster and speaker.</p>
-                <p data-aos="fade-right" data-aos-delay="500">
-                  Follow Antón &mdash;
-                  <a href="https://www.twitter.com/antonmry" class="p-2"><span class="icon-twitter"></span></a>
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                María Arias de Reyna is a Java Champion, geospatial enthusiast and FLOSS advocator.
+
+                She has been a community leader and core maintainer of several free and open source projects since 2004. She is currently working at Red Hat where she focuses on Middleware and leads the development of Kaoto, an Apache Camel low code and no code editor.
+
+                María is an experienced keynoter and speaker. Between 2017 and 2019 María was the elected President of OSGeo, the Open Source Geospatial Foundation which serves as an umbrella for the most used geospatial free and open source software. She is also well known as a feminist and Women In Tech activist.
+                </p><p data-aos="fade-right" data-aos-delay="500">
+                  Follow María &mdash;
+                  <a href="https://twitter.com/delawen" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
                 </p>
               </div>
             </div>
           </div>
 
-        <!-- B. Burd -->
+        <!-- Horstmann -->
 
-         <div id="burdCard" class="row align-items-center speaker">
+         <div id="horstmannCard" class="row align-items-center speaker">
             <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-              <img width="200" height="200" src="https://cache.sessionize.com/image/09de-0o0o0-KBZdvnvzucpM4FBh2ERG6b.png?download=barry-burd.png" alt="Image" class="img-fluid">
+              <img width="200" height="200" src="https://sessionize.com/image/6e09-400o400o1-KHv9eGosBArzPrYGYBYsTh.jpg" alt="Image" class="img-fluid">
             </div>
             <div class="col-lg-6 ml-auto">
-              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Barry Burd</h2>
+              <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Cay Horstmann</h2>
               <!-- The Modal -->
-              <div id="Burd" class="modal">
+              <div id="horstmann" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
                   <h3 style="color: red;">Abstract</h3>
                   <br/>
-                  <p>We've all heard the hype: Quantum computers will leave our current machines wallowing in the dust. Quantum algorithms will crack our existing encryption schemes in seconds. Will it really happen? The answer depends on engineering problems that have yet to be solved. But for those of us who write code, many insights are already available. In this session, I'll run Java code from Johan Vos's Quantum Computing in Action book. I'll use the code to describe how quantum algorithms approach problems.
-                    </p>
+                  <p>
+                    Pattern matching in Java makes use of the instanceof and switch syntax, so that programmers can leverage their existing knowledge to easily master the new features. At least that's the theory. In this session, you will see, through a series of increasingly challenging puzzlers, how the pattern matching process works under the hood and just how complex the interactions between classic and modern features are. You will come away with a thorough understanding of the mechanisms and limitations of the pattern matching features that have been gradually added between Java 14 and 21, as well as those that are still contemplated for future versions. You will also learn best practices and style recommendations so that your code is not a puzzler for your peers.
+                  </p>
                 </div>
 
               </div>
-              <div onclick="openAbstract('Burd')" title="Click for Abstract">Session: <a href="#burdCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Java and the Promise of Quantum Computing</a>
+              <div onclick="openAbstract('horstmann')" title="Click for Abstract">Session: <a href="#horstmannCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Learn Pattern Matching Through Puzzlers</a>
               </div>
               <div class="bio pl-lg-5">
 
-                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Professor, Drew University
-                <br/>
-                Barry Burd is the author of many books, articles, and videos, including "Android Application Development All-in-One For Dummies", "Java Programming for Android Development For Dummies", and O'Reilly's "Introduction to Functional Programming" video course.
-</p>
-                <p data-aos="fade-right" data-aos-delay="500">
-                  Follow Barry &mdash;
-                  <a href="http://twitter.com/allmycode" class="p-2"><span class="icon-twitter"></span></a>
+                <p class="mb-4" data-aos="fade-left" data-aos-delay="400">P
+                After growing up in the German countryside, I studied in the United States (M.S. in computer science from Syracuse University, and a Ph.D. in mathematics from the University of Michigan in Ann Arbor). For four years, I was VP and CTO of an Internet startup that went from 3 people in a tiny office to a public company. I taught computer science at San Jose State University and held visiting appointments at universities in Germany, Switzerland, Vietnam, and Macau. In my copious spare time I write books and articles on programming languages and computer science education.
+              </p>
+                <p data-aos="fade-left" data-aos-delay="500">
+                  Follow Cay &mdash;
+                  <a href="https://twitter.com/cayhorstmann" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- B. Rahman -->
+          <!-- Judd -->
 
-         <div id="rahmanCard" class="row align-items-center speaker">
-            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-              <img width="200" height="200" src="https://cache.sessionize.com/image/acc5-0o0o0-EBSMd1on8sMztoF7p9gQfD.jpg?download=bazlur-rahman.jpg" alt="Image" class="img-fluid">
+         <div id="juddCard" class="row align-items-center speaker">
+            <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+              <img width="200" height="200" src="https://sessionize.com/image/bd3c-400o400o1-D3KXQY9QPCWy3KUFJ6twgd.jpg" alt="Image" class="img-fluid">
             </div>
             <div class="col-lg-6 ml-auto">
-              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Bazlur Rahman</h2>
+              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Christopher Judd</h2>
               <!-- The Modal -->
-              <div id="Rahman" class="modal">
+              <div id="judd" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
                   <h3 style="color: red;">Abstract</h3>
                   <br/>
-                  <p>We don’t have to exert much mental effort when writing blocking code, but this has drawbacks. Non-blocking code, on the other hand, could be used to increase application throughput. This is why non-blocking code is recommended in many scenarios. Over the last two decades, many approaches have been introduced to writing code that does not block.
-<br/><br/>
-In this session, we will look into those options that are available to us. To begin, I’ll go over the evolution of the Java concurrency model since its inception with the vanilla thread. Then I will introduce Future/Callable, and CompletableFuture, briefly go over reactive programming, and finally conclude with the Project Loom that was added in Java 19.
-                    </p>
+                  <p>
+                    Enterprise applications are complex. A transaction starting in the browser will go through proxies, api gateways, security appliances, application performance monitoring tools, logs, microservices and more microservices. Historically there has been no standard way to get observability and traceability between all the enterprise components. Each product and framework has it's own proprietary way of identifying a transaction making it difficult if not impossible to stitch together a complete picture of a transaction. This is changing with the introduction of the W3C Trace Context standard and the open source initiative of OpenTelemetry.
+                    <br/><br/>
+                    In this session, you will learn how using Trace Context, OpenTelemetry and other open source and commercial products can improve your observability to help you better triage production issues, improve performance, be proactive and make your users happier.
+                  </p>
                 </div>
 
               </div>
-              <div onclick="openAbstract('Rahman')" title="Click for Abstract">Session: <a href="#rahmanCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">A tale of two cities: blocking code vs. non-blocking code</a>
+              <div onclick="openAbstract('judd')" title="Click for Abstract">Session: <a href="#juddCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Enterprise Observability with OpenTelemetry</a>
               </div>
               <div class="bio pl-lg-5">
 
-                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Java Champion | Software Engineer | JUG Leader | Author | Blogger | Editor at InfoQ and Foojay.IO.
-<br/>
-A N M Bazlur Rahman works at Contrast Security as a Sr. Software Engineer. He has more than ten years of professional experience in the software industry, predominantly in Java and Java-related technologies. Recently, he was named a Java Champion.
-<br/>
-Outside of his regular work hours, he loves to mentor, write, speak at conferences, and contribute to open-source projects. He is the founder and current moderator of the Java User Group in Bangladesh. He has organized meetups and conferences to share Java-related knowledge with the community since 2013. He was named Most Valuable Blogger (MVP) at DZone, one of the most recognized technology publishers in the world. Besides DZone, he is an editor for the Java Queue at InfoQ, another leading technology content publisher and conference organizer, and an editor at Foojay.io, a place for friends of OpenJDK. In addition, he has published four books about the Java programming language in Bengali; they were bestsellers in Bangladesh.
-<br/>
-He earned his bachelor's degree from the Institute of Information Technology, University of Dhaka, Bangladesh, in Information Technology, majoring in Software Engineering. He currently lives in Toronto, Canada.
-
-</p>
-                <p data-aos="fade-right" data-aos-delay="500">
-                  Follow Bazlur &mdash;
-                  <a href="https://twitter.com/bazlur_rahman" class="p-2"><span class="icon-twitter"></span></a>
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Christopher Judd is CTO and partner at Manifest Solutions (http://www.manifestcorp.com), an international speaker, Java Champion, an open source evangelist, and the Central Ohio Java Users Group (http://www.cojug.org) leader.  He is an accomplished writer having co-authored Beginning Groovy and Grails (Apress, 2008), Enterprise Java Development on a Budget (Apress, 2003) and Pro Eclipse JST (Apress, 2005) as well as the author of the children’s book “Bearable Moments”.  Based in Columbus Ohio, he has spent over 20 years architecting and developing software for organizations ranging from Fortune 500 to start-ups across various industries including insurance, health care, education, retail, government, manufacturing, service, and transportation.  Mr. Judd spends most of his time consulting while continuing to focus on mentoring and training in Java, mobile and related technologies.
+                </p>
+                                <p data-aos="fade-right" data-aos-delay="500">
+                  Follow Christopher &mdash;
+                  <a href="https://twitter.com/javajudd" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- benz -->
+          <!-- Heckler -->
 
-            <div id="benzCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/a2ec-0o0o0-H9WGD6JsC5P3fX8ap6tioY.jpg?download=brian-benz.jpg" alt="Image" class="img-fluid">
+            <div id="hecklerCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/e7cd-400o400o1-4d-a57f-4e08-978d-8043d43db097.be36bb9a-fec3-4e72-a83e-0482a0f35d70.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Brian Benz</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Mark Heckler</h2>
             <!-- The Modal -->
-            <div id="benz" class="modal">
+            <div id="heckler" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Developer teams are constantly under pressure to deliver new features and functionality without impacting core applications. In this session we’ll show how to add and deploy new application features reliably and securely without changing the core application or impacting core business activity. Highlights will include feature flags, AB Testing, and blue-green deployments using GitHub actions and GitHub repos, plus powerful cloud services based on serverless technologies, and managed container orchestration using Kubernetes.
+                <p>
+                  As developers, we continuously polish our development skills. But some of the most vital of developer abilities - delivering our carefully crafted software to production - is often left as an afterthought. Oftentimes we learn just enough to "get it there", but not enough to do it well or to make it happen reliably, repeatably, and effortlessly.
+                  <br/><br/>
+                  There are many ways to deliver your essential software to production, and each involves tradeoffs. In this session, we'll explore the pros and cons of various deployment mechanisms, including manual, scripted (using shell scripts, Terraform, etc.), and CI/CD pipelines like GitHub Actions. Then we'll put them to work! Examples of each approach will be demonstrated *live and in real time*!
+                  <br/><br/>
+                  Come to this session to take your production deployment game to the next level.
                 </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('benz')" title="Click for Abstract">Session: <a href="#benzCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Deploying Java apps to Kubernetes with GitHub Actions and feature flags</a>
+            <div onclick="openAbstract('heckler')" title="Click for Abstract">Session: <a href="#hecklerCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Powering the Push to Production: A multi-path, live action adventure!</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Brian is a Java Champion and a Cloud Advocate at Microsoft, helping developers get the most out of Java on Azure.
-<br/>
-Brian is a Java Champion and a Cloud Advocate at Microsoft, helping developers get the most out of Java on Azure. Before Joining Microsoft, he was a program manager, evangelist, solution architect, consultant, developer, and author at IBM, Deloitte, and other companies. Find him on Twitter @bbenz. A current list of Brian's talks can be found at https://aka.ms/brianspeaking</p>
-              <p data-aos="fade-right" data-aos-delay="500">
-                Follow Brian &mdash;
-                <a href="https://twitter.com/bbenz" class="p-2"><span class="icon-twitter"></span></a>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+              Mark Heckler, MBA is a software developer & Principal Cloud Developer Advocate for Java/JVM Languages at Microsoft, conference speaker, Java Champion, and Kotlin Developer Expert focused on developing innovative production-ready software at velocity for cloud and edge computing platforms. He has worked with key players in numerous industries and public sector organizations to develop and deliver critical capabilities on time and on budget. Mark is an open source contributor and author of Spring Boot: Up and Running (https://bit.ly/springbootbook) and can be found on Twitter/X @mkheck.
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Mark &mdash;
+                <a href="https://twitter.com/mkheck" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- C Hernandez -->
-        <div id="hernandezCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/2479-0o0o0-SHvHLQbiqCi83J8AjyP3wo.jpg?download=cesar-hernandez.jpg" alt="Image" class="img-fluid">
+        <!-- Raible -->
+        <div id="raibleCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/5d67-400o400o1-9997ca4c-a29b-4b0c-8bf1-4c15ad9b8d28.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Cesar Hernandez</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Matt Raible</h2>
             <!-- The Modal -->
-            <div id="hernandez" class="modal">
+            <div id="raible" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Improving security in the Open Source ecosystem is currently a priority on the global agenda. DevOps and DevSecOps have contributed to creating a framework with many opportunities but challenges in which the Java industry and ecosystem evolve regarding security.
-<br/><br/>
-In this session, we will deconstruct security in Open Source and the Java ecosystem. We will present the challenges, opportunities, and recommendations to improve the security management of your new and existing architectures under an approach supported by DevSecOps principles.
+                <p>
+                  Use Spring Boot! No, use Micronaut!! Nooooo, Quarkus is the best!!! What about Helidon?
+                  <br/><br/>
+                  Many developers praise the hottest and fastest Java REST frameworks: Micronaut, Quarkus, Spring Boot, and Helidon. In this session, you'll learn how to do the following with each framework:
+                  <br/><ul>
+                      <li>Build a REST API</li>
+                      <li>Secure your API with OAuth 2.0</li>
+                      <li>Optimize for production with Docker and GraalVM</li>
+                      <br/><br/>
+                  I'll also share some performance numbers and pretty graphs to compare community metrics.
+                </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('hernandez')" title="Click for Abstract">Session: <a href="#hernandezCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Deep diving into Java ecosystem security with OpenSource and DevSecOps</a>
+            <div onclick="openAbstract('riable')" title="Click for Abstract">Session: <a href="#riableCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Comparing Native Java REST API Frameworks</a>
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Senior Software Engineer at Tomitribe
-<br/>
-Cesar Hernandez is a Senior Software Engineer at Tomitribe with +12 years of experience in Enterprise Java Applications. He is a Java Champion, Duke's Choice Award winner, Oracle Ace Pro, Jfrog SuperFrog, Open Source advocate, MicroProfile contributor, Jakarta and Apache TomEE committer, JCP associate member, teacher, and international speaker. When César is away from a computer, he enjoys spending time with his family, traveling and playing music with the Java Community Band, The Null Pointers. Follow Cesar on https://twitter.com/CesarHgt</p>
-              <p data-aos="fade-left" data-aos-delay="500">
-                Follow Cesar &mdash;
-                <a href="https://twitter.com/CesarHgt" class="p-2"><span class="icon-twitter"></span></a>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+              <br/>
+              Matt Raible is a well-known figure in the Java community and has been building web applications for most of his adult life. For over 20 years, he has helped developers learn and adopt open source frameworks and use them effectively. He's a web developer, Java Champion, and Developer Advocate at Okta. Matt is a frequent contributor to open source and a big fan of Java, IntelliJ, TypeScript, Angular, and Spring Boot.
+
+              Matt is a member of the global JHipster development team and loves classic VWs. You can find him online at @mraible and https://raibledesigns.com.
+            </p><p data-aos="fade-right" data-aos-delay="500">
+                Follow Matt &mdash;
+                <a href="https://twitter.com/mraible" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- EJiang -->
+        <!-- Arhipov -->
 
-  <div id="jiangCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/96d2-0o0o0-BFo4CBNAaFXkUSQUCt3JH.jpg?download=emily-jiang.jpg" alt="Image" class="img-fluid">
+  <div id="arhipovCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/d673-400o400o1-LVU364AmNvMvNAzyi11RBY.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Emily Jiang</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Anton Arhipov</h2>
             <!-- The Modal -->
-            <div id="jiang" class="modal">
+            <div id="arhipov" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Both MicroProfile and Jakarta EE are cloud native API standards for developing portable microservices.
-<br/><br/>
-Jakarta EE 10 Core Profile was the new profile in Jakarta EE 10. The new shining hot-in-the-press MicroProfile 6.0 has already fully embraced Jakarta EE 10 Core Profile. Apart from this, MicroProfile 6.0 also provided some major updates from MicroProfile Metrics, which enabled the adoption of Micrometer and MicroProfile Telemetry that consumed OpenTelemetry. Come to this session to learn all about the observibility standard for your microservices with a live demo on Open Liberty.
+                <p>
+                  Modern IDEs are quite complex. Even IDE developers say they sometimes discover new features only while reading the IDE's code. And does this sound familiar: your colleague is trying to find a class in the project tree, and they don't remember a class name, so you are trying hard not to scream: "Just press Ctrl+Shift+E!!!".
+                  <br/>
+                  Generally, developers use their IDEs and do not utilize the power of automated refactorings, shortcuts, fast navigation, and other awesome features that IDEs provide. The audience will learn many tips and tricks along with different shortcuts.
+                  <br/><br/>
+                This session takes you through the cool features of IntelliJ IDEA: refactorings, shortcuts, fast navigation, code completion kung-fu, live templates, structured search, THE DEBUGGER, and other gems that the IDE provides for better productivity.
+
                 </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('jiang')" title="Click for Abstract">Session: <a href="#jiangCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Deep Dive MicroProfile 6.0 with Jakarta EE 10 Core Profile</a>
+            <div onclick="openAbstract('arhipov')" title="Click for Abstract">Session: <a href="#arhipovCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">IntelliJ IDEA Tips & Tricks</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">IBM, Cloud Native Architect and Chief Advocate
-<br/>
-Emily Jiang is a Java Champion. She is Liberty Cloud Native Architect and Chief Advocate, Senior Technical Staff Member (STSM) in IBM, based at Hursley Lab in the UK. Emily is a MicroProfile guru and has been working on MicroProfile since 2016 and leads a number of specifications including MicroProfile Config and Fault Tolerance. She interacts with most of the other MicroProfile specifications. She is also active in Jakarta EE specifications. She is a co-lead in Jakarta Config and also a Jakarta Context and Dependency Injection (CDI) committer. At IBM, she leads the effort of implementing all of MicroProfile specifications on Open Liberty.
-
-She is passionate about MicroProfile and Jakarta EE. She regularly speaks at conferences, such as QCon, Code One, DevNexus, JAX London, Voxxed, Devoxx, EclipseCon, GeeCon, JFokus, etc. </p>
-              <p data-aos="fade-right" data-aos-delay="500">
-                Follow Emily &mdash;
-                <a href="https://twitter.com/emilyfhjiang" class="p-2"><span class="icon-twitter"></span></a>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">IBM, Cloud Native Architect and Chief Advocate
+              Anton is a Developer Advocate in the Kotlin team at JetBrains. His professional interests include programming languages and developer tooling. Java Champion since 2014.
+            </p><p data-aos="fade-left" data-aos-delay="500">
+                Follow Anton &mdash;
+                <a href="https://twitter.com/antonarhipov" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- G. Anderson -->
 
-         <div id="andersonGCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cfp.connectevents.io/system/avatars/941/large/Gail_Anderson.png?1600628560" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Gail Anderson</h2>
-            <!-- The Modal -->
-            <div id="andersonG" class="modal">
-
-              <!-- Modal content -->
-              <div class="modal-content">
-                <h3 style="color: red;">Abstract</h3>
-                <br/>
-                <p>Wordle is a popular online game where you have up to six tries to guess a hidden five-letter word. By combining the power of the JavaFX UI toolkit with the latest Java Development Kit features, we show how to implement a version of Wordle for desktop and mobile devices (iOS and Android).
-<br/><br/>
-Learn how to create the main UI layout with Scene Builder and use specialized UI controls with pseudo-classes for CSS styling. Understand JavaFX property binding to control UI state and use JavaFX animation for cool looking effects. We'll also use modern Java including lambdas, streams, method references, records, and enhanced switch expressions.
-                </p>
-              </div>
-
-            </div>
-            <div onclick="openAbstract('andersonG')" title="Click for Abstract">Session: <a href="#andersonGCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Say the Words: Modern Java with JavaFX for Rich Client UIs</a>
-            </div>
-            <div class="bio pl-lg-5">
-
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Anderson Software Group, Inc.
-
-Gail Anderson, Research Director, Anderson Software Group, Inc.
-<br/>
-Gail C. Anderson is a Java Champion, Oracle Ace Member, and a past member of the NetBeans Dream Team. She is the Director of Research and founding member of the Anderson Software Group, a leading provider of training courses in Java, JavaFX, Python, Go, Modern C++, and Docker and Kubernetes.
-
-Gail enjoys researching and writing about leading-edge Java technologies. She is the co-author of nine textbooks on software programming, including "The Definitive Guide to Modern Java Clients with JavaFX 17", Second Edition. She also contributed to the book "97 Things Every Java Programmer Should Know!".
-
-Gail has conducted Technical Sessions and Hands-on Labs at Oracle Code One and JavaOne conferences in the USA, Europe, Asia, and Latin America. Gail has also presented sessions at Devoxx, Devnexus, and previous JChampions Conferences.
-
-For more information about Gail, visit asgteach.com, the Anderson Software Group on Facebook, and @gail_asgteach on Twitter.</p>
-              <p data-aos="fade-right" data-aos-delay="500">
-                Follow Gail &mdash;
-                <a href="http://twitter.com/gail_asgteach" class="p-2"><span class="icon-twitter"></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
 
 <!-- Jansen -->
 
         <div id="jansenCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/8f14-0o0o0-B9qCD7GSDFkpSgEpPHp9pk.jpg?download=grace-jansen.jpg" alt="Image" class="img-fluid">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/c998-400o400o1-NMUwpjNwtvW9oDFCe5Q7aZ.png" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Grace Jansen</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Grace Jansen</h2>
             <!-- The Modal -->
             <div id="jansen" class="modal">
 
@@ -539,291 +516,328 @@ For more information about Gail, visit asgteach.com, the Anderson Software Group
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Enabling applications to really thrive (and not just survive) in cloud environments can be challenging. The original 12 factor app methodology helped to lay out some of the key characteristics needed for cloud-native applications... but... as our cloud infrastructure and tooling has progressed, so too have these factors. <br/>
-In this session we'll dive into the extended and updated 15 factors needed to build cloud native applications that are able to thrive in this environment, and we'll take a look at open source technologies and tools that can help us achieve this.
-              </div>
+                <p>
+                  Our cloud-native environments are more complex than ever before! So how can we ensure that the applications we’re deploying to them are behaving as we intended them to? This is where effective observability is crucial. It enables us to monitor our applications in real-time and analyse and diagnose their behaviour in the cloud. However, until recently, we were lacking the standardization to ensure our observability solutions were applicable across different platforms and technologies. In this session, we’ll delve into what effective observability really means, exploring open source technologies and specifications, like OpenTelemetry, that can help us to achieve this while ensuring our applications remain flexible and portable.
+                </p>
+                </div>
 
             </div>
-            <div onclick="openAbstract('jansen')" title="Click for Abstract">Session: <a href="#jansenCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Thriving in the cloud: Going beyond the 12 factors</a>
+            <div onclick="openAbstract('jansen')" title="Click for Abstract">Session: <a href="#jansenCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Through the looking glass: Effective observability for cloud native applications</a>
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">IBM, Developer Advocate
-<br/>
-Grace is a Java Champion and Developer Advocate at IBM, working with Open Liberty, MicroProfile and Cloud Technologies. She has been with IBM since graduating from Exeter University with a Degree in Biology. Grace enjoys bringing a varied perspective to her projects and using her knowledge of biological systems to simplify complex software patterns and architectures. As a developer advocate, Grace builds POC’s, demos and sample applications, and writes guides and tutorials. She is a regular presenter at international technology conferences and has authored a book on reactive systems. Grace also has a keen passion for encouraging more women into STEM and especially Technology careers.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+              Grace is a Java Champion and Developer Advocate at IBM, working with Open Liberty and Reactive Platform. She has been with IBM since graduating from Exeter University with a Degree in Biology. Grace enjoys bringing a varied perspective to her projects and using her knowledge of biological systems to simplify complex software patterns and architectures. As a developer advocate, Grace builds POC’s, demos and sample applications, and writes guides and tutorials. She is a regular presentor at international technology conferences and has recently authored a book on reactive systems. Grace also has a keen passion for encouraging more women into STEM and especially Technology careers.
+            </p><p data-aos="fade-right" data-aos-delay="500">
                 Follow Grace &mdash;
-                <a href="https://twitter.com/gracejansen27" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://twitter.com/gracejansen27" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- H Yadid -->
+        <!-- J Vila -->
 
-         <div id="yadidCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/2cf8-0o0o0-HKdB7E2crSgU2KSPB8A2YL.jpg?download=haim-yadid.jpg" alt="Image" class="img-fluid">
+         <div id="vilaCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/a72e-400o400o1-fRwhu26FsZg1BHg619zdET.png" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Haim Yadid</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Jonathan Vila</h2>
             <!-- The Modal -->
-            <div id="yadid" class="modal">
+            <div id="vila" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>"Just leave the garbage outside and we will take care of it for you". This is the panacea promised by garbage collection mechanisms built into most software stacks available today. So, we don’t need to think about it anymore, right? Wrong! When misused, garbage collectors can fail miserably. When this happens they slow down your application and lead to unacceptable pauses. In this talk we will go over different garbage collectors approaches and understand under which conditions they function well.
+                <p>
+                  As developers, we participate every day in our software life cycle adding new logic, adapting the existing one, and integrating with services or platforms.
+                  <br/><br/>
+                  But, do we put the same effort into making software robust, maintainable, consistent, secure, clear, and tested?
+                  <br/><br/>
+                  In this session, I will show the need for good practices in Clean Code along with the issues of not using it, showing concepts like Clean As You Code (CAYC) using free and open-source tools.
+                  <br/><br/>
+                  Clean Code goes beyond the produced software and its programming language. Is a fundamental part of a developer's role growth, something that represents us no matter the language and the company where we work. Do not lose the thread.
                 </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('yadid')" title="Click for Abstract">Session: <a href="#yadidCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">"Show Me the Garbage!", Garbage Collection a Friend or a Foe</a>
+            <div onclick="openAbstract('vila')" title="Click for Abstract">Session: <a href="#vilaCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Clean code, is it really worth it? A story of monsters, heroes and victories</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Java Champion, VP of Technology@ Next Insurance<br/>
-              A software engineer with almost 30 years of experience in various technology fields: software development, team management, software architecture, HPC and algorithmic research. In my day job I am VP of technology in Next Insurance. Before that has been focusing for 8 years on Java platform performance optimization as an independent consultant and was involved in more than a dozen optimization projects. I am still passionate about scale and performance problems and even in my current position I am still a go to person for these topics. I am a Java Champion and one of the organizers of Java.IL, the Israeli Java user group.</p>
-              <p data-aos="fade-right" data-aos-delay="500">
-                Follow Haim &mdash;
-                <a href="https://twitter.com/lifeyx" class="p-2"><span class="icon-twitter"></span></a>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Java Champion, Organiser at BarcelonaJUG and cofounder of JBCNConf and DevBcn conferences in Barcelona.
+
+              Currently working as Developer Advocate in Java for Sonarsource (SonarLint,SonarQube), focused on Clean Code & Security.
+              Former SE at Tetrate, SSE at Red Hat in Keycloak team, SSE at Ocado Technology, SSE at Netcentric.
+              I have worked as a (paid) developer since the first release of The Secret of Monkey Island, about 30 years ago using Go on Kubernetes for a Service Mesh layer on top of Istio | Java on Kubernetes for K8s Operator, Rest API, using Quarkus, GraalVM, Apache Camel | PHP | VB | Python | Pascal | C
+
+              Very interested in simulated reality, psychology and Java.
+            </p><p data-aos="fade-left" data-aos-delay="500">
+                Follow Jonathan &mdash;
+                <a href="https://twitter.com/vilojona" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Kabutz -->
+        <!-- B. Rahman -->
 
-        <div id="kabutzCard" class="row align-items-center speaker">
+        <div id="rahmanCard" class="row align-items-center speaker">
+           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+             <img width="200" height="200" src="https://sessionize.com/image/982c-400o400o1-JrjaXnrQgRTRiNvSPfmyMC.jpg" alt="Image" class="img-fluid">
+           </div>
+           <div class="col-lg-6 ml-auto">
+             <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Bazlur Rahman</h2>
+             <!-- The Modal -->
+             <div id="rahman" class="modal">
+
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <h3 style="color: red;">Abstract</h3>
+                 <br/>
+                 <p>
+                   We don’t have to exert much mental effort when writing blocking code, but this has drawbacks. Non-blocking code, on the other hand, could be used to increase application throughput. This is why non-blocking code is recommended in many scenarios. Over the last two decades, many approaches have been introduced to writing code that does not block.
+                   <br/><br/>
+                   In this session, we will look into those options that are available to us. To begin, I’ll go over the evolution of the Java concurrency model since its inception with the vanilla thread. Then I'll talk about Future/Callable and CompletableFuture, talk briefly about reactive programming, and end with Project Loom, which was added to Java 19 this year.
+                 </p>
+               </div>
+
+             </div>
+             <div onclick="openAbstract('rahman')" title="Click for Abstract">Session: <a href="#rahmanCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">A tale of two cities: blocking code vs. non-blocking code</a>
+             </div>
+             <div class="bio pl-lg-5">
+
+               <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                 A N M Bazlur Rahman works at Contrast Security as a Sr. Software Engineer. He has more than ten years of professional experience in the software industry, predominantly in Java and Java-related technologies. Recently, he was named a Java Champion.
+
+                 Outside of his regular work hours, he loves to mentor, write, speak at conferences, and contribute to open-source projects. He is the founder and current moderator of the Java User Group in Bangladesh. He has organized meetups and conferences to share Java-related knowledge with the community since 2013. He was named Most Valuable Blogger (MVP) at DZone, one of the most recognized technology publishers in the world. Besides DZone, he is an editor for the Java Queue at InfoQ, another leading technology content publisher and conference organizer, and an editor at Foojay.io, a place for friends of OpenJDK. In addition, he has published five books about the Java programming language in Bengali; they were bestsellers in Bangladesh.
+              </p>
+               <p data-aos="fade-right" data-aos-delay="500">
+                 Follow Bazlur &mdash;
+                 <a href="https://twitter.com/bazlur_rahman" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+               </p>
+             </div>
+           </div>
+         </div>
+
+        <!-- SelajevCard -->
+
+        <div id="selajevCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/771e-0o0o0-RZyN9j1ggGMYLDM4HFNEWx.jpg?download=heinz-kabutz.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/5ca7-400o400o1-nLuHACqrBji1V81wQdQsWE.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Heinz Kabutz</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Oleg Šelajev</h2>
             <!-- The Modal -->
-            <div id="kabutz" class="modal">
+            <div id="selajev" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>In 2003, Heinz was asked to fix bugs and add features to a bowl of spaghetti code. It was a dismal task. He had heard of IntelliJ IDEA's supernatural analyzing powers. At the end of his 30 day trial, he purchased his first IntelliJ license. Often after his talks, instead of asking about the topic he spoke about, curious onlookers wanted to know how he had performed his IntelliJ magic. Here are your answers.
-              </div>
+                <p>
+                  Flow state, cognitive load, and speed of feedback loops are three core dimensions of developer experience. Taken together, they encapsulate almost all friction encountered in the development process.
+                  <br/><br/>
+                  However, these can be hard to measure and sometimes straightforward to improve.
+                  <br/><br/>
+                  In this session, we show how tests, the test suites' quality, and running test experience cover all three core dimensions and enable high-performing teams.
+                  <br/><br/>
+                  We look at anti-patterns for tests and how they drastically increase the cognitive load required even for the most straightforward changes and slow down feedback loops.
+                  Then we show how modern high-quality test setups ensure developer productivity and happiness and drive team velocity up and to the right.
+                </p>
+                </div>
 
             </div>
-            <div onclick="openAbstract('kabutz')" title="Click for Abstract">Session: <a href="#kabutzCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">IntelliJ Super Productivity in 45 Minutes</a>
+            <div onclick="openAbstract('selajev')" title="Click for Abstract">Session: <a href="#selajevCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Velocity and happiness via tests</a>
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">JavaSpecialists.eu
-<br/>
-Heinz is the author of The Java Specialists’ Newsletter (https://www.javaspecialists.eu), a publication enjoyed by tens of thousands of Java experts in over 150 countries.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
-                Follow Heinz &mdash;
-                <a href="https://www.twitter.com/heinzkabutz" class="p-2"><span class="icon-twitter"></span></a>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Oleg Šelajev is a head of developer relations at AtomicJar working on making integration tests with Testcontainers better for everyone in the community. VirtualJUG leader. Java Champion.
+              </p><p data-aos="fade-left" data-aos-delay="500">
+                Follow Oleg &mdash;
+                <a href="hhttps://twitter.com/shelajev" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-<!-- H Trembley -->
+<!-- F. Delaporte -->
 
-         <div id="tremblayCard" class="row align-items-center speaker">
+         <div id="delaporteCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/235f-0o0o0-3fEsuaevoh5Qx1RwimHoY9.jpg?download=henri-tremblay.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/a698-400o400o1-Q9wQws8Nhe6zHcsPGzYz63.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Henri Tremblay</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Frank Delaporte</h2>
             <!-- The Modal -->
-            <div id="tremblay" class="modal">
+            <div id="delaporte" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Have you ever peeked behind the curtain on Java? Beyond Java 8, there's a lot of cool stuff to be discovered. We talk about the "fun and shiny" features you may not even know about. See how the JDK, JVM, and the Java language have all evolved and improved--now making you more productive and forcing you to write more secure code. This session is jam-packed with fun and shiny areas to accelerate your developer productivity.
+                <p>
+                  As a teenager, a Commodore 64 and DIY solder kits ignited my passion for computers and electronics. But for some obscure reason, I chose an unexpected path by attending film school. I graduated when video and television moved from analog to digital, and the first connected computers began shaping the foundation of the internet we know today. My journey eventually led me to web and software development, where I discovered Java nearly 15 years ago. Since then, Java has been my primary programming language.
+
+                  In the summer of 2022, my life took an exciting turn when I joined Azul as a technical writer. Suddenly, I found myself surrounded by people who had been working on Java since the early start and even contributed to some of the core libraries. A whole new world opened for me! I learned more about the OpenJDK project's internals than I ever imagined when I was using Java as a developer...
+
+                  How many Garbage Collectors do you know in Java? Did you know your Java program needs a warm-up time? Are you familiar with the various stages of the JIT compiler? The ongoing debate between JIT and AOT compilation? And how tools like CRaC, ReadyNow, and Falcon can help you to run your code faster?
+
+                  Let me take you on a journey through OpenJDK-land, and what I learned about how Java starts an application, compiles the code, and needs time to reach its maximum performance. This expedition will also give you an insight into how the OpenJDK project is organized and what information you can find in its sources.
+
+                  Brace yourself for some exciting findings because, as it turns out, experimenting with Java on the Raspberry Pi also taught me new things about optimizing Java application performance!
                 </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('tremblay')" title="Click for Abstract">Session: <a href="#tremblayCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Beyond Java 8: The cool stuff</a>
+            <div onclick="openAbstract('delaporte')" title="Click for Abstract">Session: <a href="#delaporteCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">What I Learned About OpenJDK as a Docs Writer</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Head of Office, TS Imagine Canada
-<br/>
-Henri Tremblay is a Java Champion. He leads EasyMock and Objenesis open source projects. When he was young, he made popular mocking classes, invented partial mocking, and was coding with pragmatism. The social side of him leads the Montréal JUG and Devoxx4kids Québec.
-<br/>
-He has been a developer, CTO, software architect, enterprise architect, startup founder, teacher and performance expert. With pragmatism. He is currently Managing Director and Head of TS Imagine Canada.
-<br/>
-He loves optimization and productivity. In Java and in general. He tries to be useful. He is pragmatic.</p>
-              <p data-aos="fade-right" data-aos-delay="500">
-                Follow Henri &mdash;
-                <a href="https://twitter.com/henri_tremblay" class="p-2"><span class="icon-twitter"></span></a>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Frank Delporte is a Java Champion working at azul.com, blogger on webtechie.be and foojay.io, author of "Getting started with Java on the Raspberry Pi" (webtechie.be/books), and contributor to pi4j.com. Frank blogs about his experiments with Java, sometimes combined with electronic components, on the Raspberry Pi.
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Cummins -->
+        <!-- Bordet -->
 
-        <div id="cumminsCard" class="row align-items-center speaker">
+        <div id="bordetCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/38cc-0o0o0-Ub7Vj4CtgJJ3F4xE9XeJfp.png?download=holly-cummins.png" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/d582-400o400o1-wv7ZU1hMEc2Ppvs6deZgEK.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Holly Cummins</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Simone Bordet</h2>
             <!-- The Modal -->
-            <div id="cummins" class="modal">
+            <div id="bordet" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>The code we write has a climate impact. But how big is that impact? How do we measure it? How do we reduce it? Is the cloud helping? What’s going on with Virginia? Are we still allowed to do CI/CD? Will native compilation save us? Is Java even a good choice anymore? This talk discusses some of the trade-offs for a modern software developer, and provides a roadmap to figuring out the right thing.
-<br/>
-Disclosure: Holly works on Quarkus. Along the way, she will talk about Quarkus sustainability research … but it’s ok, because she promises that the Quarkus carbon data is exciting and interesting.
-              </div>
+                <p>
+                  This session details the practical approach used to analyze the performance of web applications.
+
+This session explains the general principles of performance analysis, such as how to set up a load benchmark, what tools should be used, the USE method, flamegraph generation and their analysis, with examples drawn from the work done in Jetty 12.
+                </div>
 
             </div>
-            <div onclick="openAbstract('cummins')" title="Click for Abstract">Session: <a href="#cumminsCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Writing Greener Java Applications</a>
+            <div onclick="openAbstract('bordet')" title="Click for Abstract">Session: <a href="#bordetCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Practical Performance Analysis</a>
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Senior Principal Software Engineer, Red Hat
-<br/>
-Holly Cummins is a Senior Principal Software Engineer on the Red Hat Quarkus team. Before joining Red Hat, Holly was a long time IBMer, in a range of roles from cloud consultant, full-stack javascript developer, WebSphere Liberty devops architect, JVM performance engineer, to innovation leader. Holly led projects for enormous banks, tiny startups, and everything in between. Holly has used the power of cloud to understand climate risks, count fish, help a blind athlete run ultra-marathons in the desert solo, and invent stories (although not at all the same time). Holly is also a Java Champion, author, and regular keynote speaker. You can follow her on twitter at @holly_cummins or at hollycummins.com.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
-                Follow Holly &mdash;
-                <a href="https://twitter.com/holly_cummins" class="p-2"><span class="icon-twitter"></span></a>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Simone is one of the Eclipse Jetty Project Leaders, the CometD project leader and a Java Champion.
+                Simone works as Lead Architect at Webtide, the company that provides support and services for Jetty and CometD.
+
+                Active open source developer, he founded and contributed to various open-source projects such as Jetty, CometD, MX4J, Foxtrot, LiveTribe, and others.
+
+                Simone has been a technical speaker at various national and international conferences such as Devoxx, JavaOne, CodeMotion, etc., and is a co-lead of the Java User Group of Torino, Italy.
+
+                Simone specializes in server-side multi-thread development, JEE
+                application development, in Comet technologies applied to web
+                development, web network protocols (HTTP, WebSocket, HTTP/1/2/3) and in high-performance JVM tuning, with a passion for garbage collectors.
+                </p>
+                <p data-aos="fade-left" data-aos-delay="500">
+                Follow Simone &mdash;
+                <a href="https://twitter.com/simonebordet" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
-<!-- Ruiz -->
+<!-- Oh -->
 
-         <div id="ruizCard" class="row align-items-center speaker">
+         <div id="ohCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/00f7-0o0o0-c0-72e9-4c3c-a8fa-92ce9c2d95d6.37c63fee-9331-4d6c-acfe-ce5ee17fbc53.jpg?download=ixchel-ruiz.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/f206-400o400o1-P8Ai94Pq9PhZiwmCQWp5pg.png" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Ixchel Ruiz</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Daniel Oh</h2>
             <!-- The Modal -->
-            <div id="ruiz" class="modal">
+            <div id="oh" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Apache Maven is an ubiquitous build tool in the Java ecosystem, some even claim it's the defacto standard build tool. Configuring Maven is deceptively simple, after all it's just a matter of writing XML, isn't it? Things look differently when the rubber meets the road. One must know the intricacies of the build lifecycle; how plugins, goals (mojos), and phases come together; rules for dependency resolution; configuration inheritance between parent - child POM files; enhancing the build with profiles; and more. These features may trip you over if the rules that govern them are unclear. We'll present a series of scenarios to test your knowledge on Maven rules. we guarantee you'll leave this session with a few bits of new information and better understanding of the Maven build tool.
-                </p>
+                <p>
+                  More than 16.5 million Java developers are currently working to realize business requirements and spend a ton of time and effort to optimize the application performance for a variety of workloads (e.g., Web, Mobile, AI/ML, Edge) in the cloud. A big issue for the developers is to adopt a new language programming or runtimes over Java due to the lack of compatibility with Kubernetes. This session will walk you through how Quarkus3 let developers scaffold a Java project from scratch and then evolve it as a Kubernetes native application in terms of optimizing resources with the native build, integrating Kubernetes manifest (ConfigMap, Secret, Health Check), building container images, and deploy it to Kubernetes. You can also continue testing and debugging the application while it’s already deployed to the remote Kubernetes, the same as the local developer experiences of inner loop development.
+
+                  </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('ruiz')" title="Click for Abstract">Session: <a href="#ruizCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Maven Puzzlers</a>
+            <div onclick="openAbstract('oh')" title="Click for Abstract">Session: <a href="#ohCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">From Zero to Hero in Kubernetes Native Java</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>JFrog</strong>
-<br/>
-Ix-chel Ruiz has developed software application & tools since 2000. Her research interests include Java, dynamic languages, client-side technologies and testing. Java Champion, CDF Ambassador, hackergarten enthusiast, Open Source advocate, public speaker and mentor.</p>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Daniel Oh is Java Champion and Senior Principal Developer Advocate at Red Hat to evangelize developers for building cloud-native apps and serverless ob Kubernetes ecosystems. He's also contributing to various cloud open-source projects and ecosystems as a CNCF ambassador for accelerating DevOps adoption in enterprises. He's speaking at lots of technical seminars, workshops, and meetups to elaborate on new emerging technologies for enterprise developers & DevOps teams.
+              </p>
               <p data-aos="fade-right" data-aos-delay="500">
-                Follow Ixchel &mdash;
-                <a href="https://twitter.com/ixchelruiz" class="p-2"><span class="icon-twitter"></span></a>
+                Follow Daniel &mdash;
+                <a href="https://twitter.com/danieloh30" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Pepperdine -->
+        <!-- Juneau -->
 
-        <div id="pepperdineCard" class="row align-items-center speaker">
+        <div id="juneauCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/8d11-0o0o0-PddZDXD421sQihFWkJiRhj.png?download=kirk-pepperdine.png" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/b172-400o400o1-b2-c686-416a-8e51-a95f7467b413.15617212-21ce-4a68-b12c-e4ebae98271d.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Kirk Pepperdine</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Josh Juneau</h2>
             <!-- The Modal -->
-            <div id="pepperdine" class="modal">
+            <div id="juneau" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>The JVM comes with more than 700 configurations. With all of these options, it can quickly become confusing as to which configurations you should set and how. Getting JVM configurations right with a container in the mix is enough to drive even the best of us mad. In this session, we'll explore memory and other settings that can have a significant impact on the performance and stability of your Java application. We'll also look at how to blend sensible JVM and container configurations.
+                <p>
+                  Learn important new features of Jakarta EE 10, along with strategies for migrating from older versions of Java EE and Jakarta EE.  Jakarta EE 10 includes a number of new features, and this presentation will dive into some of the most important ones, providing examples through demos.  After going through some of the new features, some strategies will be shared for upgrading older applications to Jakarta EE 10.  This session will also demonstrate how to upgrade an application from Jakarta EE 8 to Jakarta EE 10.
+                  <br/><br/>
+                  Attendees will walk away with a solid understanding of some of the most important features of Jakarta EE 10 and better understand how to migrate to the latest Jakarta EE release.
+                </p>
 
               </div>
 
             </div>
-            <div onclick="openAbstract('pepperdine')" title="Click for Abstract">Session: <a href="#pepperdineCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Sensible JVM Configuration</a>
+            <div onclick="openAbstract('juneau')" title="Click for Abstract">Session: <a href="#juneauCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Migrating to Jakarta EE 10</a>
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400"><strong>Microsoft Principal Engineer</strong><br/>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Josh Juneau works as an application developer, system analyst, and database administrator. He primarily develops using Java, PL/SQL, and other JVM languages. Josh is a technical writer for Java Magazine, and has published titles for Apress. He was a co- author of “The Definitive Guide to Jython”, published by Apress in 2010. He also co- authored the Apress titles “PL/SQL Recipes” (2010), and “Java 9 Recipes”.  He has also authored a number of titles around Java EE and Jakarta EE.
 
-Kirk has been speaking about performance for more than 20 years.</p>
+                Josh is a member of the Apache NetBeans Developer Team and Apache NetBeans PMC, a member of the Jakarta EE Ambassadors, and a Java Champion. He served on the JavaOne (CodeOne) Content Review Committee, as well as the jChampions conference committee for multiple years. Josh is a member of the JCP and was a JCP Expert Group member for JSRs 372 and 378.  Josh is a regular speaker for a number of podcasts on the Java Pubhouse network, and you can reach him through his Twitter handle @javajuneau and Mastodon handle @javajuneau@fosstodon,org or you can follow his blog at http:http://jj-blogger.blogspot.com
+              </p>
               <p data-aos="fade-left" data-aos-delay="500">
-                Follow Kirk &mdash;
-                <a href="http://twitter.com/kcpeppe" class="p-2"><span class="icon-twitter"></span></a>
+                Follow Josh &mdash;
+                <a href="https://twitter.com/javajuneau" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-<!-- Dominguez -->
 
-         <div id="dominguezCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/24f5-0o0o0-sPdW4CQh8QYbp8d725fEy1.jpg?download=maria-arias-de-reyna-dominguez.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">María Arias de Reyna Dominguez</h2>
-            <!-- The Modal -->
-            <div id="dominguez" class="modal">
-
-              <!-- Modal content -->
-              <div class="modal-content">
-                <h3 style="color: red;">Abstract</h3>
-                <br/>
-                <p>A year ago I started with a couple of friends a new project to create a visual editor for integrations: based on a visual drag and drop selection on building blocks, generate deployable source code.
-<br/>
-As responsible of the backend side, I obviously chose Java to do it. Some of the challenges were to have an extendable and customizable core where we could inject module languages to generate different outputs depending on how the user wanted to deploy. We also wanted to customize the catalog of building blocks to dynamically adapt to each user. Coming from the Java 8 world with shy traces of Java 11, I decided to jump directly to Quarkus on Java 17 and explore the serverless possibilities while, at the same time, keep the over-engineering and the over-fanciness of new features as reasonable as possible.
-<br/>
-On this talk I will describe the bowels of Kaoto.io, the journey we had to implement a stable architecture, and how it evolved into the powerful tool it is now. I will discuss about the technologies used, their shortcomings and their black magic; and why the decisions made were the right ones (or not!).
-<br/>
-This is a good talk if you want to see Quarkus in a real use case.
-                </p>
-              </div>
-
-            </div>
-            <div onclick="openAbstract('dominguez')" title="Click for Abstract">Session: <a href="#dominguezCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Bungee Jumping to Quarkus, Blindfolded but Happy</a>
-            </div>
-            <div class="bio pl-lg-5">
-
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>Senior software engineer at Red Hat</strong><br/>
-
-María Arias de Reyna is a Java Champion, geospatial enthusiast and FLOSS advocator.
-
-She has been a community leader and core maintainer of several free and open source projects since 2004. She is currently working at Red Hat where she focuses on Middleware and maintains Apache Camel and Syndesis.
-
-María is an experienced keynoter and speaker. Between 2017 and 2019 María was the elected President of OSGeo, the Open Source Geospatial Foundation which serves as an umbrella for the most used geospatial free and open source software. She is also well known as a feminist and Women In Tech activist.</p>
-              <p data-aos="fade-right" data-aos-delay="500">
-                Follow Maria &mdash;
-                <a href="https://twitter.com/delawen" class="p-2"><span class="icon-twitter"></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
 
                 <!-- Fusco -->
 
         <div id="fuscoCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/3d94-0o0o0-3ffRSvNMxbk9S8YaFjdDGP.jpg?download=mario-fusco.jpg" alt="Image" class="img-fluid">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/d09d-400o400o1-pJduq1ctmd6Y1Rg5B9vbN5.png" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Mario Fusco</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Mario Fusco</h2>
             <!-- The Modal -->
             <div id="fusco" class="modal">
 
@@ -839,12 +853,11 @@ María is an experienced keynoter and speaker. Between 2017 and 2019 María was 
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400"><strong>Red Hat</strong><br/>
-
-Mario Fusco is a Java Champion and works at Red Hat as principal software engineer and Drools project lead. He is also a frequent speaker, the coordinator of JUG Milano and the co-author of "Modern Java in Action" published by Manning.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Mario Fusco is a Java Champion and works at Red Hat as principal software engineer and Drools project lead. He is also a frequent speaker, the coordinator of JUG Milano and the co-author of "Modern Java in Action" published by Manning.
+              </p><p data-aos="fade-right" data-aos-delay="500">
                 Follow Mario &mdash;
-                <a href="https://twitter.com/mariofusco" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://twitter.com/mariofusco" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
@@ -853,11 +866,11 @@ Mario Fusco is a Java Champion and works at Red Hat as principal software engine
         <!-- Grygleski -->
 
          <div id="grygleskiCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/ef3d-0o0o0-EutNVMP5Q16wqP3Mxyc7Mt.jpg?download=mary-grygleski.jpg" alt="Image" class="img-fluid">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/c1dc-400o400o1-MzXCpAY4QMhRV1uEw1yke2.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Mary Grygleski</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Mary Grygleski</h2>
             <!-- The Modal -->
             <div id="grygleski" class="modal">
 
@@ -865,23 +878,23 @@ Mario Fusco is a Java Champion and works at Red Hat as principal software engine
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>The world is moving at an unprecedented pace and much of it has been powered by the innovations in software and systems. While event handling, messaging, and processing are not necessarily brand new concepts, the recent emergence in hardware such as virtualizations, multi-core processors, and so on, are in fact pushing the envelope in software design and development, elevating it to higher levels of capabilities never seen before. In the case of streaming which very often leverages on the underlying messaging mechanism(s) to bring distributed messaging to higher forms of purposes, such as IoT/IIoT applications, AI/ML data pipelines, or even eCommerce recommendations, event streaming platform has indeed become the "glue" in enabling data to flow through disparate systems in the pipeline and in a very dynamic fashion.
-<br/>
-This talk on event streaming is meant for anyone interested in learning about it, and understanding how it fits into the modern software development design and architecture, as well as seeing some of the challenges it faces especially in the Cloud Native environment. We’ll then take a look at an open source platform - Apache Pulsar, which is poised to become the de facto new generation of distributed messaging and streaming platform that will bring joy to developers, and enable systems and applications to be highly responsive with its true real-time capabilities.
+                <p>
+                  With ChatGPT taking center stage since the beginning of 2023, developers who have not had a chance to work with any forms of Artificial Intelligence or Machine Learning systems may find themselves either intrigued by the “maze” of new terminologies, or some may be eager to learn more, while perhaps a smaller group may not actually want to get themselves into a territory that’s unknown to them.
+                  <br/><br/>
+                  The truth is that, whether we like it or not, we have all been “thrust” into this new era of computing. Instead of procrastinating, let’s start by learning about Generative AI specifically with this presentation.  We will go over the history and evolution of AI and ML, then look at how it has evolved to where it is today.  We will touch upon as many new concepts that have popped up in the last 6-9 months, which include: Generative AI (GenAI), ChatGPT, Large Language Models (LLMs), Natural Language Processing (NLP), Vector DB, and the growing importance of Vector Search.  We will also point out the new operational concerns when it comes to managing the life-cycle of a machine learning environment.  We will then look at a demo on how Vector Search is being done behind the scenes.  We will discuss the benefits of this new wave of technology as well as the challenges that it brings to the industry and the marketplace.
                 </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('grygleski')" title="Click for Abstract">Session: <a href="#grygleskiCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Event Messaging and Streaming with Apache Pulsar</a>
+            <div onclick="openAbstract('grygleski')" title="Click for Abstract">Session: <a href="#grygleskiCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Enter the Brave New World of GenAI with Vector Search</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>Streaming Developer Advocate at DataStax, Java Champion, President of Chicago-JUG</strong><br/>
-
-Mary is a Java Champion and a passionate Senior Developer Advocate at DataStax, a leading data management company that champions Open Source software and specializes in Big Data, DB-as-a-service, Streaming, and Cloud-Native systems. She spent 3.5 years as a very effective advocate at IBM, focusing on Java, Jakarta EE, OpenJ9, Open Source, Cloud, and Distributed Systems. She transitioned from Unix/C to Java around 2000 and has never looked back since then. She considers herself a polyglot and loves to continue learning new and better ways to solve real-life problems. She is an active tech community builder outside of her day job, and currently the President of the Chicago Java Users Group (CJUG), as well as a co-organizer for several IBM-sponsored meetup groups in the Greater Chicago area.</p>
-              <p data-aos="fade-right" data-aos-delay="500">
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Mary is a Java Champion and a passionate Senior Developer Advocate at DataStax, a leading data management company that champions Open Source software and specializes in Big Data, DB-as-a-service, Streaming, and Cloud-Native systems.  She spent 3.5 years as a very effective advocate at IBM, focusing on Java, Jakarta EE, OpenJ9, Open Source, Cloud, and Distributed Systems.  She transitioned from Unix/C to Java around 2000 and has never looked back since then.  She considers herself a polyglot and loves to continue learning new and better ways to solve real-life problems. She is an active tech community builder outside of her day job, and currently the President of the Chicago Java Users Group (CJUG), as well as a co-organizer for several IBM-sponsored meetup groups in the Greater Chicago area.
+              </p>
+                <p data-aos="fade-left" data-aos-delay="500">
                 Follow Mary &mdash;
-                <a href="https://twitter.com/mgrygles" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://twitter.com/mgrygles" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
@@ -890,11 +903,11 @@ Mary is a Java Champion and a passionate Senior Developer Advocate at DataStax, 
         <!-- Taman -->
 
         <div id="tamanCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/e7af-0o0o0-59-b01a-483a-a869-568ee7ba717a.b2b9a5aa-586f-49b3-9e20-7d7a3e17662d.png?download=mohamed-taman.png" alt="Image" class="img-fluid">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/9d4c-400o400o1-59-b01a-483a-a869-568ee7ba717a.b2b9a5aa-586f-49b3-9e20-7d7a3e17662d.png" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Mohamed Taman</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Mohamed Taman</h2>
             <!-- The Modal -->
             <div id="taman" class="modal">
 
@@ -910,14 +923,12 @@ Mary is a Java Champion and a passionate Senior Developer Advocate at DataStax, 
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400"><strong>Chief Solutions Architect @Effortel, Owner/CEO of SiriusXI, a Java Champion, Oracle ACE, JCP member , Consultant, Speaker & Author</strong><br/>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Adopts Java SE.next(), JakartaEE.next(), a JCP member, was a JCP Executive Committee member, JSR 354, 363 & 377 Expert Group member, EGJUG leader, Oracle Egypt Architects Club board member, speaks Java, loves Mobile, Big Data, Cloud, Blockchain, and DevOps.
 
-Adopts Java SE.next(), JakartaEE.next(), a JCP member, Was JCP Executive Committee member, JSR 354, 363 & 377 Expert Group member, EGJUG leader, Oracle Egypt Architects Club board member, speaks Java, love Mobile, Big Data, Cloud, Blockchain, DevOps.
-<br/>
-An International speaker, books & videos author of "JavaFX essentials," "Getting Started with Clean Code, Java SE 9", and "Hands-On Java 10 Programming with JShell", and a new book "Secrets of the Java Champion," Won Duke’s choice 2015, 2014, and 2013 awards, and JCP outstanding adopt-a-jar participant 2013 awards.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
+              An International speaker, book and video author of “JavaFX essentials,” “Getting Started with Clean Code, Java SE 9”, and “Hands-On Java 10 Programming with JShell”, And I won Duke’s Choice 2015, 2014, and 2013 awards, and JCP Outstanding Adopt-a-Jar Participant 2013 awards.
+            </p><p data-aos="fade-right" data-aos-delay="500">
                 Follow Mohamed &mdash;
-                <a href="https://twitter.com/_tamanm" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://twitter.com/_tamanm" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
@@ -926,11 +937,11 @@ An International speaker, books & videos author of "JavaFX essentials," "Getting
         <!-- Mihalyi -->
 
          <div id="mihalyiCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/827e-0o0o0-HzK5bEhuMsWFvWEbZFTg3C.jpg?download=ondro-mihalyi.jpg" alt="Image" class="img-fluid">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/ad87-400o400o1-wCJN7Wyx4Rv8kp76tsWMHN.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Ondro Mihályi</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Ondro Mihályi</h2>
             <!-- The Modal -->
             <div id="mihalyi" class="modal">
 
@@ -938,75 +949,120 @@ An International speaker, books & videos author of "JavaFX essentials," "Getting
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>For years, we’ve been told that Java suffers from cold starts in AWS Lambda and Serverless in general. Believe it not. Java is extremely fast to start, the simplest Java program starts in milliseconds. It’s the Java frameworks and libraries that slow things down in general. But not all of them…
-<br/>
-In this session, I want to show you the truth about Serverless Java and cold starts, what’s slow, what’s fast and why it matters. We’ll go through what a cold start is, how cold starts in AWS Lambda impact your application responsiveness and cloud costs, and what are the options to optimize both. We’ll explore and compare Quarkus and Piranha Cloud, the most modern and fastest Jakarta EE frameworks. We’ll test the limits of what they are capable of, how fast they start and whether we even need to think about any optimizations. Then I’ll explain what optimizations may help if you need to go further, like tuning the JVM, using a custom JVM runtime or building a OS-native binary with GraalVM. However, there are also a few limitations and cost implications of these optimizations, which we'll also explain.
-<br/>
-I’ll show and tell, with very few slides. You’ll see live for yourselves how Java AWS Lambda functions built with Jakarta EE can start fast and decrease the cold starts to the absolute minimum which you can barely notice
+                <p>
+                  In this presentation, we will delve into the details of developing serverless applications in Java, emphasizing the need for a paradigm shift in coding practices and architectural considerations. I will explain key aspects of serverless Java, including source code structuring, framework choices (many of them based on Jakarta EE), deployment strategies tailored for serverless environments, and runtime optimizations with GraalVM native compilation and tools like CRaC and AWS Snapstart.
+                  <br/><br/>
+                  Serverless applications require precise attention to startup speed optimizations and efficient resource initialization. We will discuss strategies for resource management, advocating for lean connection and thread pools. Additionally, we will examine the importance of external configuration, statelessness, and the efficient storage of state data in external services or databases within the context of serverless architectures.
+                  <br/><br/>
+                  As part of our technical exploration, I will highlight the advantages of using specialized client libraries optimized for startup speed, in contrast to traditional libraries designed for high throughput. By the end of this session, you will gain a deep understanding of the technical nuances involved in serverless Java development, equipping you with the tools and insights needed to optimize performance and seamlessly adapt to serverless computing environments.
+
                 </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('mihalyi')" title="Click for Abstract">Session: <a href="#mihalyiCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Afraid of Java cold starts in serverless?  Fear not, Java is super fast!</a>
+            <div onclick="openAbstract('mihalyi')" title="Click for Abstract">Session: <a href="#mihalyiCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Serverless Java hacks: Think different and leave old habits behind</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>Director at OmniFish</strong><br/>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Ondro is a software developer and consultant specializing in combining standard and proven tools to solve new and challenging problems. He's been developing in Java for over 10 years. He’s worked for clients like Payara, LottoLand, Uniqa and others.
 
-                Ondro is a software developer and consultant specializing in combining standard and proven tools to solve new and challenging problems. He's been developing in Java for over 10 years. He’s worked for clients like Payara, LottoLand, Uniqa and others.
+              He has co-founded OmniFish, which provides enterprise support for Eclipse GlassFish and expert Jakarta EE services. He’s passionate about helping his clients and the wider Java community with their projects based on Jakarta EE and similar technologies.
 
-                He has co-founded OmniFish, where he works as a director and Jakarta EE expert. He’s passionate about helping his clients and the wider Java community with their projects based on Jakarta EE and similar technologies.
-
-                As an experienced Java developer and instructor, he's helped companies build and educate their development teams and improve their development processes.
-
-                He's a core member of several opensource projects and Jakarta EE specification projects. He’s a frequent conference speaker, leader of the Czech JUG and a Java Champion.</p>
-              <p data-aos="fade-right" data-aos-delay="500">
+              As an experienced Java developer and instructor, he's helped companies build and educate their development teams and improve their development processes.
+              He's a core member of several opensource projects and Jakarta EE specification projects. He’s a frequent conference speaker, leader of the Czech JUG, and a Java Champion.
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
                 Follow Ondro &mdash;
-                <a href="https://twitter.com/OndroMih" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://twitter.com/OndroMih" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- santana -->
+        <!-- durand -->
 
-        <div id="santanaCard" class="row align-items-center speaker">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/5456-0o0o0-pXVdmxZvv2ia212GBzYsZU.jpg?download=otavio-santana.jpg" alt="Image" class="img-fluid">
+        <div id="durandCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/864a-400o400o1-f67494db-8f64-471d-b300-a050b1ed359c.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Otavio Santana</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Antoine Sabot-Durand</h2>
             <!-- The Modal -->
-            <div id="santana" class="modal">
+            <div id="durand" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Persistence is the soul of modern architecture. It is a way to have a state in the stateless application, mainly in distributed systems such as microservices and cloud age app style.
-<br/>
-We handle various persistence sources such as SQL, NoSQL, or even web services. With a considerable amount of options or flavors, how can we have a business away from these details or have a loose couple between the application and the persistence engine?
-<br/>
-This presentation will discuss the new trends in the modern persistence model around enterprise architecture.
+                <p>
+                  Jakarta Contexts and Dependency Injection is probably the most underrated specification around. It is the Jakarta EE and MicroProfile corner stone since it provides a standard programming model and a powerful to integrate third party technology in a seamless way.
+                  <br/><br/>
+                  Now that major work on CDI 4.0 is nearly over (waiting for Jakarta EE 10 release), it’s interesting to list the evolution of the spec in the last year.
+                  <br/><br/>
+                  In this talk we’ll go thru all new and corrected features in the specification and will make a big focus on CDI lite that will enhance CDI spec to better support build time framework like Quarkus.
+                  <br/><br/>
+                  We’ll go thru the new portable extension API with a concrete example, and we’ll see how it differs from legacy runtime portable extension.
+                  <br/><br/>
+                  You’ll leave the talk being able to develop CDI Lite extension for your favorite framework integrating it to the CDI programming model.
+
+                </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('santana')" title="Click for Abstract">Session: <a href="#santanaCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Make your life easier with Jakarta's new persistence features: Data and NoSQL</a>
+            <div onclick="openAbstract('durand')" title="Click for Abstract">Session: <a href="#durandCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">What’s new in CDI 4.0 ?</a>
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400"><strong>Software Engineer & Architect and Open Source Committer</strong><br/>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Antoine is a Java Champion and the Former Jakarta EE CDI spec lead. He was part of the Quarkus launch team at Red Hat and worked on major MicroProfile specs such as Fault Tolerance or Health Check. Today, Antoine is architect and technical expert in SCIAM. He is working on challenging projects with most of the technology he contributed t in the past.
+              </p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Antoine &mdash;
+                <a href="https://twitter.com/antoine_sd" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
 
-Empowering staff-plus engineers to deliver highly scalable software on the cloud lets them become influential in their companies and the market and move their technical careers to the next level.
+        <!-- G. Anderson -->
 
-Otavio has contributed to the Java and the Open source ecosystem in several ways, such helped the direction and objectives of the Java platform since Java 8 as a JCP executive member, besides being a committer and leader in several open-source products, projects, and specifications.
+         <div id="andersonGCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/2500-400o400o1-EKbX3S4mRqPztBAikAEpcL.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Gail Anderson</h2>
+            <!-- The Modal -->
+            <div id="andersonG" class="modal">
 
-Otavio is recognized for his Open Source contributions and has received many awards, including all JCP Awards categories and the Duke’s Choice Award, to name a few. Otávio is also a distinguished member of the Java Champions and Oracle ACE programs.
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Abstract</h3>
+                <br/>
+                <p>
+                  TiltMaze is a fun game that uses a mobile device's accelerometer to move a ball through a maze. By combining the power of the JavaFX UI toolkit with the JDK, we show how to implement a client-side version for desktop and mobile devices on iOS and Android.
+                  <br/><br/>
+                  Learn how to create the main UI layout and how to access hardware in a device-agnostic way. Understand JavaFX property binding to control UI state and JavaFX animation for game movements. You'll also see modern Java including lambdas and streams and how to use GraalVM to create native images for IOS and Android.
+                </p>
+              </div>
 
-Otávio loves history, economy, traveling, programming, and real-world languages. He speaks Portuguese, English, Spanish, Italian, and French and is fluent in dad jokes.</p>
+            </div>
+            <div onclick="openAbstract('andersonG')" title="Click for Abstract">Session: <a href="#andersonGCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Are You Game?  Mobile Development with Modern Java, JavaFX, and GraalVM</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Gail C. Anderson is a Java Champion, Oracle Ace Member, and a past member of the NetBeans Dream Team. She is the Director of Research and founding member of the Anderson Software Group, a leading provider of training courses in Java, JavaFX, Python, Go, Modern C++, and Docker and Kubernetes.
+
+                Gail enjoys researching and writing about leading-edge Java technologies. She is the co-author of nine textbooks on software programming, including “The Definitive Guide to Modern Java Clients with JavaFX 17”, Second Edition. She also contributed to the book “97 Things Every Java Programmer Should Know!”.
+
+                Gail has conducted Technical Sessions and Hands-on Labs at Oracle Code One and JavaOne conferences in the USA, Europe, Asia, and Latin America. Gail has also presented sessions at Devoxx, Devnexus, and previous JChampions Conferences.
+
+                For more information about Gail, visit asgteach.com, the Anderson Software Group on Facebook, and @gail_asgteach on Twitter.
+              </p>
               <p data-aos="fade-left" data-aos-delay="500">
-                Follow Otavio &mdash;
-                <a href="https://twitter.com/otaviojava" class="p-2"><span class="icon-twitter"></span></a>
+                Follow Gail &mdash;
+                <a href="http://twitter.com/gail_asgteach" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
@@ -1016,7 +1072,7 @@ Otávio loves history, economy, traveling, programming, and real-world languages
 
          <div id="andersonPCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/8e27-0o0o0-Lfy1omGoSGSEYsXdDDChZq.jpg?download=paul-anderson.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/d2ce-400o400o1-Gon1Tru2HnhaHRxJpzbEFt.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
             <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Paul Anderson</h2>
@@ -1027,66 +1083,63 @@ Otávio loves history, economy, traveling, programming, and real-world languages
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Wordle is a popular online game where you have up to six tries to guess a hidden five-letter word. By combining the power of the JavaFX UI toolkit with the latest Java Development Kit features, we show how to implement a version of Wordle for desktop and mobile devices (iOS and Android).
-<br/>
-Learn how to create the main UI layout with Scene Builder and use specialized UI controls with pseudo-classes for CSS styling. Understand JavaFX property binding to control UI state and use JavaFX animation for cool looking effects. We'll also use modern Java including lambdas, streams, method references, records, and enhanced switch expressions.
+                <p>
+                  TiltMaze is a fun game that uses a mobile device's accelerometer to move a ball through a maze. By combining the power of the JavaFX UI toolkit with the JDK, we show how to implement a client-side version for desktop and mobile devices on iOS and Android.
+                  <br/><br/>
+                  Learn how to create the main UI layout and how to access hardware in a device-agnostic way. Understand JavaFX property binding to control UI state and JavaFX animation for game movements. You'll also see modern Java including lambdas and streams and how to use GraalVM to create native images for IOS and Android.
                 </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('andersonP')" title="Click for Abstract">Session: <a href="#andersonPCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">All Sessions
-Say the Words: Modern Java with JavaFX for Rich Client UIs</a>
+            <div onclick="openAbstract('andersonP')" title="Click for Abstract">Session: <a href="#andersonPCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Are You Game?  Mobile Development with Modern Java, JavaFX, and GraalVM</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>President, Anderson Software Group, Inc.</strong><br/>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Paul L. Anderson is a Java Champion, Oracle Ace Member, and a past member of the NetBeans Dream Team. He is the Director of Training and co-founder of the Anderson Software Group, a leading provider of training courses in Java, JavaFX, Python, Go, Modern C++, and Docker and Kubernetes. He is also the co-author of nine textbooks on software programming, including the “The Definitive Guide to Modern Java Clients with JavaFX 17”, Second Edition.
 
-Paul L. Anderson is a Java Champion, Oracle Ace Member, and a past member of the NetBeans Dream Team. He is the Director of Training and co-founder of the Anderson Software Group, a leading provider of training courses in Java, JavaFX, Python, Go, Modern C++, and Docker and Kubernetes. He is also the co-author of nine textbooks on software programming, including the "The Definitive Guide to Modern Java Clients with JavaFX 17", Second Edition.
+                Paul has conducted Technical Sessions and Hands-on Labs at Oracle Code One and JavaOne conferences in the USA, Europe, Asia, and Latin America. Paul has also presented sessions at Devoxx, Devnexus, and previous JChampions Conferences.
 
-Paul has conducted Technical Sessions and Hands-on Labs at Oracle Code One and JavaOne conferences in the USA, Europe, Asia, and Latin America. Paul has also presented sessions at Devoxx, Devnexus, and previous JChampions Conferences.
-
-For more information about Paul, visit asgteach.com, the Anderson Software Group on Facebook, and @paul_asgteach on Twitter.</p>
-              <p data-aos="fade-right" data-aos-delay="500">
+                For more information about Paul, visit asgteach.com, the Anderson Software Group on Facebook, and @paul_asgteach on Twitter.
+                </p>
+                <p data-aos="fade-right" data-aos-delay="500">
                 Follow Paul &mdash;
-                <a href="https://twitter.com/Paul_ASGTeach" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://twitter.com/Paul_ASGTeach" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Lawrey -->
+        <!-- Mann -->
 
-        <div id="lawreyCard" class="row align-items-center speaker">
+        <div id="mannCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/4af6-0o0o0-Vti8d8HYkGhzSjuoSurG4e.jpg?download=peter-lawrey.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/6a0f-400o400o1-feCGcqQ1yVBojKzZ4DGGnv.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Peter Lawrey</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Kito Mann</h2>
             <!-- The Modal -->
-            <div id="lawrey" class="modal">
+            <div id="mann" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Up to 4 CPUs, allocations are cheap, GC is pretty cheap.
-However, 4 busy CPUs may be enough to saturate your server's memory bus. Using more CPUs may result in little to no benefit unless you consider the total allocation rate of the physical server.
-In this talk, I look at how to test this and a simple estimate of how much throughput is consumed by your allocations.
-<br/>
-Virtual machines don't provide isolated use of the memory buses, allowing one 4 vCPU VM to slow all others on the same physical machine significantly, so it's essential to understand its impact.
+                <p>
+                  One of the most common reasons for software defects is poor exception handling. The more complex the application, the more difficult it can be to track down the root cause of a bug. An exception at the service or database layer may manifest itself as unpredictable behavior at the user interface level. Simple coding errors or unexpected inputs may result in unnecessary and confusing error messages. The net result is an application that doesn't meet the user's expectations. These types of issues can be avoided by handling exceptions properly. In this session, we'll look at examples of what happens when exceptions aren't handled, and how you can avoid unexpected defects by following a few key principles and using some discipline. We'll also examine the importance of establishing logging standards, and look at how to properly configure error pages and use the error handling facilities in back-end Java services and web apps.
+                </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('lawrey')" title="Click for Abstract">Session: <a href="#lawreyCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Your Allocation Rate Could Be Hurting Vertical Scalability</a>
+            <div onclick="openAbstract('mann')" title="Click for Abstract">Session: <a href="#mannCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Expect the Unexpected: Handling Exceptions in Enterprise Applications</a>
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400"><strong>13K answers for Java on Stackoverflow</strong><br/>
-
-Peter is the CEO of Chronicle Software, specialising in low-latency software for trading firms in Java and C++.</p>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Kito D. Mann is the Principal Consultant at Virtua, Inc., specializing in enterprise application architecture, training, development, and mentoring with microservices, cloud, Web Components, Angular, and Jakarta/Java EE technologies. He is also the co-host of The Stackd Podcast and the author of JavaServer Faces in Action. Mann has participated in several Java Community Process expert groups (including CDI, JSF, and Portlets) and is an internationally recognized speaker. He is also a Java Champion and Google Developer Expert in Web Technologies. He holds a BA in Computer Science from Johns Hopkins University.
+              </p>
               <p data-aos="fade-left" data-aos-delay="500">
-                Follow Peter &mdash;
-                <a href="https://twitter.com/PeterLawrey" class="p-2"><span class="icon-twitter"></span></a>
+                Follow Kito &mdash;
+                <a href="https://twitter.com/kito99" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
@@ -1096,7 +1149,7 @@ Peter is the CEO of Chronicle Software, specialising in low-latency software for
 
          <div id="delNeroCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/880d-0o0o0-NvXpVYUhm99phRXeyw9fUY.jpg?download=rafael-del-nero.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/c261-400o400o1-PJ7qte9CmqR1oRL2cVCXHg.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
             <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Rafael del Nero</h2>
@@ -1107,177 +1160,175 @@ Peter is the CEO of Chronicle Software, specialising in low-latency software for
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>Duke needs your help in navigating through the Delta Quadrant. Join us on this incredible journey visiting new features of the JDK 19 system as well as the best features of previous versions of Java. During this journey, you can improve your craft as an engineer. These short challenges will keep your katas going at warp speed! Solve the puzzles to learn the full power of the Java language. Apply the techniques, and develop concise code where bugs will have a hard time hiding. Come to this session to boldly go where no Duke has gone before!
-
+                <p>
+                  To create maintainable and bug-proof code, it's necessary to master Java fundamentals. Join us on this incredible journey, visiting new features of the JDK 21 system as well as the best previous Java version features. During this journey, you will improve your craft as a software engineer. These short challenges will make you sharper to read and understand code. Solve the puzzles to learn the full power of the Java language. Apply the techniques and develop concise code where bugs will have difficulty hiding. Come to this session to boldly go where no Duke has gone before!
                 </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('delNero')" title="Click for Abstract">Session: <a href="#delNeroCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Duke's Star Trek with Java 19 Code Challenges</a>
+            <div onclick="openAbstract('delNero')" title="Click for Abstract">Session: <a href="#delNeroCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Master the Fundamentals of Java 21  by Cracking Code Challenges</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>Java Champion</strong><br/>
-
-Rafael Del Nero is a Java Champion, creator of NoBugsProject and quiz master in Oracle Dev Gym, is the author of "No Bugs, No Stress - Create a Life-Changing Software Without Destroying Your Life." Rafael believes there are many techniques involved in creating high-quality software that developers are often unaware of. His life's purpose is to help Java developers use better programming practices to code quality software for stress-free projects with fewer bugs.</p>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Rafael del Nero is a Java Champion, creator of the Java Challengers initiative, and author of  "Java Challengers", "Java Interview Challenger" and  "Golden Lessons." He is a Java mentor who helps developers develop their technical Java skills to another level so they earn more and have more time with their families.
+              </p>
               <p data-aos="fade-right" data-aos-delay="500">
                 Follow Rafael &mdash;
-                <a href="https://twitter.com/RafaDelNero" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://twitter.com/RafaDelNero" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Mehmandarov -->
+        <!-- Massetto -->
 
-        <div id="mehmandarovCard" class="row align-items-center speaker">
+        <div id="massettoCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/eb82-0o0o0-7HznkRP2vQUuqy8mjWnejd.jpg?download=rustam-mehmandarov.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/ff05-400o400o1-QDsRZgF3jE3pGzzN93syoC.png" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Rustam Mehmandarov</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Francisco Isidro Massetto</h2>
             <!-- The Modal -->
-            <div id="mehmandarov" class="modal">
+            <div id="massetto" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>But what is awesome? Well, for instance, an awesome app reacts to failure and still remains functional, can provide information about its status, can provide an easy way of enabling easy way of toggling features, is easy to test, and is fast – it is ready to go to prod right away!
-<br/>
-We talk about these and other features and show you some options while we build an (slightly opinionated?) demo application from scratch. Join us for this fun evolution of a few lines of code into a modern cloud-native application!
-              </div>
+                <p>
+                  Graph Theory, Operating Systems, Data Structures, State Machines are usually boring subjects and useless topics for a developer, right? Wrong! Let's find out how those concepts are implemented inside most popular Java frameworks, such as Spring. Let's explore how those concepts can be key concepts to your career and as much as you become a senior developer, you must study and domain all these fundamentals. In this session Professor Isidro will show Isi-Spring (a cacophony for "easy", the main reason to explain complex features on a simple way).
+                </p>
+                </div>
 
             </div>
-            <div onclick="openAbstract('mehmandarov')" title="Click for Abstract">Session: <a href="#mehmandarovCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">5 tips to make your Java apps more awesome</a>
+            <div onclick="openAbstract('massetto')" title="Click for Abstract">Session: <a href="#massettoCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Graph Theory on your Favorite Framewor? Yes! And much more!</a>
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400"><strong>Passionate computer scientist</strong><br/>
-
-Passionate computer scientist. Java Champion and Google Developers Expert for Cloud. Public speaker. Ex-leader of JavaZone and Norwegian JUG – javaBin.</p>
-              <p data-aos="fade-left" data-aos-delay="500">
-                Follow Rustam &mdash;
-                <a href="https://twitter.com/rmehmandarov" class="p-2"><span class="icon-twitter"></span></a>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Professor Isidro is a UFABC Faculty Member, Researcher, has a youtube channel and offers free courses about java, web development, data structures, trying to help students to understand Programming Fundamentals in order to be better professsionals.
               </p>
+
             </div>
           </div>
         </div>
 
-        <!-- parsick -->
+        <!-- walls -->
 
-         <div id="parsickCard" class="row align-items-center speaker">
+         <div id="wallsCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/8269-0o0o0-25-a949-43ac-971f-cec885fa060b.c84e95d2-1366-4eda-b6f0-0482e38b3cf1.jpg?download=sandra-parsick.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/79a5-400o400o1-PBVDjsE9sXbEoC1ywtB929.jpeg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Sandra Parsick</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Craig Walls</h2>
             <!-- The Modal -->
-            <div id="parsick" class="modal">
+            <div id="walls" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
                 <br/>
-                <p>More and more developers are writing applications that will later run in a Kubernetes cluster. What can be so difficult about this? Starting with "How do I structure my repositories?", "Where do I put my code for deployment (container files, helmet charts, config values)?", "What needs to be considered when developing the application?", "How do I get the code tested locally?", "How do I get to see what is happening in the test cluster?"
-<br/>
-Using a Java application as an example, this talk goes through the typical development steps from putting it in the VCS to deploying it on a cluster from a developer's perspective.
+                <p>
+                  By now, you've no doubt noticed that Generative AI is making waves across many industries. In between all of the hype and doubt, there are several use cases for Generative AI in many software projects. Whether it be as simple as building a live chat to help your users or using AI to analyze data and provide recommendations, Generative AI is becoming a key piece of software architecture.
+                  <br/><br/>
+                  So how can you implement Generative AI in your projects? Let me introduce you to Spring AI.
+                  <br/><br/>
+                  For over two decades, the Spring Framework and its immense portfolio of projects has been making complex problems easy for Java developers. And now with the new Spring AI project, adding Generative AI to your Spring Boot projects couldn't be easier! Spring AI brings an AI client and templated prompting that handles all of the ceremony necessary to communicate with common AI APIs (such as OpenAI and Azure OpenAI). And with Spring Boot auto-configuration, you'll be able to get straight to the point of asking questions and getting answers your application needs.
+                  <br/><br/>
+                  In this session, we'll consider a handful of use cases for Generative AI and see how to implement them with Spring AI. We'll start simple, then build up to some more advanced uses of Spring AI that employ your application's own data when generating answers.
                 </p>
               </div>
 
             </div>
-            <div onclick="openAbstract('parsick')" title="Click for Abstract">Session: <a href="#parsickCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Kubernetes Developer Survival Kit</a>
+            <div onclick="openAbstract('walls')" title="Click for Abstract">Session: <a href="#wallsCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Introducing Spring AI</a>
             </div>
             <div class="bio pl-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>Freelancer, Software Developer, Java Champion</strong><br/>
-
-Sandra Parsick is a Java Champion and works as a freelance software developer and consultant in the Java environment. She has been involved in agile software development in various roles since 2008.
-Her focus is on Java enterprise applications, cloud and the automation of software development processes.
-She enjoys writing articles about this and speaking at conferences.
-In her spare time, she is involved in various program committees and community groups.</p>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Craig Walls is an engineer with VMware, Java Champion, Alexa Champion, and the author of Spring in Action, Spring Boot in Action, and Build Talking Apps. He's a zealous promoter of the Spring Framework, speaking frequently at local user groups and conferences and writing about Spring. When he's not slinging code, Craig is planning his next trip to Disney World or Disneyland and spending as much time as he can with his wife, two daughters, 1 bird and 3 dogs.
+              </p>
               <p data-aos="fade-right" data-aos-delay="500">
-                Follow Sandra &mdash;
-                <a href="https://twitter.com/SandraParsick" class="p-2"><span class="icon-twitter"></span></a>
+                Follow Craig &mdash;
+                <a href="https://twitter.com/habuma" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- daschner -->
+        <!-- Long -->
 
-        <div id="daschnerCard" class="row align-items-center speaker">
+        <div id="longCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/a5af-0o0o0-snrHDwXd791vJbozt9JgwR.jpg?download=sebastian-daschner.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/900f-400o400o1-5d453734-1a61-4d8d-b234-55fdf95d1202.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 ml-auto">
-            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Sebastian Daschner</h2>
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Josh Long</h2>
             <!-- The Modal -->
-            <div id="daschner" class="modal">
+            <div id="long" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
-                <br/>
-                <p>Who doesn’t want to work more effectively, to work smarter, and get more done? We want to focus on what adds value, increase our development speed, and cut out all the cumbersome, boring and repetitive tasks as possible.
-<br/>
-This session shows principles how to accomplish the goal of being more effective and efficient as developer. We’ll see how to automate the boring parts of our job, what big and small tips and tricks help us, which mindsets to follow, why we have the best job ever, and how to enjoy our work even more.
-              </div>
+                <p>
+                  Spring Framework 6 and Spring Boot 3 are almost here and you know what that means? New .jars! And also new baselines and new possibilities! Spring Framework implies a Java 17 and Jakarta EE baseline, and offers new support for building GraalVM-native images. It also offers a new observability layer, an amalgamation of some of the work in the Micrometer project and Spring Cloud Sleuth. Spring Boot 3 builds upon all of this, and integrates all of this into our application. Join me, Spring Developer Advocate Josh Long (@starbuxman), and we'll look at next-gen Spring.
+
+                </p>
+                </div>
 
             </div>
-            <div onclick="openAbstract('daschner')" title="Click for Abstract">Session: <a href="#daschnerCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Principles of Effective Developers</a>
+            <div onclick="openAbstract('long')" title="Click for Abstract">Session: <a href="#;pmgCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Bootiful Spring Boot 3</a>
             </div>
             <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-left" data-aos-delay="400"><strong>Java Champion</strong><br/>
-
-Sebastian Daschner is a self-employed Java consultant, author and trainer and is enthusiastic about programming and Java. He is the author of the book "Architecting Modern Java EE Applications". Sebastian is participating in open source standardization processes such as the JCP or the Eclipse Foundation, helping forming the future standards of Enterprise Java, and collaborating on various open source projects. For his contributions in the Java community and ecosystem he was recognized as a Java Champion, Oracle Developer Champion, and JavaOne Rockstar. Besides Java, Sebastian is a heavy user of cloud native technologies and anything related to enterprise software. Sebastian evangelizes computer science practices on https://blog.sebastian-daschner.com, in his newsletter, podcast, and videos, and on Twitter via @DaschnerS.</p>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Josh (@starbuxman) is the Spring Developer Advocate at Pivotal. Josh is a Java Champion, author of 5 books (including O'Reilly's upcoming Cloud Native Java: Designing Resilient Systems with Spring Boot, Spring Cloud, and Cloud Foundry) and 3 best-selling video trainings (including Building Microservices with Spring Boot Livelessons with Spring Boot co-founder Phil Webb), and an open-source contributor (Spring Boot, Spring Integration, Spring Cloud, Activiti and Vaadin). He is a huge Kotlin-fan, too.
+              </p>
               <p data-aos="fade-left" data-aos-delay="500">
-                Follow Sebastian &mdash;
-                <a href="https://twitter.com/DaschnerS" class="p-2"><span class="icon-twitter"></span></a>
+                Follow Josh &mdash;
+                <a href="https://twitter.com/starbuxman" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- orozco -->
+        <!-- Cummins -->
 
-         <div id="orozcoCard" class="row align-items-center speaker">
+        <div id="cumminsCard" class="row align-items-center speaker">
           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
-            <img width="200" height="200" src="https://cache.sessionize.com/image/66cf-0o0o0-VzKUc1NaJ117c7R7K2dn8S.jpg?download=victor-orozco.jpg" alt="Image" class="img-fluid">
+            <img width="200" height="200" src="https://sessionize.com/image/3e52-400o400o1-Ub7Vj4CtgJJ3F4xE9XeJfp.png" alt="Image" class="img-fluid">
           </div>
-          <div class="col-lg-6 ml-auto order-lg-1">
-            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Victor Orozco</h2>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Holly Cummins</h2>
             <!-- The Modal -->
-            <div id="orozco" class="modal">
+            <div id="cummins" class="modal">
 
               <!-- Modal content -->
               <div class="modal-content">
                 <h3 style="color: red;">Abstract</h3>
-                <br/>
-                <p>Do you fear missing the Serverless/Microservices/DDD/Reactive/GitOps era? You're not alone. Despite hyped technologies, not everyone is working at a FAANG and many consultants out-there struggle to modernize well-established development teams culture, technology and process. This talk presents a generic approach used in two mid-sized government institutions (500+ employees) running projects in Java and NodeJS. Describing how these institutions were evaluated, trained, and most importantly how DDD, Reactive, GitOps, Kubernetes . . . makes sense (or not) in this kind of context. Presenting the current results and how developer's life improved (or not) by reducing technical debt.
+                <p>
+                In the early days of computing, software developers had to encode their programs on punch cards, and carry the bits around by hand. By the 1970s they had the joy of keyboards and displays. Sadly, those oppressed developers had to wear flare trousers, work in C, and manage their own memory. By 2000 the memory thing was sorted out, but the trousers were arguably worse, and developers had to maintain their own hardware. Now, our hardware is someone else’s problem, everything is open source, AI can write our code, and we have a choice whether to work in Java, Kotlin, Javascript, Ruby, Go, Python, Rust, or Typescript. On the other hand, now we have yaml. And many of us find we have to work in ALL of Java, Kotlin, Javascript, Ruby, Go, Python, Rust, or Typescript, all while managing a cloud, becoming security experts, learning CSS, and debugging the code our AI “helper” wrote. And we’re supposed to be full-stack, and shifting left, and building up open source in our free time. Are we living the dream or sinking under cognitive overload? And is open source helping or hurting?
+
                 </p>
-              </div>
+                </div>
 
             </div>
-            <div onclick="openAbstract('orozco')" title="Click for Abstract">Session: <a href="#orozcoCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">From Traditional to GitOps: A Tale of Modernizing Two Government Institutions in One Year</a>
+            <div onclick="openAbstract('cummins')" title="Click for Abstract">Session: <a href="#cumminsard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">The future of development: Are our jobs getting harder or easier?</a>
             </div>
-            <div class="bio pl-lg-5">
+            <div class="bio pr-lg-5">
 
-              <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>CTO at Nabenik</strong><br/>
-
-Víctor Orozco holds a master in Computer Science by Universidade Federal de Santa Maria (Brazil) awarded with a scholarship from the Organization of American States.
-<br/>
-JUG Leader of Guatemala Java Users group (the biggest IT user group in Central America) , Duke’s Choice Award 2016 winner and instructor on Edx micromasters.
-<br/>
-"By day" he works as Java trainer and consultant for Nabenik with clients from the financial, government and banking sector, and is also a member of the computer science department at Universidad Rafael Landivar.</p>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Holly Cummins is a Senior Principal Software Engineer on the Red Hat Quarkus team. Before joining Red Hat, Holly was a long time IBMer, in a range of roles from cloud consultant, full-stack javascript developer, WebSphere Liberty devops architect, JVM performance engineer, to innovation leader. Holly led projects for enormous banks, tiny startups, and everything in between. Holly has used the power of cloud to understand climate risks, count fish, help a blind athlete run ultra-marathons in the desert solo, and invent stories (although not at all the same time). Holly is also a Java Champion, author, and regular keynote speaker. You can follow her on twitter at @holly_cummins or at hollycummins.com.
+              </p>
               <p data-aos="fade-right" data-aos-delay="500">
-                Follow Victor &mdash;
-                <a href="https://twitter.com/tuxtor" class="p-2"><span class="icon-twitter"></span></a>
+                Follow Holly &mdash;
+                <a href="https://twitter.com/holly_cummins" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
               </p>
             </div>
           </div>
         </div>
+
+
 
         <!-- end of speakers -->
 
