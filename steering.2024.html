@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jChampions Conference</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@JChampionsConf">
+    <meta name="twitter:creator" content="@JChampionsConf">
+    <meta name="twitter:title" content="JChampions Conference">
+    <meta name="twitter:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations.">
+    <meta name="twitter:image" content="https://jchampionsconf.com/images/twittercard2024.png">
+    <meta property="og:title" content="JChampions Conference" />
+    <meta property="og:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations." />
+    <meta property="og:image" content="https://jchampionsconf.com/images/twittercard2024.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://jchampionsconf.com/images/TwitterLogo.png"/>
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e4e4e4;
+  color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 3px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  </head>
+  <body>
+
+    <script>
+
+// When the user clicks on the button, open the modal
+var modal;
+
+// When the user clicks the button, open the modal
+openAbstract = function(modalid) {
+  modal = document.getElementById(modalid);
+  modal.style.display = "block";
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Change the timezone
+function changeTimezones(){
+  let sessionTime = [];
+  sessionTime.push(moment.tz("2022-01-20 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-20 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2022-01-21 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-21 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2022-01-25 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-25 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2022-01-26 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2022-01-26 15:00:00", "America/Toronto"));
+
+  var selectedTimeZone = document.getElementById("timezoneMenuButton");
+
+  var timezoneValue = selectedTimeZone.value;
+  if(timezoneValue === null || timezoneValue === ''){
+    timezoneValue = moment.tz.guess();
+  }
+
+  for(var idx = 1; idx <=28; idx++){
+    var sessionLabel = "session" + idx + "Time";
+    document.getElementById(sessionLabel).innerHTML = sessionTime[idx-1].clone().tz(timezoneValue).format('h:mma z');
+  }
+}
+
+
+
+</script>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar py-3 header" id="siteHeader" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">jChampions<span class="text-primary">Conference</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="cfp.html">CFP Committee</a></li>
+                <li class="active"><a href="steering.html">Steering Committee</a></li>
+                <li><a href="past.html">Previous Years</a></li>
+                <li class="cta"><a href="https://cevents.io/JChampions24" target="_blank">Register</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-section">
+      <div class="container content">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="site-section-heading">
+              <h2>Steering Committee</h2>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <p>The Steering committee is comprised of a small group of Java Champions.</p>
+            <br/>
+            <p>List is in progress</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="images/Ken2019Small3.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Ken Fogel</h2>
+            <div class="bio pr-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Expertise: Java in Education, Java training</span>
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Java Champions, JCP Executive Committee Member, Research Scholar in Residence at Dawson College, author, conference speaker. His first book titled Transitioning to Java from Packt was recently published. He is an active member in the Java in Education initiative in the JCP EC. He recently completed a workshop on Jakarta REST services that will be made available to JUGs and anyone who wishes to organize a workshop on this topic.</p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Ken &mdash;
+                <a href="https://twitter.com/omniprof" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/kenfogel/" class="p-2" target="_blank"><span class="icon-linkedin"></span></a>
+                <a href="https://mastodon.social/@omniprof" class="p-2" target="_blank">Mastadon</href></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img src="https://avatars.githubusercontent.com/u/4043260?v=4" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Mike Redlich</h2>
+            <div class="bio pl-lg-5">
+            <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="" target="_blank"></a></span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Java Champion | Director at Garden State JUG | Lead Java Editor at InfoQ Java | Contract Developer Advocate and Technical Writer at Payara</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Mike &mdash;
+                <a href="https://twitter.com/mpredli" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+                <a href="https://github.com/mpredli01" class="p-2" target="_blank"><span class="icon-github"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="images/rustam.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Rustam Mehmandarov</h2>
+            <div class="bio pl-lg-5">
+              <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300"><a href="https://mehmandarov.com/" target="_blank">https://mehmandarov.com/</a></span>
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Rustam is a Java Champion and Google Developer Expert (GDE) for Cloud. He lives and works in Oslo, Norway, working as a chief engineer and consultant specializing in Java platform, and a competency network coordinator at work. Previously, he has been leading JavaZone and the Norwegian JUG – javaBin. Rustam is passionate about open source and sharing his knowledge with others. He is a frequent speaker at both national and international conferences and events.</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Rustam &mdash;
+                <a href="https://twitter.com/rmehmandarov" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img src="https://www.alldaydevops.com/hubfs/2023%20ADDO/2023%20ADDO%20Speakers/Mary_Grygleski.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Mary Grygleski</h2>
+            <div class="bio pl-lg-5">
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Mary is a Java Champion and a passionate Senior Developer Advocate at DataStax, a leading data management company that champions Open Source software and specializes in Big Data, DB-as-a-service, Streaming, and Cloud-Native systems. She spent 3.5 years as a very effective advocate at IBM, focusing on Java, Jakarta EE, OpenJ9, Open Source, Cloud, and Distributed Systems. She transitioned from Unix/C to Java around 2000 and has never looked back since then. She considers herself a polyglot and loves to continue learning new and better ways to solve real-life problems. She is an active tech community builder outside of her day job, and currently the President of the Chicago Java Users Group (CJUG).</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Mary &mdash;
+                <a href="https://twitter.com/mgrygles" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+                <a href="https://github.com/mgrygles" lass="p-2" target="_blank"><span class="icon-github"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img src="https://pbs.twimg.com/profile_images/696907861503246336/35nTbZvm_400x400.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Cesar Hernandez</h2>
+            <div class="bio pl-lg-5">
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Senior Software Engineer @Tomitribe. Java Champion, Ace Pro, SuperFrog, OpenSource surfer always eager to share and learn with fellow developers</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Cesar &mdash;
+                <a href="https://twitter.com/CesarHgt" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img src="https://pbs.twimg.com/profile_images/2857145563/2a34223b0f572bead8c687cf32aac5c8_400x400.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Andrzej Grzesik</h2>
+            <div class="bio pl-lg-5">
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Small data and high latency software, on the JVM</p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Andrzej &mdash;
+                <a href="https://twitter.com/ags313" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+                 <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+                   <img src="https://avatars.githubusercontent.com/u/1070321?v=4" alt="Image" class="img-fluid">
+                 </div>
+                 <div class="col-lg-6 ml-auto">
+                   <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Peter Lawrey</h2>
+                   <div class="bio pl-lg-5">
+
+                     <p class="mb-4" data-aos="fade-right" data-aos-delay="400">CEO of Chronicle Software, 13K answers for Java and JVM on StackOverflow.com, "Vanilla Java" blog with 4M+ views, Java Champion</p>
+                     <p data-aos="fade-right" data-aos-delay="500">
+                       Follow Peter &mdash;
+                       <a href="https://twitter.com/PeterLawrey" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+                       <a href="https://github.com/peter-lawrey" class="p-2" target="_blank"><span class="icon-github"></span></a>
+                     </p>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="row align-items-center speaker">
+                        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+                          <img src="https://pbs.twimg.com/profile_images/29013162/headShotSmall_400x400.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 ml-auto">
+                          <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Barry Burd</h2>
+                          <div class="bio pl-lg-5">
+
+                            <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Author of Java For Dummies, Android Application Development All-in-One For Dummies, and other books.</p>
+                            <p data-aos="fade-right" data-aos-delay="500">
+                              Follow Barry &mdash;
+                              <a href="https://twitter.com/barryburdtweets" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row align-items-center speaker">
+                               <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+                                 <img src="https://pbs.twimg.com/profile_images/1618755757184253954/YvKB816o_400x400.jpg" alt="Image" class="img-fluid">
+                               </div>
+                               <div class="col-lg-6 ml-auto">
+                                 <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Vincent Mayers</h2>
+                                 <div class="bio pl-lg-5">
+
+                                   <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Tech Community Leader, Java Champion, MicroProfile.io steering committee, Organizer of Devnexus and Atlanta Java Users Group.</p>
+                                   <p data-aos="fade-right" data-aos-delay="500">
+                                     Follow Vincent &mdash;
+                                     <a href="https://twitter.com/vincentmayers" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+                                   </p>
+                                 </div>
+                               </div>
+                             </div>
+
+                             <div class="row align-items-center speaker">
+                                      <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+                                        <img src="https://avatars.githubusercontent.com/u/14066977?v=4" alt="Image" class="img-fluid">
+                                      </div>
+                                      <div class="col-lg-6 ml-auto">
+                                        <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Daniel Oh</h2>
+                                        <div class="bio pl-lg-5">
+
+                                          <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Senior Principal Technical Marketing Manager at Red Hat, a well-known public speaker, open source contributor, published author, and developer advocate. Daniel has more than 20 years of first-hand experience in solving real-world enterprise problems in production environments using cloud-native technologies such as Quarkus, Spring Boot, Node.js, and Kubernetes.</p>
+                                          <p data-aos="fade-right" data-aos-delay="500">
+                                            Follow Daniel &mdash;
+                                            <a href="https://twitter.com/danieloh30" class="p-2" target="_blank"><span class="icon-twitter"></span></a>
+                                            <a href="https://github.com/danieloh30" class="p-2" target="_blank"><span class="icon-github"></span></a>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+
+      </div>
+    </div>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-10">
+              <p><a href="https://docs.google.com/document/d/1ma8aDpZILxLRN1QE4q5T9WxSrTFhpXPpcsGcO5LcgXI" target="_blank">jChampions Conference Code of Conduct</a>
+              <br/>
+              <a href="https://docs.google.com/document/d/185mhjUBM5PJkAJkMvyehsZzqHlIoEWcAQyxPwnhkdaE" target="_blank">jChampions Conference Privacy Policy</a>
+              </p>
+              <br/>
+              <h2 class="footer-heading text-uppercase mb-4">About The Java Champions</h2>
+              <p>To learn more about the Java Champions, please visit the <a href="https://developer.oracle.com/javachampions" target="_blank">informational site</a>.</p>
+              <br/>
+              <p>See a list of Java Champions:
+                <a href="http://www.javachampions.org/" target="_blank">http://www.javachampions.org/</a>
+              </p>
+              <br/>
+
+            </div>
+            <!--div class="col-md-3 ml-auto">
+              <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+              <p>
+                <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="p-2"><span class="icon-youtube"></span></a>
+                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+              </p>
+            </div-->
+          </div>
+          <div class="row">
+
+            <div class="col-md-12 text-center">
+              <div class="border-top pt-5">
+                <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  </div>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    var header = document.getElementById("siteHeader");
+    var sticky = header.offsetTop;
+
+    function scrollFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+
+  <script src="js/moment.min.js"></script>
+  <script src="js/moment-timezone-with-data-10-year-range.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    window.onload=changeTimezones;
+  </script>
+
+  </body>
+</html>
