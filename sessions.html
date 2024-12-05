@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jChampions Conference</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@JChampionsConf">
+    <meta name="twitter:creator" content="@JChampionsConf">
+    <meta name="twitter:title" content="JChampions Conference">
+    <meta name="twitter:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations.">
+    <meta name="twitter:image" content="https://jchampionsconf.com/images/twitterCard2025.png">
+    <meta property="og:title" content="JChampions Conference" />
+    <meta property="og:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations." />
+    <meta property="og:image" content="https://jchampionsconf.com/images/twitterCard2025.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://jchampionsconf.com/images/TwitterLogo.png"/>
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e4e4e4;
+  color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 3px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  </head>
+  <body>
+
+    <script>
+
+// When the user clicks on the button, open the modal
+var modal;
+
+// When the user clicks the button, open the modal
+openAbstract = function(modalid) {
+  modal = document.getElementById(modalid);
+  modal.style.display = "block";
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Change the timezone
+
+
+
+
+</script>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar py-3 header" id="siteHeader" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">jChampions<span class="text-primary">Conference</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="sessions.html">Sessions</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="cfp.html">Committees</a></li>
+                <!--li><a href="steering.html">Steering Committee</a></li-->
+                <li><a href="past.html">Previous Years</a></li>
+                <li class="cta"><a href="https://www.eventbrite.com/e/jchampions-conference-2025-tickets-1037978590907?aff=oddtdtcreator" target="_blank">Register</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-section site-hero inner">
+      <div class="container content">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <span class="d-block mb-3 caption" data-aos="fade-up">Our Sessions</span>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="100">Sessions</h1>
+            <h3>* Click speaker name for bio</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+
+
+<!-- Start Speaker Cards -->
+
+          <div id="borgesCard" class="row align-items-center speaker">
+            <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+              <img width="200" height="200" src="https://sessionize.com/image/4430-400o400o1-4t1EhbB52wMVkC1HuTbANf.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-6 ml-auto">
+              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Secrets of Performance Tuning Java on Kubernetes</h2>
+              <!-- The Modal -->
+              <div id="borges" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <h3 style="color: red;">Bio</h3>
+                  <br/>
+                  <p>
+
+                      Greetings, I’m Bruno. I’m a Product Manager at Microsoft living in Vancouver, Canada. I am a fan of photography, technology, and movies. I’m also interested in food and travel. But most importantly, I'm opinionated!
+
+                    </p>
+                  </div>
+
+              </div>
+              <div onclick="openAbstract('borges')" title="Click for Bio">Speaker: <a href="#borgesCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Bruno Borges</a>
+              </div>
+              <div class="bio pl-lg-5">
+
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                  Initially, getting Java to run on Kubernetes may seem complicated, but after a few lines of YAML and a bit of work with Docker, you will wonder what all that fuss was. It is easy! Then you start looking at the performance of your Java app in one core, one GB of memory container, and this is when it all very quickly gets murky. Ops, SREs, and Java developers need to be aware of the JVM's inner works when deciding on how to resource their applications. Without this knowledge, it isn't easy to know whether it is best to scale vertically or horizontally for performance and costs. This talk will explore JVM ergonomics, CPU throttling, Garbage Collectors, and how using this knowledge can help you increase performance while reducing costs in the cloud.
+                </p>
+                <p data-aos="fade-right" data-aos-delay="500">
+                  Follow Bruno &mdash;
+                  <a href="https://x.com/brunoborges" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                  <a href="https://linkedin.com/in/brunocborges" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!------  Cougil ---->
+
+          <div id="cougilCard" class="row align-items-center speaker">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+              <img width="200" height="200" src="https://sessionize.com/image/c297-400o400o1-T1ogn5LqaPxX8G46YLsugx.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-6 ml-auto">
+              <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Cómo a John empezó a gustarle TDD (en lugar de odiarlo) <br/>How John started to like TDD (instead of hating it)</h2>
+              <!-- The Modal -->
+              <div id="cougil" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <h3 style="color: red;">Bio</h3>
+                  <br/>
+                  <p>
+                    Nacho es un ingeniero de software de Barcelona, fan de las prácticas de eXtreme Programming (XP) que ha estado trabajando con Java y otras tecnologías web desde antes del efecto 2000. Tiene experiencia en diferentes roles en el mundo de las TIC ("chico-para-todo" 😅, desarrollador, lider de equipo y CTO) trabajando en empresas de muchos sectores: energía, comercio electrónico, startups (algún unicornio 🦄) y consultoría tecnológica. Ahora trabaja como Ingeniero Principal de Software en Dynatrace desarrollando software para monitorizar otras aplicaciones y en 2022 nombrado convirtió en Java Champion.
+                    Siempre preocupado con preguntas como "¿Cómo funciona?" y "¿Cómo podemos hacerlo mejor?", a Nacho le encanta compartir sus conocimientos con los demás y al mismo tiempo aprender de los demás. Como progresión natural de esta actitud, fundó el Grupo de Usuarios Java de Barcelona ( https://www.barcelonajug.org ) y co-fundó la Barcelona Developers Conference, DevBcn ( https://www.devbcn.com ), antigua Java and JVM Barcelona Conference ( JBCNConf ).
+                    Cuando no está pensando en la próxima cosa interesante que hacer para la comunidad, le gusta pasar tiempo con su familia, hacer deporte o mejorar su TDD y otras habilidades XP.
+                  </p>
+                </div>
+
+              </div>
+              <div onclick="openAbstract('cougil')" title="Click for Bio">Speaker: <a href="#cougilCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Nacho Cougil</a>
+              </div>
+              <div class="bio pl-lg-5">
+
+                <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                  <p>
+                    Permíteme compartir una historia acerca de cómo John -un desarrollador como otro cualquiera- empezó a entender (y a disfrutar) con eso de escribir Tests antes del código de Producción.
+                    <br/>
+                    Todos hemos sentido un cierto "tedio" a la hora de escribir tests, ¿no es cierto? Que si es aburrido, que si es complicado, que si no es necesario... ¿verdad? John también lo pensaba, y de hecho, por más que había escuchado acerca de escribir los tests antes del código de producción, nunca había conseguido llevarlo a la práctica e incluso cuando lo había intentado, se había frustrado aún más, al no haber conseguido entender el cómo llevarlo a la práctica fuera de algunas katas de ejemplo 🤷‍♂️
+                    <br/>
+                    Escucha esta historia en la que explicaré como John pasó de no entender Test Driven Development (TDD) a ser un apasionado del tema... tanto es así, ¡que ahora no quiere trabajar de otro modo 😅! Algunos beneficios se habrá encontrado a la hora de practicarlo, ¿no? Él dice que así encuentra que tiene más ventajas que al trabajar de otro modo: por ejemplo, que detectarás antes errores en tu código, tendrás un circuito de retroalimentación (feedback loop) más rápido o que será más fácil de refactorizarlo, pero mejor os lo explico en la sesión, ¿no?
+                    <br/>
+                    PS: Piensa en John como una persona cualquiera, ¡como si incluso fuera el ponente de esta charla 😉!
+                    <p>
+                    (Let me share a story about how John (a developer like any other) started to understand (and enjoy) writing Tests before the Production code.
+
+                    We've all felt an inevitable "tedium" when writing tests, haven't we? If it's boring, if it's complicated or unnecessary? Isn't it? John thought so too, and, as much as he had heard about writing tests before production code, he had never managed to put it into practice, and even when he had tried, John had become even more frustrated at not understanding how to put it into practice outside of a few examples katas 🤷‍♂️
+
+                    Listen to this story in which I will explain how John went from not understanding Test Driven Development (TDD) to being passionate about it... so much that now he doesn't want to work any other way 😅 ! He must have found some benefits in practising it, right? He says he has more advantages than working in any other way (e.g., you'll find defects earlier, you'll have a faster feedback loop or your code will be easier to refactor), but I'd better explain it to you in the session, right?
+
+                    PS: Think of John as a random person, as if he was even the speaker of this talk 😉 !)
+                  </p>
+
+              <p>
+                <italic>(Nacho is a software engineer from Barcelona, fan of TDD and XP practices. He has been working with Java and other web technologies before the effect 2000 and had experience in different roles in the IT world now working at Dynatrace writing code to monitor applications. You may probably meet him before as founder of the Barcelona Java Users Group & the Java & JVM Barcelona Conference ( JBCNConf ). He enjoys spending time with his family, playing sports & improving his eXtreme Programming skills)</italic>
+              </p><p data-aos="fade-left" data-aos-delay="500">
+                  Follow Nacho &mdash;
+                  <a href="https://twitter.com/icougil" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                  <a href="https://www.linkedin.com/in/icougil/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!------  Cummins ---->
+
+          <div id="cumminsCard" class="row align-items-center speaker">
+            <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+              <img width="200" height="200" src="https://sessionize.com/image/3e52-400o400o1-Ub7Vj4CtgJJ3F4xE9XeJfp.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-6 ml-auto">
+              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Zero Waste, Radical Magic, and Italian Graft – Quarkus Efficiency Secrets</h2>
+              <!-- The Modal -->
+              <div id="cummins" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <h3 style="color: red;">Bio</h3>
+                  <br/>
+                  <p>
+                    Holly Cummins is a Senior Principal Software Engineer on the Red Hat Quarkus team. Before joining Red Hat, Holly was a long time IBMer, in a range of roles from cloud consultant, full-stack javascript developer, WebSphere Liberty devops architect, JVM performance engineer, to innovation leader. Holly led projects for enormous banks, tiny startups, and everything in between. Holly has used the power of cloud to understand climate risks, count fish, help a blind athlete run ultra-marathons in the desert solo, and invent stories (although not at all the same time). Holly is also a Java Champion, author, and regular keynote speaker. You can follow her on twitter at @holly_cummins or at hollycummins.com.
+
+                  </p>
+                </div>
+
+              </div>
+              <div onclick="openAbstract('cummins')" title="Click for Bio">Speaker: <a href="#cumminsCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Holly Cummins</a>
+              </div>
+              <div class="bio pl-lg-5">
+
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                  What makes a platform efficient? Is it how quickly code executes, or is it how quickly developers can use it to solve problems? Quarkus makes both people and hardware more efficient. That’s cool, but how does it work? Usually, we expect to trade-off developer experience against runtime efficiency. In this session, Holly will dive into some of the technical underpinnings of Quarkus’s efficiency. She’ll give advice for those using or considering Quarkus - should you be doing reactive programming? Do native binaries run fastest? She’ll also share general principles and transferrable discoveries from the engineering team, such as knowing what you’re optimising for, avoiding cache pollution, and how to be static-but-dynamic.
+
+                </p><p data-aos="fade-right" data-aos-delay="500">
+                  Follow Holly &mdash;
+                  <a href="https://twitter.com/holly_cummins" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                  <a href="https://www.linkedin.com/in/holly-k-cummins/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        <!-- Darwin -->
+
+         <div id="darwinCard" class="row align-items-center speaker">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+              <img width="200" height="200" src="https://sessionize.com/image/6793-400o400o1-LncbtXbtMjM8yXropDGmGe.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-6 ml-auto">
+              <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Six Jewels from Six Javas</h2>
+              <!-- The Modal -->
+              <div id="darwin" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <h3 style="color: red;">Bio</h3>
+                  <br/>
+                  <p>
+                    Ian has worked in software for decades, working on too many different computer systems. He's developed apps for mobile health, business, and recreation. Author of O'Reilly Java Cookbook and Android Cookbook.
+
+
+
+                  </p>
+                </div>
+
+              </div>
+              <div onclick="openAbstract('darwin')" title="Click for Bio">Speaker: <a href="#darwinCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Ian Darwin</a>
+              </div>
+              <div class="bio pl-lg-5">
+
+                <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                  In this talk, Java Cookbook author Ian Darwin will highlight and illustrate six of his favorite enhancements over the last six or eight releases of Java. Tune in to find out which features these are, and how using them can help you become a better Java Developer!
+                  <br/><br/>
+                  P.S. Ian reserves the right to complain about how one or two features have been handled.
+                </p>
+                <p data-aos="fade-left" data-aos-delay="500">
+                  Follow Ian &mdash;
+                  <a href="https://twitter.com/Ian_Darwin" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deandrea -->
+
+         <div id="deandreaCard" class="row align-items-center speaker">
+            <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+              <img width="200" height="200" src="https://sessionize.com/image/bdf3-400o400o1-wDppAPjLoaKe7E2oBKVJtV.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-6 ml-auto">
+              <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Test-Driven Development: It's easier than you think!</h2>
+              <!-- The Modal -->
+              <div id="deandrea" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <h3 style="color: red;">Bio</h3>
+                  <br/>
+                  <p>
+                    Eric Deandrea is a Java Champion & Senior Principal Developer Advocate at Red Hat, focusing on application development technologies. Eric has over 25 years of experience designing and building Java-based solutions and developer training programs. He is a contributor to various OSS projects, including Quarkus, Spring, LangChain4j, WireMock, and Microcks, as well as a speaker at many public events and user groups around the world. Eric recently put his Quarkus and Spring knowledge to use by publishing his first book, “Quarkus for Spring Developers (https://red.ht/quarkus-spring-devs).” Outside of work, Eric enjoys boating on the lakes of New Hampshire, ice hockey, and martial arts, in which he holds a black belt in Kempo Karate.
+
+                  </p>
+                </div>
+
+              </div>
+              <div onclick="openAbstract('deandrea')" title="Click for Bio">Speaker: <a href="#deandreaCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Eric Deandrea</a>
+              </div>
+              <div class="bio pl-lg-5">
+
+                <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                  Everyone loves writing tests, don’t they? How do you write good tests? What tools are available for you to write good tests?
+                  <br/>
+                  In this session, I will dive into the many features of Quarkus that help developers write good tests. I will highlight some of the features of Quarkus, Dev Services and Continuous Testing, which help make testing easier. Additionally, I will live code some tests for common use cases developers encounter, including unit, integration, and “black box” testing of imperative and reactive RESTful and event-driven applications that use common services, such as databases and Kafka brokers. I will discuss techniques such as mocking, spying, and interaction-based testing/verification.
+                  <br/>
+                  I'll even spend some time showing how IDE-based AI assistants can help!
+                  <br/>
+                  Once you see how easy TDD really can be there isn't a reason to not do it!
+                  </p>
+                <p data-aos="fade-right" data-aos-delay="500">
+                  Follow Eric &mdash;
+                  <a href="https://twitter.com/edeandrea" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                  <a href="https://www.linkedin.com/in/edeandrea" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- delNero -->
+
+            <div id="delNeroCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/321f-400o400o1-Bpqa3RT3SHxz6deXcZFz75.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Cracking Tricky Java Code Challenges From Java 8 to Java 24</h2>
+            <!-- The Modal -->
+            <div id="delNero" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Rafael Del Nero is a Java Champion, creator of NoBugsProject and quiz master in Oracle Dev Gym, is the author of "No Bugs, No Stress - Create a Life-Changing Software Without Destroying Your Life." Rafael believes there are many techniques involved in creating high-quality software that developers are often unaware of. His life's purpose is to help Java developers use better programming practices to code quality software for stress-free projects with fewer bugs.
+
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('delNero')" title="Click for Bio">Speaker: <a href="#delNeroCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Rafael del Nero</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Mastering Java fundamentals is necessary to create maintainable, bug-proof, high-quality code and advance your Java career.
+                <br/><br/>
+                I've seen many experienced developers write meaningless Java code because they lack knowledge of the Java core features. They reinvent the wheel and write more complicated, confusing, and difficult-to-maintain code.
+                <br/><br/>
+                Join me in this talk so you can prepare for Java interviews and Java certification using the latest Java features in your applications. You will also be well-equipped to create flexible and maintainable code, making you a reference for code quality from your co-workers.
+                <br/><br/>
+                Let's solve the Java code challenges together so you can best use the latest Java features to create high-quality software.
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Rafael &mdash;
+                <a href="https://twitter.com/RafaDelNero" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/rafadelnero/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Delporte -->
+        <div id="delporteCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/a698-400o400o1-Q9wQws8Nhe6zHcsPGzYz63.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Looking at Music, an experiment with Kotlin, JavaFX, MIDI, and Virtual Threads</h2>
+            <!-- The Modal -->
+            <div id="delporte" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Frank Delporte is a Java Champion working at azul.com, blogger on webtechie.be and foojay.io, author of "Getting started with Java on the Raspberry Pi" (webtechie.be/books), and contributor to pi4j.com. Frank blogs about his experiments with Java, sometimes combined with electronic components, on the Raspberry Pi.
+
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('delporte')" title="Click for Bio">Speaker: <a href="#delporteCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Frank Delporte</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+              <br/>
+              When a nerdy dad and music-playing son join forces and start experimenting with music and code, some nice things can happen. Did you ever present your music piece in a business dashboard with charts? Did you know that the FXGL game library can be used to generate a piano with fireworks? Let's look at music with the MelodyMatrix application (https://melodymatrix.rocks/) and guide you through the process of how a small experiment turned into a full-blown project.
+              <br/><br/>
+              This talk is not just about code but also features a live piano performance by a 14-year-old musician-coder. Let's have a battle between humans and machines! Who is the best piano player? The musician or a few thousand Virtual Threads? And how far can we push the app's performance to send ByteArrays to an LED strip to react to the music?
+              <br/><br/>
+              Topics in this talk: Java, Kotlin, JavaFX, Gradle, FXGL, MIDI, Vaadin, GitHub Actions, JDeploy,…
+                </p><p data-aos="fade-right" data-aos-delay="500">
+                Follow Frank &mdash;
+                <a href="https://twitter.com/frankdelporte" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/frankdelporte/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drotbohm -->
+
+  <div id="drotbohmCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/38dd-400o400o1-c8-1a2f-436b-a5f4-3770e0bd3e20.b530e78b-9017-46be-9fcb-5f90e7903514.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">It Takes Two to Tango – Designing Module Interactions in Modulithic Spring Applications</h2>
+            <!-- The Modal -->
+            <div id="drotbohm" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Oliver Drotbohm is a member of the Spring engineering team at VMware by Broadcom, Inc.. His work focused on software architecture, DDD, REST, and persistence technologies. His new book, “Modulithic Applications with Spring”, is due to release in 2024.
+
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('drotbohm')" title="Click for Bio">Speaker: <a href="#drotbohmCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Oliver Drotbohm</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                According to Russell Ackoff “A system is not the sum of the behaviors of its parts, but the product of their interactions”. That’s why the design of those interactions is of the uttermost importance. In a Spring application, the primary means to establish relationships between application components is dependency injection (DI). With higher-level structuring approaches like Spring Modulith’s application modules in place, should the interaction of those be implemented by DI as well?
+                <br/><br/>
+                The talk presents different approaches to designing application module interactions and compares them regarding their applicability, effect on testability, consistency, error scenarios and how they affect the modularity of the system overall.
+
+                </p><p data-aos="fade-left" data-aos-delay="500">
+                Follow Oliver &mdash;
+                <a href="https://twitter.com/odrotbohm" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/odrotbohm/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+<!-- Dubois -->
+
+        <div id="duboisCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/7df3-400o400o1-WoJXMV1WNg5WJ88aFuYTku.jpg" alt="Image" class="img-fluid">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img width="200" height="200" src="https://sessionize.com/image/5b8c-400o400o1-WGaguRyvA6idCeTRfHC4my.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Serverless Java in Action: Cloud Agnostic Design Patterns and Tips</h2>
+            <!-- The Modal -->
+            <div id="dubois" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Kevin is a Java Champion, software engineer, author and international speaker with a passion for Open Source, Java, and Cloud Native Development & Deployment practices. He currently works as developer advocate at Red Hat where he gets to enjoy working with Open Source projects and improving the developer experience. He previously worked as a (lead) software engineer at a variety of organizations across the world ranging from small startups to large enterprises and even government agencies.
+                  <br/>
+                  Kevin is actively involved in Open Source communities, contributing to projects such as Quarkus, Knative, Apache Camel, and Podman (Desktop). He is also a member of the Belgian CNCF and the Belgian Java User Group.
+                  <br/>
+                  Kevin speaks English, Dutch, French and Italian fluently and is currently based in Belgium, having lived in Italy and the USA as well.
+                  <br/>
+                  In his free time you can find Kevin somewhere in the wild hiking, gravel biking, snowboarding or packrafting.
+
+                  </p>
+                </div>
+
+            </div>
+            <div id="oh" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Daniel Oh is a Java Champion and Senior Principal Developer Advocate at Red Hat to evangelize developers for building cloud-native apps and serverless ob Kubernetes ecosystems. He's also contributing to various cloud open-source projects and ecosystems as a CNCF ambassador for accelerating DevOps adoption in enterprises. He's speaking at lots of technical seminars, workshops, and meetups to elaborate on new emerging technologies for enterprise developers & DevOps teams.
+
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('dubois')" title="Click for Bio">Speaker: <a href="#duboisCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Kevin Dubois</a>
+            </div>
+            <div onclick="openAbstract('oh')" title="Click for Bio">Speaker: <a href="#ohCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Daniel Oh</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                You've probably seen how to create a Function-as-a-Service with one of the cloud providers, but if this is all you know about Serverless, prepare to have your mind blown!
+                <br/>
+                In this session we'll show you how to create a production-grade, cloud-agnostic, event-driven serverless solution with Quarkus, a Java stack optimized for fast startup and small footprint; and Knative, an open source community project for deploying, running and managing serverless applications on Kubernetes.   Say goodbye to vendor lock-in and hello to Supersonic Subatomic Java-based Serverless bliss!
+
+
+            </p><p data-aos="fade-right" data-aos-delay="500">
+                Follow Kevin &mdash;
+                <a href="https://twitter.com/kevindubois" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/kevindubois/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embregts -->
+
+         <div id="embregtsCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/5469-400o400o1-7cEMzWvxp4JUZGFaGKYBCL.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Java's Concurrency Journey Continues! Exploring Structured Concurrency and Scoped Values</h2>
+            <!-- The Modal -->
+            <div id="embregts" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Hanno Embregts is a Java Developer with a passion for learning, teaching and making music.
+                  <br/><br/>
+                  In his day-to-day job as an IT Consultant at Info Support, Hanno prefers work that is fast-paced and versatile. This is why he juggles Java development, software architecture, public speaking, leading Info Support’s Java Community and teaching courses at Info Support’s Knowledge Centre.
+                  <br/><br/>
+                  Hanno is both a Java Champion and an Oracle ACE Pro. He is also one of the editors of the Dutch Java Magazine. Outside of work Hanno likes making music with his friends. He plays the flute, the guitar and he likes to sing.
+                  <br/><br/>
+                  Software conferences are Hanno’s favourite thing in the world, because they allow him to do the three things he loves most at the same time: learning new things, teaching others about stuff he discovered and yes: even making music from time to time!
+
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('embregts')" title="Click for Bio">Speaker: <a href="#embregtsCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Hanno Embregts</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Java's concurrency journey has been a long and winding one. We departed from the 'classic threads' station and traveled through Runnables, ExecutorServices, CompletableFutures and ForkJoinPools, before finally arriving at 'virtual threads'. But does 'finally' mean that we've arrived at our final destination, or is it a transfer at best?
+                <br/><br/>
+                Now that virtual threads are available, our Java programs will likely use an abundance of threads. This increase in thread count will immediately make thread coordination, observability and isolation more difficult. Two new Java features are currently in development that might make things a bit easier: Structured Concurrency and Scoped Values.
+                <br/><br/>
+                In this talk, we'll introduce and demonstrate these new features, and how they can help address the challenges that have emerged since the introduction of virtual threads. We'll also discuss how the availability of these features will impact your day-to-day programming life and whether Java's concurrency journey is actually over now that these features have become available or if there are still more stops to come.
+
+
+            </p><p data-aos="fade-left" data-aos-delay="500">
+                Follow Hanno &mdash;
+                <a href="https://twitter.com/hannotify" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/hannoembregts/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fogel -->
+
+        <div id="fogelCard" class="row align-items-center speaker">
+           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+             <img width="200" height="200" src="https://sessionize.com/image/20cf-400o400o1-5b-f376-44fb-9876-d8a84491a6cd.76fc8c81-c29e-4c37-81fe-8a2cbbc07eb4.jpg" alt="Image" class="img-fluid">
+           </div>
+           <div class="col-lg-6 ml-auto">
+             <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">How my views on teaching Java have changed.</h2>
+             <!-- The Modal -->
+             <div id="fogel" class="modal">
+
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <h3 style="color: red;">Bio</h3>
+                 <br/>
+                 <p>
+                   Ken retired from the classroom after 31 years teaching software development at Dawson College, 25 of those years as the chair and program coordinator of the Computer Science Technology Program. He is currently a Research Scholar in Residence at the college. His first book, Transitioning to Java, was recently published by Packt. He has spoken and continues to speak at numerous conferences around the world.
+
+                   </p>
+               </div>
+
+             </div>
+             <div onclick="openAbstract('fogel')" title="Click for Bio">Speaker: <a href="#fogelCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Kenneth Fogel</a>
+             </div>
+             <div class="bio pl-lg-5">
+
+               <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                 During my years teaching students how to program, I focused on the specific language, such as Java, in my courses. I felt that this was necessary due to the complexity of the language, just as I felt when I taught Pascal, C, and C++. I frequently complained about many of the aspects of Java that either had to be taught on day one or that I had to tell my students to ignore. Two changes in the language have led me to reflect on my approach to teaching. JEP 477: Implicitly Declared Classes and Instance Main and JEP 458: Launch Multi-File Source-Code Programs each have contributed to the simplification of the language and by extension the simplification of teaching the language. If you are teaching programming or are considering teaching Java, then join me as I discuss how my thoughts on teaching Java have changed.
+
+                 <p data-aos="fade-right" data-aos-delay="500">
+                 Follow Kenneth &mdash;
+                 <a href="https://www.linkedin.com/in/kenfogel/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+               </p>
+             </div>
+           </div>
+         </div>
+
+        <!-- Fusco -->
+
+        <div id="fuscoCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/96b1-400o400o1-7yJQPZkLYbSk2sjC5EMake.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Machine Learning + Symbolic Reasoning: a Quarkus story on Artificial Intelligence</h2>
+            <!-- The Modal -->
+            <div id="fusco" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Mario Fusco is a Java Champion and works at Red Hat as principal software engineer and Drools project lead. He is also a frequent speaker, the coordinator of JUG Milano and the co-author of "Modern Java in Action" published by Manning.
+
+                </p>
+                </div>
+
+            </div>
+            <div onclick="openAbstract('fusco')" title="Click for Bio">Speaker: <a href="#fuscoCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Mario Fusco</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                What AI can do nowadays is simply mind-blowing. I must admit that I cannot stop being surprised and sometimes literally jumping from my seat thinking: "I didn't imagine that AI could ALSO do this!". What is a bit misleading here is that what we tend to identify with Artificial Intelligence is actually Machine Learning which is only a subset of all AI technologies available: ML is a fraction of the whole AI-story, while Symbolic Artificial Intelligence enables experts to encode their knowledge of a specific domain through a set of human-readable and transparent rules.
+                <br/><br/>
+                In fact there are many situations where being surprised is the last thing that you may want. You don't want to jump from your seat when your bank refuses your mortgage without any human understandable reason, but only because AI said no. And even the bank may want to grant their mortgages only to applicants who are considered viable under their strict and well-defined business rules.
+                <br/><br/>
+                Given these premises why not mixing 2 very different and complementary AI branches like Machine Learning and Symbolic Reasoning? During this talk we will demonstrate with practical examples why this could be a winning architectural choice in many common situations and how Quarkus through its langchain4j and drools extensions makes the development of applications integrating those technologies straightforward.
+
+                </p><p data-aos="fade-left" data-aos-delay="500">
+                Follow Mario &mdash;
+                <a href="https://twitter.com/mariofusco" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/mario-fusco-3467213/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+<!-- Groner -->
+
+         <div id="gronerCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/5898-400o400o1-9VmEQFpGyeXYEMDvUP1mDA.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Best Practices to Secure Web Applications</h2>
+            <!-- The Modal -->
+            <div id="groner" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Loiane Groner is a Java Champion, Angular GDE, Microsoft MVP, Oracle ACE with over 18 years of experience and a Director at BNY. In her spare time, she loves contributing to the community, and she publishes tech videos on Youtube and creates free programming courses at https://loiane.training.
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('groner')" title="Click for Bio">Speaker: <a href="#gronerCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Loiane Groner</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                While strong authentication and authorization lay the foundation, achieving robust web application security demands a multi-layered approach. At first glance, the field of web application security can seem daunting, but by understanding and implementing core principles, you can dramatically strengthen your defenses against cyber threats.
+                <br/><br/>
+                In this presentation, we'll delve into the essential, yet often neglected, aspects of securing your applications. We'll cover best practices for secure coding, meticulous input validation techniques, the importance of strategic error handling and logging, how to manage file uploads safely, and much more.
+
+                </p><p data-aos="fade-left" data-aos-delay="500">
+                Follow Loiane &mdash;
+                <a href="https://twitter.com/loiane" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/loiane" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horstmann -->
+
+        <div id="horstmannCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/4ba6-400o400o1-Q4szjU8F7U6AJCEtwDB6ua.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Java for Small Coding Tasks</h2>
+            <!-- The Modal -->
+            <div id="horstmann" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  After growing up in the German countryside, I studied in the United States (M.S. in computer science from Syracuse University, and a Ph.D. in mathematics from the University of Michigan in Ann Arbor). For four years, I was VP and CTO of an Internet startup that went from 3 people in a tiny office to a public company. I taught computer science at San Jose State University and held visiting appointments at universities in Germany, Switzerland, Vietnam, and Macau. In my copious spare time I write books and articles on programming languages and computer science education.
+
+                </p>
+                </div>
+
+            </div>
+            <div onclick="openAbstract('horstmann')" title="Click for Bio">Speaker: <a href="#horstmannCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Cay Horstmann</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                For small projects, we often reach for a scripting language, such as Python or Bash, because Java seems too heavy handed. In this interactive presentation, I want to convince you to give Java a try for those tasks. With the right tooling (and some innovative features in Java 21 and 22), Java can be a great choice for scripts, Jupyter notebooks, and even code in the browser. The benefit: compile-time typing, great IDEs, and a growth path when those small projects don't stay small.
+                <br/><br/>
+                Intended audience:
+                Experienced Java programmers who also need to do scripting/exploratory programming.
+                </p>
+
+            </div>
+          </div>
+        </div>
+<!-- Kabutz -->
+
+         <div id="kabutzCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/d712-400o400o1-32bf028a-f674-420b-9bfe-2670bed9ff8f.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Translating a Cretan Book into English, German, Dutch, Chinese, etc. using Java and ChatGPT API</h2>
+            <!-- The Modal -->
+            <div id="kabutz" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Heinz is the author of The Java Specialists’ Newsletter (https://www.javaspecialists.eu), a publication enjoyed by tens of thousands of Java experts in over 150 countries.
+
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('kabutz')" title="Click for Bio">Speaker: <a href="#kabutzCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Heinz Kabutz</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                "My Village Chorafakia Akrotiri - a book by Emmanouil Koutrakis son of Giorgos (www.chorafakia.com). Heinz held the book in his hand. It was written in flowery Greek. But not just any Greek. The local village dialect of Cretan spoken in the village of Chorafakia. The book was hundreds of pages long, with almost 500 photographs. Unfortunately, even though Heinz has lived on Crete for 18 years, Greek, and especially Cretan, was still opaque to him. "Would you mind if I translate this book into English?" Heinz asked Mr Manolis confidently. Shouldn't be too hard. Send a copy to Google Translate, and we're done. "With the greatest of pleasure, as long as it doesn't cost me anything extra." And with that, the journey began to try and translate a book about the
+                history of our village Chorafakia into something that Heinz could understand. After several years of wrong starts, we finally managed to convert the entire book to AsciiDoc. We also wrote some Java code that would send each portion to the ChatGPT 4.0 API for translation.
+                <br/><br/>
+                During the talk, we will attempt to translate the entire book of over 500 pages into a new language, as well as show the code that drives everything. The logic for working with the files and for interacting with the ChatGPT API was mostly generated by the ChatGPT AI. We will also look at virtual threads and structured
+                concurrency and show how that was used to accelerate the translation process. We will also demonstrate how the ChatGPT AI built in to IntelliJ can be used to simplify our coding tasks.
+
+              </p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Heinz &mdash;
+                <a href="https://www.twitter.com/heinzkabutz" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/heinzkabutz/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kousen -->
+
+        <div id="kousenCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/54a2-400o400o1-MBpbESkHxvKv9FSG3gjNiu.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">A Data-Oriented Programming Approach to REST APIs</h2>
+            <!-- The Modal -->
+            <div id="kousen" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Ken Kousen is the author of the Pragmatic Programmers books "Mockito Made Clear" and "Help Your Boss Help You", the O'Reilly books "Kotlin Cookbook", "Modern Java Recipes", and "Gradle Recipes for Android", and the Manning book "Making Java Groovy". He is a regular speaker on the No Fluff, Just Stuff conference tour, and has spoken at conferences all over the world. He is a Java Champion, a JavaOne Rock Star, and a Devnexus Rock Star. Currently he a Professor of the Practice of Computer Science and Associate Director for STEM Initiatives at the Entrepreneurship Center at Trinity College in Hartford, CT.
+                <br/><br/>
+                In addition to various industry certifications, he has BS degrees in both Mathematics and Mechanical Engineering from M.I.T., an MA and Ph.D. in Aerospace Engineering from Princeton, and an MS in Computer Science from R.P.I.
+
+                    </p>
+
+              </div>
+
+            </div>
+            <div onclick="openAbstract('kousen')" title="Click for Bio">Speaker: <a href="#kousenCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Kenneth Kousen</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                This session will use records, sealed interfaces, and pattern matching for switch to access RESTful web services. The approach takes advantage of concepts from Data-Oriented Programming like immutability, explicit data representations, and expressive behavior. At least one example will involve making text and vision requests to an AI service, and how to implement that effectively using Java 21+.
+
+                </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Kenneth &mdash;
+                <a href="https://twitter.com/kenkousen" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/kenkousen/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+                <!-- Lawrey -->
+
+        <div id="lawreyCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/06bd-400o400o1-VbNrjPo8P5ZiHAykhhw9Lk.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Lessons learnt from founding my own company, and over 30 years hands on coding</h2>
+            <!-- The Modal -->
+            <div id="lawrey" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Peter is the CEO of Chronicle Software, specialising in low-latency software for trading firms in Java and C++.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('lawrey')" title="Click for Bio">Speaker: <a href="#lawreyCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Peter Lawrey</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                How can a developer with around ten years of experience continue to grow while remaining hands-on?
+                   <br/><br/>
+                  In this talk, I share insights and lessons I've gained as a:
+                  <br/>
+                  - Java Champion<br/>
+                  - Founder of a self-funded company for 11 years<br/>
+                  - Hands-on developer with over three decades of experience<br/>
+                  - As an employer who has hired developers ranging from junior level to those with 30 years of expertise<br/>
+                  - How AI is likely to transform the way we work as developers.
+
+              </p><p data-aos="fade-right" data-aos-delay="500">
+                Follow Peter &mdash;
+                <a href="https://twitter.com/PeterLawrey" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/peterlawrey/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Long -->
+
+         <div id="longCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/900f-400o400o1-5d453734-1a61-4d8d-b234-55fdf95d1202.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Bootiful Spring Boot: A DOGumentary</h2>
+            <!-- The Modal -->
+            <div id="long" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Josh (@starbuxman) is the Spring Developer Advocate at Pivotal. Josh is a Java Champion, author of 5 books (including O'Reilly's upcoming Cloud Native Java: Designing Resilient Systems with Spring Boot, Spring Cloud, and Cloud Foundry) and 3 best-selling video trainings (including Building Microservices with Spring Boot Livelessons with Spring Boot co-founder Phil Webb), and an open-source contributor (Spring Boot, Spring Integration, Spring Cloud, Activiti and Vaadin). He is a huge Kotlin-fan, too.
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('long')" title="Click for Bio">Speaker: <a href="#longCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Josh Long</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Spring Boot 3.x and Java 21 have arrived, making it an exciting time to be a Java developer! Join me, Josh Long (@starbuxman), as we dive into the future of Spring Boot with Java 21. Discover how to scale your applications and codebases effortlessly. We'll explore the robust Spring Boot ecosystem, featuring AI, modularity, seamless data access, and cutting-edge production optimizations like Project Loom's virtual threads, GraalVM, AppCDS, and more. Let's explore the latest-and-greatest in Spring Boot to build faster, more scalable, more efficient, more modular, more secure, and more intelligent systems and services.
+
+                </p>
+                <p data-aos="fade-left" data-aos-delay="500">
+                Follow Josh &mdash;
+                <a href="http://twitter.com/starbuxman" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/joshlong/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taman -->
+
+        <div id="mandrikovCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/6f13-400o400o1-fWhP66qq2SDdw33AoPHXsD.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Java, Code Coverage and their best friend - bytecode: scandals, intrigues, investigations</h2>
+            <!-- The Modal -->
+            <div id="mandrikov" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Evgeny is a contributor to various open source projects, including OpenJDK, and a speaker at international conferences and JUGs. He is also one of the project leads of widely adopted code coverage library for Java and Kotlin - JaCoCo, and the award-winning EclEmma project at the Eclipse Foundation that integrates JaCoCo into Eclipse. In his day job at Sonar he develops SonarQube’s static source code analysis for languages such as Java, Kotlin, C, and C++.
+
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('mandrikov')" title="Click for Bio">Speaker: <a href="#mandrikovCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Evgeny Mandrikov</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                Do you know what is inside of your class files? Are you ready to bet? Let's have fun by diving into bytecode and exploring how Java compiler and its different versions, from the old ones up to the most recent, transform your source code.
+                  <br/><br/>
+                Our dive will be based on details of the implementation of the most popular open-source code coverage tool for Java – JaCoCo (https://jacoco.org), which finds in bytecode and filters out various compiler generated artifacts, which otherwise require unnecessary and sometimes impossible tricks to have full code coverage.
+
+                </p><p data-aos="fade-right" data-aos-delay="500">
+                Follow Evgeny &mdash;
+                <a href="https://twitter.com/_Godin_" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://linkedin.com/in/mandrikov" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Martinelli -->
+
+         <div id="martinelliCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/3673-400o400o1-T3j7ZVaoWYE21yPgUGnZkP.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Say Goodbye to Microservices, Say Hello to Self-Contained Systems</h2>
+            <!-- The Modal -->
+            <div id="martinelli" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Simon Martinelli is a Java Champion, a Vaadin Champion, and an Oracle ACE Pro. He regularly shares his knowledge in articles, speaks at international conferences, and writes his blog: https://martinelli.ch. His current interest is increasing the efficiency of full-stack development with Java.
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('martinelli')" title="Click for Bio">Speaker: <a href="#martinelliCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Simon Martinelli</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Microservices are a popular approach to building modern software, offering scalability and flexibility. But for many teams, they come with challenges like increased complexity, difficult debugging, and managing too many small services.
+                <br/><br/>
+                In this talk, we'll introduce an alternative: Self-Contained Systems (SCS). Unlike microservices, SCS allows each part of your application to operate independently with its UI, logic, and database, simplifying both development and deployment.
+                <br/><br/>
+                You'll learn why SCS can be a better fit for many projects, how it reduces the complexity of distributed systems, and when it makes sense to use this approach over microservices. We'll also dive into real-world examples that show you how to build self-contained systems using Java and Vaadin.
+                <br/><br/>
+                If you're ready to rethink your architecture and say goodbye to microservice headaches, this talk will show you the way!
+                  <br/>
+                He owns Martinelli LLC and has worked as a software architect, developer, consultant, and trainer for three decades, especially in the Java Enterprise environment. In addition to his work, he is a lecturer at the Bern University of Applied Sciences BFH and the University of Applied Science Northwestern Switzerland FHNW on modern architecture and integrating distributed systems, persistence technologies, and DevOps.
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Simon &mdash;
+                <a href="https://twitter.com/simas_ch" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/simonmartinelli/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mehmandarov -->
+
+        <div id="mehmandarovCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/ee2b-400o400o1-3QQSMKmr3rh4z8RaAUGZJ1.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Your Cloud-Native Toolbox for Java</h2>
+            <!-- The Modal -->
+            <div id="mehmandarov" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Passionate computer scientist. Java Champion and Google Developers Expert for Cloud. Public speaker. Ex-leader of JavaZone and Norwegian JUG – javaBin.
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('mehmandarov')" title="Click for Bio">Speaker: <a href="#mehmandarovCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Rustam Mehmandarov</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                What does it mean to have cloud-native Java applications? What do you need to think about to be a good Cloud citizen?
+                <br/><br/>
+                It is not about the platform you run it on or the library/framework you want to use. It is about how you build scalable, observable, resilient applications while keeping in mind the application architecture, containers, builds, testing, automation, and standards.
+                <br/><br/>
+                Join us in exploring different tools for creating cloud-native Java apps. We will go through the whole life-cycle of an application – from the first lines of code to a fully operational and containerized application.
+
+
+              </p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Rustam &mdash;
+                <a href="https://twitter.com/RMehmandarov" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/mehmandarov/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nogueira -->
+
+         <div id="nogueiraCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/127b-400o400o1-LnQXwxiro3aE5cBdE8bSoz.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Managing Testing Data</h2>
+            <!-- The Modal -->
+            <div id="nogueira" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Elias is a Java Champion, Oracle ACE Pro, Java Magazine NL and Senior Principal Software Engineer at Backbase.
+                  <br/><br/>
+                  He shares content related to Java, OSS and Quality Engineering at conferences, meetups, articles and open-source conferences.
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('nogueira')" title="Click for Bio">Speaker: <a href="#nogueiraCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Elias Nogueira</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Have you ever tried to troubleshoot an issue taking a looking at the log files? I bet you did! And it turns out the issue is related to data usage because, you know, users will use real data! Developers won't! A good thing about your recent troubleshooting is that you can understand the data. It's not a bunch of numbers or UUIDs in the name field. How about your development environment? Probably you use either hard-coded data or random strings. We must fix that!
+                <br/><br/>
+                This presentation will show you how to manage testing data in two different ways.
+                <br/><br/>
+                The first way is the creation of a Test Data Factory approach, where we will use the Factory Pattern to easily create any objects we want with understandable and reliable data. This approach will make you in control of your own data, so you can find any bug in the early stages of the SDLC and the DataFaker library will help us to generate good random data in every execution.
+                <br/><br/>
+                In a second way, we will learn and apply the Data-Driven Testing approach, where the same requirement can be applied to different sets of data, generating different results. This approach can reduce the amount of code and the execution time. With the support of JUnit 5 you will learn how to do it in 5 different ways: value source, internal method source, external method source, argument provider, and CVS source.
+
+
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Elias &mdash;
+                <a href="https://twitter.com/eliasnogueira" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/eliasnogueira/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Pepperdine -->
+
+        <div id="pepperdineCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/713d-400o400o1-KpEXBzYT7oKcMVN2mQRKGB.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Automatic Heap Sizing</h2>
+            <!-- The Modal -->
+            <div id="pepperdine" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Kirk has been speaking about performance for more than 20 years.
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('pepperdine')" title="Click for Bio">Speaker: <a href="#pepperdineCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Kirk Pepperdine</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Automatic heap sizing (AHS) is new feature being introduced in Z, G1, and Serial GC. Traditionally, left on its own, max Java heap size has been limited to 25% of available RAM. The Adaptive Size Policy was introduced into the Parallel, G1, and Z GC collectors to dynamically adjust the size of heap. With AHS all of this will change and this talk will dive into the how and why.
+
+              </p>
+              <p data-aos="fade-left" data-aos-delay="500">
+                Follow Kirk &mdash;
+                <a href="http://twitter.com/kcpeppe" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/kirk-pepperdine/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rahman -->
+
+         <div id="rahmanCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 " data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/e6b4-400o400o1-n3S4fWYk2L5Urbxe6neQP2.jpg" alt="Image" class="img-fluid">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img width="200" height="200" src="https://sessionize.com/image/41a7-400o400o1-RyW6SgbgVRh4Xn1VYfGvRf.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Java + LLMs: A hands-on guide to building LLM Apps in Java with Jakarta</h2>
+            <!-- The Modal -->
+            <div id="rahman" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  A N M Bazlur Rahman is a Software Engineer with over a decade of specialized experience in Java and related technologies. His expertise has been formally recognized through the prestigious title of Java Champion. Beyond his professional commitments, Mr. Rahman is deeply involved in community outreach and education. He is the founder and current moderator of the Java User Group in Bangladesh, where he has organized educational meetups and conferences since 2013.
+                  <br/><br/>
+                  In the past two years, Mr. Rahman has been an active speaker at various international conferences and Java user groups. His talks have often focused on specialized topics such as concurrency and virtual threads. In addition to his community work, Mr. Rahman also serves as an editor for Java Queue at InfoQ and Foojay.io, both of which are leading platforms for technology content. Notably, he has authored five books on the Java programming language in Bengali, three of which have become best sellers in Bangladesh.
+                  <br/><br/>
+                  He is currently writing a new book with O'Reilly titled "Modern Concurrency in Java".
+                  https://learning.oreilly.com/library/view/modern-concurrency-in/9781098165406/
+                </p>
+              </div>
+            </div>
+              <div id="shaaf" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <h3 style="color: red;">Bio</h3>
+                  <br/>
+                  <p>
+                  Shaaf is a Principal Architect at Red Hat. A contributor to Konveyor community a CNCF Sandbox project.
+                  <br/>
+                  Mostly developing code with Java, Node and recently AI/ML. For the last 15 years, he has helped customers create and adopt open source solutions for applications, cloud and managed service, continuous integration environments, and frameworks. Shaaf is a technical editor at InfoQ and spends his time writing about Kubernetes, Security and Java
+                </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('rahman')" title="Click for Bio">Speaker: <a href="#rahmanCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Bazlur Rahman</a>
+            </div>
+            <div onclick="openAbstract('shaaf')" title="Click for Bio">Speaker: <a href="#shaafCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Syed Shaaf</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                AI is revolutionizing the software landscape. However, for many Java developers, integrating these powerful AI tools into existing enterprise applications or a new one can feel daunting. In this hands-on session, we'll demystify the process and show you how to build LLM-powered features directly into your Java codebase.
+                <br/><br/>
+                Using JakartaEE and the LangChain4j library, we'll dive deep into Retrieval Augmented Generation (RAG), a cutting-edge technique that combines the vast knowledge of LLMs with the precision of your own data. We'll explore how to create both few-shot and zero-shot RAG models, and then add practical features like summarization and similarity search, backed by an Embedding database.
+                <br/><br/>
+                Through a live coding demo, we’ll walk you through constructing an AI-powered online store backend and provide practical insights into the architecture and code.
+                <br/><br/>
+                Whether you're familiar with AI or just getting started, this session will give you the confidence and skills to harness the potential of LLMs in your Java projects.
+
+
+
+
+              </p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Bazlur &mdash;
+                <a href="https://twitter.com/bazlur_rahman" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/bazlur/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Redlich -->
+
+        <div id="redlichCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/2016-400o400o1-XpP3ZWPcLGLTeV4xTgAa48.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">A Developer's Guide to Jakarta EE 11</h2>
+            <!-- The Modal -->
+            <div id="redlich" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Michael Redlich has been an active member within the Java community for the past 25 years. He founded the Garden State Java User Group (formerly the ACGNJ Java Users Group) in 2001 where he serves as one of the directors. Since 2016, Mike has served as a Java community news editor for InfoQ where his contributions include the weekly Java news roundup, news items, technical articles and technical reviews from external authors. He is currently the lead Java Queue editor. Mike joined Payara as a contract Developer Advocate and Technical Writer in the summer of 2023.
+                  <br/><br/>
+                  He has presented at venues such as Devnexus, Oracle Code One, JCON World, Emerging Technologies for the Enterprise, Trenton Computer Festival (TCF), TCF IT Professional Conference, and numerous Java User Groups. Mike serves as a committer on the Jakarta NoSQL and Jakarta Data specifications and the Eclipse JNoSQL project. He also participates on the leadership council of the Jakarta EE Ambassadors. Mike was named a Java Champion in April 2023.
+                  <br/><br/>
+                  Mike retired from ExxonMobil Technology & Engineering in June 2023 with 33½ years of service. His experience included developing custom scientific laboratory and web applications, polymer physics, chemometrics, infrared spectroscopy and automotive testing. He also has experience as a Technical Support Engineer at Ai-Logix, Inc. (now AudioCodes) where he provided technical support and developed telephony applications for customers.
+
+                </p>
+                </div>
+
+            </div>
+            <div onclick="openAbstract('redlich')" title="Click for Bio">Speaker: <a href="#redlichCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Michael Redlich</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                Since its introduction in 2018 as Jakarta EE, the platform has evolved from: Jakarta EE 8, an open-source version of Java EE 8; to Jakarta EE 9, the "big bang" release; to Jakarta EE 10 that introduced the Core Profile.
+                <br/><br/>
+                And now, Jakarta EE 11, released on { month}, { day }, 2024, focuses on productivity and innovation and delivers: updates to 16 specifications; introduces a new specification, Jakarta Data; and sets the baseline to Java 21, the latest LTS release.
+                <br/><br/>
+                This presentation will provide a brief history of JavaEE/Jakarta EE, what's new in Jakarta EE 11, and a review of new and updated specifications with working example applications.
+
+
+              </p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Michael &mdash;
+                <a href="https://twitter.com/mpredli" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="http://www.linkedin.com/pub/michael-redlich/0/966/13a" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reimers -->
+
+         <div id="reimersCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 " data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/99a5-400o400o1-aqToUfPCKkz48GUYcoMKpT.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto order-lg-1">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">JTaccuino - A better Jupyter Experience for Java Developers</h2>
+            <!-- The Modal -->
+            <div id="reimers" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <br/>
+                <p>
+                  Sven Reimers is an industrial engineer with over 25 years of experience in designing and implementing distributed systems which have a focus in the engineering domain. He was the lead software architect for a system and network management solution for satellite communication networks, which received the Duke'c Choice award. He currently works on ground segment software for earth observation satellite systems. He is author of several scientific articles, co-author of some Java community driven books and was a long term member of the program committee of the JavaOne conference. He was chosen a Java Champion by his peers. In addition he is the founder of the JUG Bodensee, a member of the openjdk community, member of the Apache NetBeans PMC and lead of TweetWallFX and JTaccuino opensource projects. Currently, he works as an eXpert for functional chain software architecture for earth observation systems at Airbus Defence and Space.
+
+                  </p>
+              </div>
+
+            </div>
+            <div onclick="openAbstract('reimers')" title="Click for Bio">Speaker: <a href="#reimersCard" class="text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Sven Reimers</a>
+            </div>
+            <div class="bio pl-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                This session shows a new tool for interactive computing for Java developers. Up to now a couple of tools already exist for interactive computing or doing interactive experiments with Java:
+              <br/><br/>
+              JShell - terminal<br/>
+              Jupyter with Java Kernel - Web based<br/>
+              JDoodle - web based<br/>
+              <br/><br/>
+              The main idea for creating a new tool was to provide a seamless interactive experience to write Java code, interact with the results using a full graphical interface and all this without the tedious process of compiling and running every time you make a small change achieving a lightweight rapid development cycle. JTaccuino is based on running embedded JShell tooling for executing the Java code and provides a library and some packaged default tooling (JTaccuino Pad, JTaccuino Studio) to allow for maximum flexibility and for direct use or integration in existing environments. For the graphical frontend JTaccuino uses JavaFX.
+              <br/><br/>
+              JTaccuino uses the the Jupyter notebook format (ipynb) for persistence to leverage the source code rendering support e.g. on GitHub.
+              <br/><br/>
+              The session will demo the use of JTaccuino and shows different examples of Jupyter like notebooks in Java.
+              <br/><br/>
+              During the demo a special interest will be to show how a tight integration of a library, e.g. JavaFX charting solutions, can be achieved. This will enhance the overall user experience by adding magic things to the running JShell environment like the automatic display of special variable content.
+
+
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Souza -->
+
+        <div id="souzaCard" class="row align-items-center speaker">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+            <img width="200" height="200" src="https://sessionize.com/image/f5ea-400o400o1-7PDkcAx4GvdyyQxXxcu1NL.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Java Developer Career Masterplan: 15 steps to grow beyond senior developer</h2>
+            <!-- The Modal -->
+            <div id="souza" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <h3 style="color: red;">Bio</h3>
+                <p>
+                  Since 1995, Bruno helps Java developers design amazing careers and work on cool projects with great people! Java Evangelist and a Java Champion, Bruno is the founder and President of SouJava, the Brazilian Java Users Society. He also represents the group on the JCP Executive Committee. Bruno discusses Java and the Developer Career in the https://code4.life/ project.
+
+                </p>
+                </div>
+
+            </div>
+            <div onclick="openAbstract('souza')" title="Click for Bio">Speaker: <a href="#souzaCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Bruno Souza</a>
+            </div>
+            <div class="bio pr-lg-5">
+
+              <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+                What if you could devise a clear plan for your Java developer career, to reach senior levels and beyond? What if this plan could be built with the guidance and inspiration of some of the top players in the industry?
+                <br/>
+                Search no more. The Developer Career Masterplan is a 15-step process to design your own masterplan. This is the exact plan used by Java Champions, Open Source developers, Developer Advocates, Distinguished Engineers, Community Managers and more to achieve success in their careers.
+                <br/>
+                Join us in this interactive presentation, where we will work together on your plan. It is a unique opportunity to come away with clarity about your future and actionable steps to build the career you want.
+
+              </p>
+              <p data-aos="fade-right" data-aos-delay="500">
+                Follow Bruno &mdash;
+                <a href="https://twitter.com/brjavaman" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/brjavaman/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+<!-- -->
+
+<!-- Taman  -->
+
+<div id="tamanCard" class="row align-items-center speaker">
+  <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+    <img width="200" height="200" src="https://sessionize.com/image/9d4c-400o400o1-59-b01a-483a-a869-568ee7ba717a.b2b9a5aa-586f-49b3-9e20-7d7a3e17662d.png" alt="Image" class="img-fluid">
+  </div>
+  <div class="col-lg-6 ml-auto">
+    <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Forking the Future: Embracing Microservices Evolution</h2>
+    <!-- The Modal -->
+    <div id="taman" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h3 style="color: red;">Bio</h3>
+        <p>
+          Adopts Java SE.next(), JakartaEE.next(), a JCP member, was a JCP Executive Committee member, JSR 354, 363 & 377 Expert Group member, EGJUG leader, Oracle Egypt Architects Club board member, speaks Java, loves Mobile, Big Data, Cloud, Blockchain, and DevOps.
+          <br/><br/>
+          An International speaker, book and video author of “JavaFX essentials,” “Getting Started with Clean Code, Java SE 9”, and “Hands-On Java 10 Programming with JShell”, And I won Duke’s Choice 2015, 2014, and 2013 awards, and JCP Outstanding Adopt-a-Jar Participant 2013 awards.
+
+        </p>
+        </div>
+
+    </div>
+    <div onclick="openAbstract('taman')" title="Click for Bio">Speaker: <a href="#tamanCard" class="text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Mohamed Taman</a>
+    </div>
+    <div class="bio pr-lg-5">
+
+      <p class="mb-4" data-aos="fade-left" data-aos-delay="400">
+        This talk delves into the challenges faced by organizations burdened with monolithic software systems lacking modularity. Many realize their systems must be more decoupled, hindering the seamless transition to microservices. This talk introduces a groundbreaking solution: tactical forking. This innovative approach embraces the existing complexities, offering a unique strategy for transitioning to microservices. Join this session to explore the practical applications of tactical forking.
+        <br/><br/>
+        Gain insights into its profound impact on software design, team dynamics, and the broader realm of software development. Discover how this approach revolutionizes your transformation journey, turning obstacles into opportunities and ensuring a smooth evolution toward a microservices-based future.
+
+        </p>
+      <p data-aos="fade-left" data-aos-delay="500">
+        Follow Mohamed &mdash;
+        <a href="https://twitter.com/_tamanm" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+        <a href="https://www.linkedin.com/in/mohamedtaman/" target="_blank" class="p-2"><span class="icon-linkedin"></span></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+        <!-- end of speakers -->
+
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4 ">
+            Conference Sponsors
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <a href="https://martinelli.ch/" target="_blank"><img src="images/logo_martinelli_white.png" alt="Image" class="img-fluid"></a>
+          </div>
+           <!--div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <a href="https://www.dawsoncollege.qc.ca/dawscon/" target="_blank"><img src="images/dawscon.jpg" alt="Image" class="img-fluid"></a>
+          </div-->
+
+        </div>
+      </div>
+    </div>
+
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-10">
+              <p><a href="https://docs.google.com/document/d/1ma8aDpZILxLRN1QE4q5T9WxSrTFhpXPpcsGcO5LcgXI" target="_blank">jChampions Conference Code of Conduct</a>
+              <br/>
+              <a href="https://docs.google.com/document/d/185mhjUBM5PJkAJkMvyehsZzqHlIoEWcAQyxPwnhkdaE" target="_blank">jChampions Conference Privacy Policy</a>
+              </p>
+              <br/>
+              <h2 class="footer-heading text-uppercase mb-4">About The Java Champions</h2>
+              <p>To learn more about the Java Champions, please visit the <a href="https://developer.oracle.com/javachampions" target="_blank">informational site</a>.</p>
+              <br/>
+              <p>See a list of Java Champions:
+                <a href="http://www.javachampions.org/" target="_blank">http://www.javachampions.org/</a>
+              </p>
+              <br/>
+
+            </div>
+            <!--div class="col-md-3 ml-auto">
+              <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+              <p>
+                <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="p-2"><span class="icon-youtube"></span></a>
+                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+              </p>
+            </div-->
+          </div>
+          <div class="row">
+
+            <div class="col-md-12 text-center">
+              <div class="border-top pt-5">
+                <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  </div>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    var header = document.getElementById("siteHeader");
+    var sticky = header.offsetTop;
+
+    function scrollFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+
+  <script src="js/moment.min.js"></script>
+  <script src="js/moment-timezone-with-data-10-year-range.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+
+  </script>
+
+  </body>
+</html>
