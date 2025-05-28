@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jChampions Conference</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@JChampionsConf">
+    <meta name="twitter:creator" content="@JChampionsConf">
+    <meta name="twitter:title" content="JChampions Conference">
+    <meta name="twitter:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations.">
+    <meta name="twitter:image" content="https://jchampionsconf.com/images/twitterCard2025.png">
+    <meta property="og:title" content="JChampions Conference" />
+    <meta property="og:description" content="Conference organized by Java Champions and featuring Java Champions in the presentations." />
+    <meta property="og:image" content="https://jchampionsconf.com/images/twitterCard2025.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://jchampionsconf.com/images/TwitterLogo.png"/>
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href=https://reg.connectevents.io/ConnectEvents/jchampions24/widget/v1.css>
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+<link rel="manifest" href="/images/site.webmanifest" />
+
+<script type="text/javascript" src=https://reg.connectevents.io/widget/v1.en.js async></script>
+
+    <style>
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e4e4e4;
+  color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 3px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  </head>
+  <body>
+
+    <script>
+
+// When the user clicks on the button, open the modal
+var modal;
+
+// When the user clicks the button, open the modal
+openAbstract = function(modalid) {
+  modal = document.getElementById(modalid);
+  modal.style.display = "block";
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Change the timezone
+function changeTimezones(){
+  let sessionTime = [];
+  sessionTime.push(moment.tz("2025-01-23 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-23 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-23 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-23 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-23 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-23 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-23 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2025-01-24 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-24 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-24 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-24 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-24 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-24 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-24 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2025-01-27 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-27 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-27 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-27 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-27 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-27 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-27 15:00:00", "America/Toronto"));
+
+  sessionTime.push(moment.tz("2025-01-28 09:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-28 10:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-28 11:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-28 12:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-28 13:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-28 14:00:00", "America/Toronto"));
+  sessionTime.push(moment.tz("2025-01-28 15:00:00", "America/Toronto"));
+
+  var selectedTimeZone = document.getElementById("timezoneMenuButton");
+
+  var timezoneValue = selectedTimeZone.value;
+  if(timezoneValue === null || timezoneValue === ''){
+    timezoneValue = moment.tz.guess();
+  }
+
+  for(var idx = 1; idx <=28; idx++){
+    var sessionLabel = "session" + idx + "Time";
+    document.getElementById(sessionLabel).innerHTML = sessionTime[idx-1].clone().tz(timezoneValue).format('h:mma z');
+  }
+}
+
+
+
+</script>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar py-3 header" id="siteHeader" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">jChampions<span class="text-primary">Conference</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="sessions.html">Sessions</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="cfp.html">Committees</a></li>
+                <!--li><a href="steering.html">Steering Committee</a></li-->
+                <li><a href="past.html">Previous Years</a></li>
+
+                <li class="cta"><a href="https://www.eventbrite.com/e/jchampions-conference-2025-tickets-1037978590907?aff=oddtdtcreator" target="_blank">Register</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-section site-hero">
+      <div class="container contents">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <span class="d-block mb-3 caption" style="font-size: 55px;" data-aos="fade-up" data-aos-delay="100">jChampions</span>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="200">Conference 2025</h1>
+            <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="300">Virtually Everywhere...Online Thur 1/23/2025, Fri 1/24/2025, Mon 1/27/2025, and Tues 1/28/2025.
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="site-section-heading">
+              <h2>The jChampions Conference</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <p>Java Champions are developers from around the world who are recognized for the contributions to the
+Java community. Champions are about sharing their knowledge with developers. This coming January, after successful conferences for the past four years, will be our fifth conference organized by Champions and featuring Champions in the presentations. Our
+audience is the 14 million Java developers world wide.
+
+          </div>
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="site-section-heading">
+              <h2>What type of conference will this be?</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <p>The jChampions Conference will run for four days in January 2025 on Thurs 1/23, Fri 1/24, Mon 1/27, & Tues 1/28. Rather than trying to run like a traditional in person event, each day will feature 7 sessions. Sessions will begin at 9:00 EST and end at 17:00 EST. After each session there will be time for participants to speak with the presenters.
+          </div>
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="site-section-heading">
+              <h2>What is the schedule?</h2>
+              <!--h2>Submit a Talk</h2-->
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <!--p>The CFP is now open!</p-->
+
+
+            <!--p>Click <a href="https://sessionize.com/jchampions-conference-2025">here</a> to submit a talk.</p-->
+            <p>See the list of <a href="speakers.html">Speakers</a>.</p>
+            <!--p>Schedule of sessions coming soon!</p-->
+            <p>Click <a href="schedule.html">here</a> to see the schedule!</p>
+            <h2>Session Listing</h2>
+            <p><a href="sessions.html#borgesCard" target="_blank">Secrets of Performance Tuning Java on Kubernetes</a></p>
+            <p><a href="sessions.html#cougilCard" target="_blank">Cómo a John empezó a gustarle TDD (en lugar de odiarlo)</a></p>
+            <p><a href="sessions.html#cumminsCard" target="_blank">Zero Waste, Radical Magic, and Italian Graft – Quarkus Efficiency Secrets</a></p>
+            <p><a href="sessions.html#darwinCard" target="_blank">Six Jewels from Six Javas</a></p>
+            <p><a href="sessions.html#deandreaCard" target="_blank">Test-Driven Development: It's easier than you think!</a></p>
+            <p><a href="sessions.html#delNeroCard" target="_blank">Cracking Tricky Java Code Challenges From Java 8 to Java 24</a></p>
+            <p><a href="sessions.html#delporteCard" target="_blank">Looking at Music, an experiment with Kotlin, JavaFX, MIDI, and Virtual Threads</a></p>
+            <p><a href="sessions.html#drotbohmCard" target="_blank">It Takes Two to Tango – Designing Module Interactions in Modulithic Spring Applications</a></p>
+            <p><a href="sessions.html#duboisCard" target="_blank">Serverless Java in Action: Cloud Agnostic Design Patterns and Tips</a></p>
+            <p><a href="sessions.html#embregtsCard" target="_blank">Java's Concurrency Journey Continues! Exploring Structured Concurrency and Scoped Values</a></p>
+            <p><a href="sessions.html#fogelCard" target="_blank">How my views on teaching Java have changed.</a></p>
+            <p><a href="sessions.html#fuscoCard" target="_blank">Machine Learning + Symbolic Reasoning: a Quarkus story on Artificial Intelligence</a></p>
+            <p><a href="sessions.html#gronerCard" target="_blank">Best Practices to Secure Web Applications</a></p>
+            <p><a href="sessions.html#horstmannCard" target="_blank">Java for Small Coding Tasks</a></p>
+            <p><a href="sessions.html#kabutzCard" target="_blank">Translating a Cretan Book into English, German, Dutch, Chinese, etc. using Java and ChatGPT API</a></p>
+            <p><a href="sessions.html#kousenCard" target="_blank">A Data-Oriented Programming Approach to REST APIs</a></p>
+            <p><a href="sessions.html#lawreyCard" target="_blank">Lessons learnt from founding my own company, and over 30 years hands on coding</a></p>
+            <p><a href="sessions.html#longCard" target="_blank">Bootiful Spring Boot: A DOGumentary</a></p>
+            <p><a href="sessions.html#mandrikovCard" target="_blank">Java, Code Coverage and their best friend - bytecode: scandals, intrigues, investigations</a></p>
+            <p><a href="sessions.html#martinelliCard" target="_blank">Say Goodbye to Microservices, Say Hello to Self-Contained Systems</a></p>
+            <p><a href="sessions.html#mehmandarovCard" target="_blank">Your Cloud-Native Toolbox for Java</a></p>
+            <p><a href="sessions.html#nogueiraCard" target="_blank">Managing Testing Data</a></p>
+            <p><a href="sessions.html#ohCard" target="_blank">Serverless Java in Action: Cloud Agnostic Design Patterns and Tips</a></p>
+            <p><a href="sessions.html#pepperdineCard" target="_blank">Automatic Heap Sizing</a></p>
+            <p><a href="sessions.html#rahmanCard" target="_blank">Java + LLMs: A hands-on guide to building LLM Apps in Java with Jakarta</a></p>
+            <p><a href="sessions.html#redlichCard" target="_blank">A Developer's Guide to Jakarta EE 11</a></p>
+            <p><a href="sessions.html#reimersCard" target="_blank">JTaccuino - A better Jupyter Experience for Java Developers</a></p>
+            <p><a href="sessions.html#shaafCard" target="_blank">Java + LLMs: A hands-on guide to building LLM Apps in Java with Jakarta</a></p>
+            <p><a href="sessions.html#souzaCard" target="_blank">Java Developer Career Masterplan: 15 steps to grow beyond senior developer</a></p>
+            <p><a href="sessions.html#tamanCard" target="_blank">Forking the Future: Embracing Microservices Evolution</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4 ">
+            Conference Sponsors
+          </div>
+
+        </div>
+        <div class="row" >
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <a href="https://martinelli.ch/" target="_blank"><img src="images/logo_martinelli_white.png" alt="Image" class="img-fluid"></a>
+          </div>
+           <!--div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <a href="https://www.dawsoncollege.qc.ca/dawscon/" target="_blank"><img src="images/dawscon.jpg" alt="Image" class="img-fluid"></a>
+          </div-->
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-10">
+              <p><a href="https://docs.google.com/document/d/1ma8aDpZILxLRN1QE4q5T9WxSrTFhpXPpcsGcO5LcgXI" target="_blank">jChampions Conference Code of Conduct</a>
+              <br/>
+              <a href="https://docs.google.com/document/d/185mhjUBM5PJkAJkMvyehsZzqHlIoEWcAQyxPwnhkdaE" target="_blank">jChampions Conference Privacy Policy</a>
+              </p>
+              <br/>
+              <h2 class="footer-heading text-uppercase mb-4">About The Java Champions</h2>
+              <p>To learn more about the Java Champions, please visit the <a href="https://developer.oracle.com/javachampions" target="_blank">informational site</a>.</p>
+              <br/>
+              <p>See a list of Java Champions:
+                <a href="http://www.javachampions.org/" target="_blank">http://www.javachampions.org/</a>
+              </p>
+              <br/>
+
+            </div>
+            <!--div class="col-md-3 ml-auto">
+              <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+              <p>
+                <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="p-2"><span class="icon-youtube"></span></a>
+                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+              </p>
+            </div-->
+          </div>
+          <div class="row">
+
+            <div class="col-md-12 text-center">
+              <div class="border-top pt-5">
+                <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  </div>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    var header = document.getElementById("siteHeader");
+    var sticky = header.offsetTop;
+
+    function scrollFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+
+  <script src="js/moment.min.js"></script>
+  <script src="js/moment-timezone-with-data-10-year-range.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    window.onload=changeTimezones;
+  </script>
+
+  </body>
+</html>
