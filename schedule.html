@@ -188,13 +188,13 @@ function changeTimezones(){
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="sessions.html">Sessions</a></li>
+                <!--li><a href="sessions.html">Sessions</a></li-->
                 <li><a href="speakers.html">Speakers</a></li>
                 <li class="active"><a href="schedule.html">Schedule</a></li>
                 <li><a href="cfp.html">Committees</a></li>
 
                 <li><a href="past.html">Previous Years</a></li>
-                <li class="cta"><a href="https://www.eventbrite.com/e/jchampions-conference-2025-tickets-1037978590907?aff=oddtdtcreator" target="_blank">Register</a></li>
+                <!--li class="cta"><a href="https://www.eventbrite.com/e/jchampions-conference-2025-tickets-1037978590907?aff=oddtdtcreator" target="_blank">Register</a></li-->
               </ul>
             </nav>
           </div>
@@ -278,30 +278,30 @@ His passion for teaching is reflected in his work as a lecturer at two universit
                 </div>
                 <span style="padding-left: 20px">Simon Martinelli</span>
                 <!--p style="padding-left: 20px" >Session URL: <a href="https://www.youtube.com/watch?v=r-vHAjHx4Gw" target="_blank>">https://www.youtube.com/watch?v=r-vHAjHx4Gw</a></p-->
-                <br/>
+               
 
               </div>
             </div>
           </div>
 
 
-          <div id="horstmannCard" class="row align-items-center border-top border-bottom py-5" style="width: 100%;">
+          <div id="reynaCard" class="row align-items-center border-top border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session3Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="horstmann" class="modal">
-                  <!-- Modal content -->
+                <div id="reyna" class="modal">
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>Since Java 14, the Java switch and instanceof statements have been enhanced, in multiple phases, to support pattern matching and a "data-oriented" programming style. In this presentation, I explore when this programming style is beneficial, and why. (Spoiler: Not as often as one might think from Oracle's presentations, but when it does apply, it is truly useful.) I describe the syntax of pattern matching, as it has evolved, and show how it will be further enhanced in upcoming versions of Java. I warn of corner cases of the switch syntax where modern usage clashes with legacy behavior. I conclude with a set of rules when to use pattern matching and "data orientation" now, how to prepare for future enhancements, and when to stay away.</p>
+                    <p>There are many initiatives inside the OpenJDK that are revolutionizing the way our Java applications behave. Project Leyden accelerates peak performance by improving ahead of time caching. But, do you know how to use it with your application?<br><br>On this session we will discuss what Leyden is, what is the state of art of the ahead of time cache, and showcase a few examples. We will prove (with potential demo effect!) that Leyden decreases warm-up time, and present the tools you can use to optimize your application!</p>
                   </div>
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('horstmann')" title="Click for Abstract"><h2 class="text-white"><a href="#horstmannCard" class="text-primary d-block mb-3">Effective Pattern Matching in Java</a>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('reyna')" title="Click for Abstract"><h2 class="text-white"><a href="#reynaCard" class="text-primary d-block mb-3">Ahead of time, the final frontier</a>
                 </div>
-                <span style="padding-left: 20px">Cay Horstmann</span>
+                <span style="padding-left: 20px">María Arias de Reyna Dominguez</span>
                 <br/>
+                <span style="padding-left: 20px">Andrew Dinn</span>
               </div>
             </div>
           </div>
@@ -343,8 +343,7 @@ His passion for teaching is reflected in his work as a lecturer at two universit
                </div>
                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('baumgartner')" title="Click for Abstract"><h2 class="text-white"><a href="#baumgartnerCard" class="text-primary d-block mb-3">Understanding Buildpacks: Delving Deep into Their Functionality</a>
                </div>
-               <p style="padding-left: 20px">Patrick Baumgartner</p>
-               <br/>
+               <span style="padding-left: 20px">Patrick Baumgartner</span>
              </div>
            </div>
          </div>
@@ -364,41 +363,28 @@ His passion for teaching is reflected in his work as a lecturer at two universit
                </div>
                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('burd')" title="Click for Abstract"><h2 class="text-white"><a href="#burdCard" class="text-primary d-block mb-3">Post-Quantum Cryptography in Java</a>
                </div>
-               <p style="padding-left: 20px">Barry Burd</p>
-               <br/>
+               <span style="padding-left: 20px">Barry Burd</span>
              </div>
            </div>
          </div>
 
-         <div id="martinelliCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
-           <div class="row align-items-center speaker">
-             <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session7Time"></span> </div>
-             <div class="col-lg-6">
-               <!-- The Modal -->
-               <div id="martinelli" class="modal">
-
-                 <!-- Modal content -->
-                 <div class="modal-content">
-                   <h3 style="color: red;">Abstract</h3>
-                   <br/>
-                   <p>
-                     Microservices are a popular approach to building modern software, offering scalability and flexibility. But for many teams, they come with challenges like increased complexity, difficult debugging, and managing too many small services.
-                     <br/><br/>
-                     In this talk, we'll introduce an alternative: Self-Contained Systems (SCS). Unlike microservices, SCS allows each part of your application to operate independently with its UI, logic, and database, simplifying both development and deployment.
-                     <br/><br/>
-                     You'll learn why SCS can be a better fit for many projects, how it reduces the complexity of distributed systems, and when it makes sense to use this approach over microservices. We'll also dive into real-world examples that show you how to build self-contained systems using Java and Vaadin.
-                     <br/><br/>
-                     If you're ready to rethink your architecture and say goodbye to microservice headaches, this talk will show you the way!</p>
+         <div id="souzaCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+             <div class="row align-items-center speaker">
+               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session7Time"></span> </div>
+               <div class="col-lg-6">
+                 <!-- The Modal -->
+                 <div id="souza" class="modal">
+                   <div class="modal-content">
+                     <h3 style="color: red;">Abstract</h3>
+                     <br/>
+                     <p>Many senior Java developers dream of becoming respected experts — sought after by companies, invited to speak, and known for their contributions. But few know how to take the next step.<br><br>In this talk, you'll learn how to apply the Deliberate REPUTATION formula — a framework built from years of experience helping Java developers become recognized leaders in their field. We’ll cover how to define your focus, build visibility through open source and community, take meaningful action, and avoid the common traps that stall your growth.<br><br>If you're a seasoned developer who wants more autonomy, better opportunities, and to make a lasting impact in the Java world, this session is your roadmap.</p>
+                   </div>
                  </div>
-
-               </div>
-               <div style="padding-left: 20px; width:500px;" onclick="openAbstract('martinelli')" title="Click for Abstract"><h2 class="text-white"><a href="#martinelliCard" class="text-primary d-block mb-3" >Say Goodbye to Microservices, Say Hello to Self-Contained Systems</a>
-               </div>
-               <span style="padding-left: 20px">Simon Martinelli</span>
-               <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=N7l-_IX8jdQ" target="_blank>">https://www.youtube.com/watch?v=N7l-_IX8jdQ</a></p>
-               <br/>
-
-             </div>
+                 <div style="padding-left: 20px; width:500px;" onclick="openAbstract('souza')" title="Click for Abstract"><h2 class="text-white"><a href="#souzaCard" class="text-primary d-block mb-3">Growing Beyond Senior: Build Influence and Reputation Through Java, Open Source, and Community</a>
+                 </div>
+                 <span style="padding-left: 20px">Bruno Souza</span>
+                 <br/>
+                 </div>
            </div>
          </div>
 
@@ -434,8 +420,9 @@ His passion for teaching is reflected in his work as a lecturer at two universit
                 </div>
                 <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('deandrea')" title="Click for Abstract"><h2 class="text-white"><a href="#deandreaCard" class="text-primary d-block mb-3">Non-deterministic? No problem! You can test it!</a>
                 </div>
-                <p style="padding-left: 20px">Eric Deandrea</p>
-                <p style="padding-left: 20px">Oleg Selajev</p>
+                <span style="padding-left: 20px">Eric Deandrea</span>
+                <br/>
+                <span style="padding-left: 20px">Oleg Selajev</span>
                 <br/>
               </div>
             </div>
@@ -485,125 +472,89 @@ His passion for teaching is reflected in his work as a lecturer at two universit
           </div>
 
 
-
-
-          <div id="gronerCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+         <div id="horstmannCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session11Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="groner" class="modal">
-
-                  <!-- Modal content -->
+                <div id="horstmann" class="modal">
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>
-                      While strong authentication and authorization lay the foundation, achieving robust web application security demands a multi-layered approach. At first glance, the field of web application security can seem daunting, but by understanding and implementing core principles, you can dramatically strengthen your defenses against cyber threats.
-                      <br/><br/>
-                      In this presentation, we'll delve into the essential, yet often neglected, aspects of securing your applications. We'll cover best practices for secure coding, meticulous input validation techniques, the importance of strategic error handling and logging, how to manage file uploads safely, and much more.
-                    </p>
-                    </div>
-
+                    <p>Since Java 14, the Java switch and instanceof statements have been enhanced, in multiple phases, to support pattern matching and a "data-oriented" programming style. In this presentation, I explore when this programming style is beneficial, and why. (Spoiler: Not as often as one might think from Oracle's presentations, but when it does apply, it is truly useful.) I describe the syntax of pattern matching, as it has evolved, and show how it will be further enhanced in upcoming versions of Java. I warn of corner cases of the switch syntax where modern usage clashes with legacy behavior. I conclude with a set of rules when to use pattern matching and "data orientation" now, how to prepare for future enhancements, and when to stay away.</p>
+                  </div>
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('groner')" title="Click for Abstract"><h2 class="text-white"><a href="#gronerCard" class="text-primary d-block mb-3" >Best Practices to Secure Web Applications</a>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('horstmann')" title="Click for Abstract"><h2 class="text-white"><a href="#horstmannCard" class="text-primary d-block mb-3">Effective Pattern Matching in Java</a>
                 </div>
-
-                <span style="padding-left: 20px">Loiane Groner</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=P8O90GgxPIE" target="_blank>">https://www.youtube.com/watch?v=P8O90GgxPIE</a></p>
+                <span style="padding-left: 20px">Cay Horstmann</span>
                 <br/>
-
               </div>
             </div>
           </div>
-          <div id="kousenCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+
+          
+          <div id="pooleCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0" style="width:300px"><span class="h4" id="session12Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="kousen" class="modal">
-
+                <div id="poole" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>
-                      This session will use records, sealed interfaces, and pattern matching for switch to access RESTful web services. The approach takes advantage of concepts from Data-Oriented Programming like immutability, explicit data representations, and expressive behavior. At least one example will involve making text and vision requests to an AI service, and how to implement that effectively using Java 21+.
-                    </p>
+                    <p>Designing APIs is an art, a creative exercise. Getting it right for the present is hard; getting it right for the future is even harder.<br><br>This talk explores designing resilient Java APIs for upward compatibility, consumability, and flexibility.<br><br>We’ll discuss the practicalities of ideas like encapsulation and inheritance, look at broader elements like consistency, effective communication of intent, and cover concepts like the Open-Closed Principle, Semantic Versioning, and other elements that are essential for seamless API evolution.<br><br>We’ll review real-world examples, Java gotchas, the latest Java API capabilities, API Check tools, and data and take a look at what Maven Central tells us about the challenge we all face (and just how good we collectively are).<br><br>Amazingly, good API design not only helps with evolving for the future, it makes the API more secure and reduces maintenance overheads - all while remaining flexible and consumable.<br><br>Time to break those bad design habits before they begin</p>
+                  </div>
                 </div>
-
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('poole')" title="Click for Abstract"><h2 class="text-white"><a href="#pooleCard" class="text-primary d-block mb-3">Future-Proofing Java: The Art of Crafting Resilient APIs</a>
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('kousen')" title="Click for Abstract"><h2 class="text-white"><a href="#kousenCard" class="text-primary d-block mb-3" >A Data-Oriented Programming Approach to REST APIs</a>
-                </div>
-                <span style="padding-left: 20px">Kenneth Kousen</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=fmToimoSF4s" target="_blank>">https://www.youtube.com/watch?v=fmToimoSF4s</a></p>
+                <span style="padding-left: 20px">Steve Poole</span>
                 <br/>
-
               </div>
             </div>
           </div>
 
 
-          <div id="souzaCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+          <div id="gronerCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0"  style="width: 300px;"><span class="h4" id="session13Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="souza" class="modal">
-
+                <div id="groner" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
-                    <p>
-                      What if you could devise a clear plan for your Java developer career, to reach senior levels and beyond? What if this plan could be built with the guidance and inspiration of some of the top players in the industry?
-                      <br/>
-                      Search no more. The Developer Career Masterplan is a 15-step process to design your own masterplan. This is the exact plan used by Java Champions, Open Source developers, Developer Advocates, Distinguished Engineers, Community Managers and more to achieve success in their careers.
-                      <br/>
-                      Join us in this interactive presentation, where we will work together on your plan. It is a unique opportunity to come away with clarity about your future and actionable steps to build the career you want.
-                    </p>
-                    </div>
-
+                    <br/>
+                    <p>Get hands-on experience with integrating AI capabilities into your Angular and Java projects. This talk will provide a step-by-step guide to setting up the integration, handling API calls, and processing AI-generated data. We'll focus on practical examples and real-world use cases to demonstrate how to create intelligent features that enhance your web applications.</p>
+                  </div>
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('souza')" title="Click for Abstract"><h2 class="text-white"><a href="#souzaCard" class="text-primary d-block mb-3" >Java Developer Career Masterplan: 15 steps to grow beyond senior developer</a>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('groner')" title="Click for Abstract"><h2 class="text-white"><a href="#gronerCard" class="text-primary d-block mb-3">Building the Next Generation of Web Apps: Angular, Java, and the AI Revolution</a>
                 </div>
-                <span style="padding-left: 20px">Bruno Souza</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=486MSTVHP-w" target="_blank>">https://www.youtube.com/watch?v=486MSTVHP-w</a></p>
-                  <br/>
-
+                <span style="padding-left: 20px">Loiane Groner</span>
+                <br/>
               </div>
             </div>
           </div>
 
 
-          <div id="delNeroCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+         
+          <div id="mehmandarovCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session14Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="delNero" class="modal">
-
+                <div id="mehmandarov" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>
-                      Mastering Java fundamentals is necessary to create maintainable, bug-proof, high-quality code and advance your Java career.
-                      <br/><br/>
-                      I've seen many experienced developers write meaningless Java code because they lack knowledge of the Java core features. They reinvent the wheel and write more complicated, confusing, and difficult-to-maintain code.
-                      <br/><br/>
-                      Join me in this talk so you can prepare for Java interviews and Java certification using the latest Java features in your applications. You will also be well-equipped to create flexible and maintainable code, making you a reference for code quality from your co-workers.
-                      <br/><br/>
-                      Let's solve the Java code challenges together so you can best use the latest Java features to create high-quality software.
-                    </p>
-                    </div>
-
+                    <p>Let's be honest: many of our so-called "REST" APIs aren't REST. They're just JSON-RPC over HTTP, with versioning challenges, brittle integrations, clumsy error handling, and a maintenance burden we all know too well.<br><br>Let's do something about this! We’ll go straight to the patterns that matter in production, tackling the real-world challenges head-on: building evolvable versioning strategies, designing sane error responses, providing clear API contracts, and demystifying the practical use of hypermedia (HATEOAS).<br><br>You'll leave with practical, battle-tested approaches for building APIs that are maintainable and scalable. We'll also discuss when to use REST and when alternatives like GraphQL or gRPC are a better tool for the job. All demos use Jakarta EE and MicroProfile, but the patterns can be applied to any modern web stack of your choosing.</p>
+                  </div>
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('delNero')" title="Click for Abstract"><h2 class="text-white"><a href="#delNeroCard" class="text-primary d-block mb-3" >Cracking Tricky Java Code Challenges From Java 8 to Java 24</a>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('mehmandarov')" title="Click for Abstract"><h2 class="text-white"><a href="#mehmandarovCard" class="text-primary d-block mb-3">API = Some REST and HTTP, right? RIGHT?!</a>
                 </div>
-                <span style="padding-left: 20px">Rafael Del Nero</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=8erQSFxJuuc" target="_blank>">https://www.youtube.com/watch?v=8erQSFxJuuc</a></p>
+                <span style="padding-left: 20px">Rustam Mehmandarov</span>
                 <br/>
-
               </div>
             </div>
           </div>
@@ -620,224 +571,155 @@ His passion for teaching is reflected in his work as a lecturer at two universit
             <h2>Monday, January 26 2026</h2>
           </div>
 
-          <div id="tamanCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+          <div id="tudoseCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
            <div class="row align-items-center speaker">
              <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session15Time"></span></div>
              <div class="col-lg-6">
                <!-- The Modal -->
-               <div id="taman" class="modal">
-
+               <div id="tudose" class="modal">
                  <!-- Modal content -->
                  <div class="modal-content">
                    <h3 style="color: red;">Abstract</h3>
                    <br/>
-                   <p>
-                     This talk delves into the challenges faced by organizations burdened with monolithic software systems lacking modularity. Many realize their systems must be more decoupled, hindering the seamless transition to microservices. This talk introduces a groundbreaking solution: tactical forking. This innovative approach embraces the existing complexities, offering a unique strategy for transitioning to microservices. Join this session to explore the practical applications of tactical forking.
-                     <br/><br/>
-                     Gain insights into its profound impact on software design, team dynamics, and the broader realm of software development. Discover how this approach revolutionizes your transformation journey, turning obstacles into opportunities and ensuring a smooth evolution toward a microservices-based future.
-                   </p>
+                   <p>Today's AI agents are technological marvels, but their non-deterministic, "black box" nature makes them a risky foundation for industrial-scale software development. It's time to move beyond agent-based improvisation and embrace engineering discipline.<br><br>This talk introduces a fundamentally new architecture and an open-source tool, JAIG (Java AI-powered Code Generator), designed to tame the chaos of AI. We shift the paradigm from "chatting with an agent" to orchestrating deterministic, versionable, and testable workflows. We will demonstrate how our novel AI Interview process transforms ambiguous requirements into executable blueprints, and how these blueprints drive a transparent, reproducible code generation process.</p>
                  </div>
-
                </div>
-               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('taman')" title="Click for Abstract"><h2 class="text-white"><a href="#tamanCard" class="text-primary d-block mb-3" >Forking the Future: Embracing Microservices Evolution</a>
+               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('tudose')" title="Click for Abstract"><h2 class="text-white"><a href="#tudoseCard" class="text-primary d-block mb-3">Beyond Agents: A New Architecture for Reproducible Code Generation Workflows</a>
                </div>
-               <span style="padding-left: 20px">Mohamed Taman</span>
-               <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=GA5oRt7DLbY" target="_blank>">https://www.youtube.com/watch?v=GA5oRt7DLbY</a></p>
+               <span style="padding-left: 20px">Catalin Tudose</span>
                <br/>
-
+               <span style="padding-left: 20px">Vladimir Sonkin</span>
              </div>
            </div>
          </div>
 
-         <div id="fuscoCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
-           <div class="row align-items-center speaker">
-             <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session16Time"></span> </div>
-             <div class="col-lg-6">
-               <!-- The Modal -->
-               <div id="fusco" class="modal">
-
-                 <!-- Modal content -->
-                 <div class="modal-content">
-                   <h3 style="color: red;">Abstract</h3>
-                   <br/>
-                   <p>
-                     What AI can do nowadays is simply mind-blowing. I must admit that I cannot stop being surprised and sometimes literally jumping from my seat thinking: "I didn't imagine that AI could ALSO do this!". What is a bit misleading here is that what we tend to identify with Artificial Intelligence is actually Machine Learning which is only a subset of all AI technologies available: ML is a fraction of the whole AI-story, while Symbolic Artificial Intelligence enables experts to encode their knowledge of a specific domain through a set of human-readable and transparent rules.
-                     <br/><br/>
-                     In fact there are many situations where being surprised is the last thing that you may want. You don't want to jump from your seat when your bank refuses your mortgage without any human understandable reason, but only because AI said no. And even the bank may want to grant their mortgages only to applicants who are considered viable under their strict and well-defined business rules.
-                     <br/><br/>
-                     Given these premises why not mixing 2 very different and complementary AI branches like Machine Learning and Symbolic Reasoning? During this talk we will demonstrate with practical examples why this could be a winning architectural choice in many common situations and how Quarkus through its langchain4j and drools extensions makes the development of applications integrating those technologies straightforward.
-
-                   </p>
-                   </div>
-
-               </div>
-               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('fusco')" title="Click for Abstract"><h2 class="text-white"><a href="#fuscoCard" class="text-primary d-block mb-3" >Machine Learning + Symbolic Reasoning: a Quarkus story on Artificial Intelligence</a>
-               </div>
-               <span style="padding-left: 20px">Mario Fusco</span>
-               <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=s2DYbGJqFPg" target="_blank>">https://www.youtube.com/watch?v=s2DYbGJqFPg</a></p>
-                 <br/>
-
-             </div>
-           </div>
-         </div>
-
-
-
-         <div id="fogelCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
-           <div class="row align-items-center speaker">
-             <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session17Time"></span></div>
-             <div class="col-lg-6">
-               <!-- The Modal -->
-               <div id="fogel" class="modal">
-
-                 <!-- Modal content -->
-                 <div class="modal-content">
-                   <h3 style="color: red;">Abstract</h3>
-                   <br/>
-                   <p>
-                     During my years teaching students how to program, I focused on the specific language, such as Java, in my courses. I felt that this was necessary due to the complexity of the language, just as I felt when I taught Pascal, C, and C++. I frequently complained about many of the aspects of Java that either had to be taught on day one or that I had to tell my students to ignore. Two changes in the language have led me to reflect on my approach to teaching. JEP 477: Implicitly Declared Classes and Instance Main and JEP 458: Launch Multi-File Source-Code Programs each have contributed to the simplification of the language and by extension the simplification of teaching the language. If you are teaching programming or are considering teaching Java, then join me as I discuss how my thoughts on teaching Java have changed.
-                   </p>
-                 </div>
-
-               </div>
-               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('fogel')" title="Click for Abstract"><h2 class="text-white"><a href="#fogelCard" class="text-primary d-block mb-3" >How my views on teaching Java have changed.</a>
-               </div>
-               <span style="padding-left: 20px">Kenneth Fogel</span>
-               <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=ChEBO4d2U0o" target="_blank>">https://www.youtube.com/watch?v=ChEBO4d2U0o</a></p>
-               <br/>
-
-             </div>
-           </div>
-         </div>
-
-         <div id="deandreaCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
-           <div class="row align-items-center speaker">
-             <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session18Time"></span></div>
-             <div class="col-lg-6">
-
-                 <!-- Modal content -->
-                 <div id="deandrea" class="modal">
-
+         <div id="grzesikCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+             <div class="row align-items-center speaker">
+               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session16Time"></span> </div>
+               <div class="col-lg-6">
+                 <!-- The Modal -->
+                 <div id="grzesik" class="modal">
                    <!-- Modal content -->
                    <div class="modal-content">
                      <h3 style="color: red;">Abstract</h3>
                      <br/>
-                     <p>
-                       Everyone loves writing tests, don’t they? How do you write good tests? What tools are available for you to write good tests?
-                       <br/>
-                       In this session, I will dive into the many features of Quarkus that help developers write good tests. I will highlight some of the features of Quarkus, Dev Services and Continuous Testing, which help make testing easier. Additionally, I will live code some tests for common use cases developers encounter, including unit, integration, and “black box” testing of imperative and reactive RESTful and event-driven applications that use common services, such as databases and Kafka brokers. I will discuss techniques such as mocking, spying, and interaction-based testing/verification.
-                       <br/>
-                       I'll even spend some time showing how IDE-based AI assistants can help!
-                       <br/>
-                       Once you see how easy TDD really can be there isn't a reason to not do it!</p>
+                     <p>Java, the runtime, likes memory.<br>It is a fact well known to those who know it well, that subtle differences in code, can lead to drastic changes to applications memory and runtime profiles.<br>I’ll take you through the memory lane part of my work, and show how do I approach analysis, problems and troubleshooting. Tools, what information can they surface, and how to navigate back to the code.<br>Techniques and libraries, how do they affect what the application does. Feel invited if you believe troubleshooting memory in Java is “magic”, or “only tuning the GC can save us”.</p>
                    </div>
-
                  </div>
-                 <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('deandrea')" title="Click for Abstract"><h2 class="text-white"><a href="#deandreaCard" class="text-primary d-block mb-3" >Test-Driven Development: It's easier than you think!</a>
+                 <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('grzesik')" title="Click for Abstract"><h2 class="text-white"><a href="#grzesikCard" class="text-primary d-block mb-3">Scooby RAM, where are you?</a>
                  </div>
-               <span style="padding-left: 20px">Eric Deandrea</span>
-               <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=jSLu6h01UEM" target="_blank>">https://www.youtube.com/watch?v=jSLu6h01UEM</a></p>
-              <br/>
+                 <span style="padding-left: 20px">Andrzej Grzesik</span>
+                 <br/>
+               </div>
+             </div>
+           </div>
 
+
+
+         <div id="sippachCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+             <div class="row align-items-center speaker">
+               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session17Time"></span></div>
+               <div class="col-lg-6">
+                 <!-- The Modal -->
+                 <div id="sippach" class="modal">
+                   <!-- Modal content -->
+                   <div class="modal-content">
+                     <h3 style="color: red;">Abstract</h3>
+                     <br/>
+                     <p>One of the great advantages of Java was and is the static, strong type system. This helps millions of developers detect errors at compile time and makes development more robust and efficient. However, Java's distinction between primitive and reference types has been a heavy burden. The primitive data types introduced around 30 years ago for performance reasons do not integrate well with modern approaches such as generics, stream API or pattern matching.<br><br>Value Objects will provide a remedy and combine the advantages of both worlds. This will allow us to design immutable data types (state and behavior, but without their own identity) that behave like primitive data types. This not only increases performance and reduces memory consumption, it also increases readability and maintainability, as we can then define expressive yet performant types much more easily according to the ideas of DDD.<br><br>The project Valhalla has been working on this major change to Java's type system for around 10 years. There are a number of complex issues involved, such as how to handle default values and null values, the conversion of wrapper types, and the use of generic typing. In the summer of 2024, Java's Language architect Brian Goetz announced that after a long time, a breakthrough in implementation had been achieved. So let's take a look together at how value classes, null-restricted and nullable types, and extended primitive boxing will change the way we program in the future.</p>
+                   </div>
+                 </div>
+                 <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('sippach')" title="Click for Abstract"><h2 class="text-white"><a href="#sippachCard" class="text-primary d-block mb-3">Value Objects - the next big thing in Java</a>
+                 </div>
+                 <span style="padding-left: 20px">Falk Sippach</span>
+                 <br/>
+               </div>
+             </div>
+           </div>
+        
+
+         <div id="nogueiraCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+           <div class="row align-items-center speaker">
+             <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session18Time"></span></div>
+             <div class="col-lg-6">
+               <!-- The Modal -->
+               <div id="nogueira" class="modal">
+                 <!-- Modal content -->
+                 <div class="modal-content">
+                   <h3 style="color: red;">Abstract</h3>
+                   <br/>
+                   <p>The presentation starts by addressing common testing pitfalls in distributed systems, like using in-memory databases, brittle mocks, and flaky async tests. It introduces a real-world fintech architecture with microservices, multiple databases, external APIs, and asynchronous workflows. The core strategy covers five areas: using real dependencies, avoiding in-memory DBs, virtualizing external systems, testing async flows properly, and establishing strong API governance. Through code examples and practical tips, the session shows how to build fast, reliable, and realistic test pipelines that boost confidence in complex systems.</p>
+                 </div>
+               </div>
+               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('nogueira')" title="Click for Abstract"><h2 class="text-white"><a href="#nogueiraCard" class="text-primary d-block mb-3">Test Smarter, Not Harder: Achieving Confidence in Complex Distributed Systems</a>
+               </div>
+               <span style="padding-left: 20px">Elias Nogueira</span>
+               <br/>
              </div>
            </div>
          </div>
+         
 
-         <div id="delporteCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+         <div id="drotbohmCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
            <div class="row align-items-center speaker">
              <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session19Time"></span></div>
              <div class="col-lg-6">
                <!-- The Modal -->
-               <div id="delporte" class="modal">
-
+               <div id="drotbohm" class="modal">
                  <!-- Modal content -->
                  <div class="modal-content">
                    <h3 style="color: red;">Abstract</h3>
                    <br/>
-                   <p>
-                     When a nerdy dad and music-playing son join forces and start experimenting with music and code, some nice things can happen. Did you ever present your music piece in a business dashboard with charts? Did you know that the FXGL game library can be used to generate a piano with fireworks? Let's look at music with the MelodyMatrix application (https://melodymatrix.rocks/) and guide you through the process of how a small experiment turned into a full-blown project.
-                     <br/><br/>
-                     This talk is not just about code but also features a live piano performance by a 14-year-old musician-coder. Let's have a battle between humans and machines! Who is the best piano player? The musician or a few thousand Virtual Threads? And how far can we push the app's performance to send ByteArrays to an LED strip to react to the music?
-                      <br/><br/>
-                     Topics in this talk: Java, Kotlin, JavaFX, Gradle, FXGL, MIDI, Vaadin, GitHub Actions, JDeploy,…
-                   </p>
-                   </div>
-
-               </div>
-               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('delporte')" title="Click for Abstract"><h2 class="text-white"><a href="#delporteCard" class="text-primary d-block mb-3" >Looking at Music, an experiment with Kotlin, JavaFX, MIDI, and Virtual Threads</a>
-               </div>
-               <span style="padding-left: 20px">Frank Delporte</span>
-               <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=UW6fDQt-8BI" target="_blank>">https://www.youtube.com/watch?v=UW6fDQt-8BI</a></p>
-               <br/>
-
-             </div>
-           </div>
-         </div>
-
-         <div id="lawreyCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
-           <div class="row align-items-center speaker">
-             <div class="col-md-3 text-white mb-3 mb-md-0"  style="width: 300px;"><span class="h4" id="session20Time"></span></div>
-             <div class="col-lg-6">
-
-               <!-- The Modal -->
-               <div id="lawrey" class="modal">
-
-                 <!-- Modal content -->
-                 <div class="modal-content">
-                   <h3 style="color: red;">Abstract</h3>
-                   <br/>
-                   <p>
-                     How can a developer with around ten years of experience continue to grow while remaining hands-on?
-                        <br/><br/>
-                       In this talk, I share insights and lessons I've gained as a:
-                       <br/>
-                       - Java Champion<br/>
-                       - Founder of a self-funded company for 11 years<br/>
-                       - Hands-on developer with over three decades of experience<br/>
-                       - As an employer who has hired developers ranging from junior level to those with 30 years of expertise<br/>
-                       - How AI is likely to transform the way we work as developers.
-                   </p>
+                   <p>To separate technical from domain code, architectural approaches like Hexagonal or Onion Architecture are currently all the rage. However, discussions about their semantic details and their mapping to the source code structure of software projects are at least equally ubiquitous.<br><br>How much abstraction and mapping between architectural concepts is needed? Is persistence metadata in the domain model heresy? Above all: what is the actual goal of the exercise, and: does it have to be so complicated?<br><br>We address these and other questions in a theoretical overview and by looking at concrete examples. We discuss the trade-offs of different approaches and how various tools and libraries help us to maintain the intended structure.</p>
                  </div>
-
                </div>
-               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('lawrey')" title="Click for Abstract"><h2 class="text-white"><a href="#lawreyCard" class="text-primary d-block mb-3" >Lessons learnt from founding my own company, and over 30 years hands on coding</a>
+               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('drotbohm')" title="Click for Abstract"><h2 class="text-white"><a href="#drotbohmCard" class="text-primary d-block mb-3">Domain-centric? Why Hexagonal- and Onion-Architecture are answers to the wrong question</a>
                </div>
-               <span style="padding-left: 20px">Peter Lawrey</span>
-               <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=t8Oq-Hr6ua8" target="_blank>">https://www.youtube.com/watch?v=t8Oq-Hr6ua8</a></p>
+               <span style="padding-left: 20px">Oliver Drotbohm</span>
                <br/>
-
              </div>
            </div>
          </div>
+         
 
+         <div id="vilaCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+           <div class="row align-items-center speaker">
+             <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session20Time"></span></div>
+             <div class="col-lg-6">
+               <!-- The Modal -->
+               <div id="vila" class="modal">
+                 <!-- Modal content -->
+                 <div class="modal-content">
+                   <h3 style="color: red;">Abstract</h3>
+                   <br/>
+                   <p>🤖 AI code assistants are everywhere in Java development! They promise speed, but let's be honest, blindly accepting suggestions or falling into "vibe coding" often leads straight to confusing code and technical debt. 🤔 Sound familiar?<br><br>Want to actually master these tools? Ready to unlock truly productive AI collaboration and boost your speed without sacrificing quality? ✨ This talk reveals the 7 key habits and critical mindset shifts that separate frustrating AI interactions from game-changing results.<br><br>We'll skip the hype and focus on the practical secrets for working with your AI assistant smartly in your Java workflow.<br><br>The Golden Rule? Simple: whether you wrote the line or the AI did, you own the code. (git blame doesn't point to 'code assistant'! ❗) That's habit #1 – come to the talk to discover the other 6!<br><br>Knowing these habits is crucial, because shipping AI-assisted code with confidence requires more than just hitting 'accept'. Solid checks and a clear view of code quality are non-negotiable.<br><br>Join this session to learn the habits that will transform how you build Java code with AI. Walk away ready to make these tools work for you, faster and safer! ✅🚀</p>
+                 </div>
+               </div>
+               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('vila')" title="Click for Abstract"><h2 class="text-white"><a href="#vilaCard" class="text-primary d-block mb-3">Seven Habits of Highly Effective AI Java Coding</a>
+               </div>
+               <span style="padding-left: 20px">Jonathan Vila López</span>
+               <br/>
+             </div>
+           </div>
+         </div>
+         
 
-         <div id="nogueiraCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+         <div id="mannCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
            <div class="row align-items-center speaker">
              <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session21Time"></span></div>
              <div class="col-lg-6">
                <!-- The Modal -->
-               <div id="nogueira" class="modal">
-               <div class="modal-content">
-               <h3 style="color: red;">Abstract</h3>
-               <br/>
-               <p>
-                 Have you ever tried to troubleshoot an issue taking a looking at the log files? I bet you did! And it turns out the issue is related to data usage because, you know, users will use real data! Developers won't! A good thing about your recent troubleshooting is that you can understand the data. It's not a bunch of numbers or UUIDs in the name field. How about your development environment? Probably you use either hard-coded data or random strings. We must fix that!
-                 <br/><br/>
-                 This presentation will show you how to manage testing data in two different ways.
-                 <br/><br/>
-                 The first way is the creation of a Test Data Factory approach, where we will use the Factory Pattern to easily create any objects we want with understandable and reliable data. This approach will make you in control of your own data, so you can find any bug in the early stages of the SDLC and the DataFaker library will help us to generate good random data in every execution.
-                 <br/><br/>
-                 In a second way, we will learn and apply the Data-Driven Testing approach, where the same requirement can be applied to different sets of data, generating different results. This approach can reduce the amount of code and the execution time. With the support of JUnit 5 you will learn how to do it in 5 different ways: value source, internal method source, external method source, argument provider, and CVS source.
-               </p>
+               <div id="mann" class="modal">
+                 <div class="modal-content">
+                   <h3 style="color: red;">Abstract</h3>
+                   <br/>
+                   <p>What’s wonderful about Java is that it's over 30 years old and still evolving—there’s a new release every six months! This means there are countless legacy systems that can be modernized to take advantage of new Java features and updated libraries. The primary driver for upgrading older systems is security—older versions of libraries often contain vulnerabilities. However, modernization can also bring additional benefits, such as improved performance and a better developer experience.<br><br>In this talk, we’ll explore a real-world project that modernized a mission-critical application using OpenRewrite, combined with deep expertise in technologies like Spring and Java/Jakarta EE. Join this session to gain insights that can help you modernize that aging back-office system in the corner—or the mission-critical app at the heart of your business.</p>
+                 </div>
                </div>
-
-           </div>
-           <div style="padding-left: 20px; width:500px;" onclick="openAbstract('nogueira')" title="Click for Abstract"><h2 class="text-white"><a href="#nogueiraCard" class="text-primary d-block mb-3" >Managing Testing Data</a>
-           </div>
-               <span style="padding-left: 20px">Elias Nogueira</span>
-               <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=P5D7Bly5CNs" target="_blank>">https://www.youtube.com/watch?v=P5D7Bly5CNs</a></p>
+               <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('mann')" title="Click for Abstract"><h2 class="text-white"><a href="#mannCard" class="text-primary d-block mb-3">Modernizing the Mission Critical with OpenRewrite and AI</a>
+               </div>
+               <span style="padding-left: 20px">Kito Mann</span>
                <br/>
-
              </div>
            </div>
          </div>
@@ -854,233 +736,166 @@ His passion for teaching is reflected in his work as a lecturer at two universit
           <div class="site-section-heading">
             <h2>Tuesday, January 27 2026</h2>
           </div>
-          <div id="mandrikovCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+          <div id="delporteCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session22Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="mandrikov" class="modal">
-
-                  <!-- Modal content -->
+                <div id="delporte" class="modal">
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>
-                      Do you know what is inside of your class files? Are you ready to bet? Let's have fun by diving into bytecode and exploring how Java compiler and its different versions, from the old ones up to the most recent, transform your source code.
-                        <br/><br/>
-                      Our dive will be based on details of the implementation of the most popular open-source code coverage tool for Java – JaCoCo (https://jacoco.org), which finds in bytecode and filters out various compiler generated artifacts, which otherwise require unnecessary and sometimes impossible tricks to have full code coverage.
-                      </p>
+                    <p>Since 2012, Pi4J has enabled Java to control electronic components connected to the Raspberry Pi's GPIO pins. However, both Java and the Raspberry Pi have evolved significantly since then. Supporting new hardware has been a challenge, requiring multiple implementations in the Pi4J library with a significant amount of complex code based on the Java Native Interface (JNI) and Java Native Access (JNA).<br><br>The Foreign Function & Memory (FFM) API, finalized in Java 22, promised to make such integrations with native code a lot easier. With Java reaching a new Long Term Support version, the Pi4J project bumped to Java 25 and makes full use of FFM!<br><br>In this talk, you’ll learn how this FFM implementation is much easier to support and achieves high performance due to less memory copying and less interop code. It will also help improve the Pi4J project by reducing dependencies, minimizing the JAR footprint, supporting additional protocols, and enhancing compatibility with more SoCs.<br><br>Through live demos, you will learn how to control LEDs, read buttons, interface with LCD displays, and gather sensor data. You'll see how FFM makes hardware interaction as natural as regular Java programming, and you will be ready to start your own experiments as soon as you arrive home.<br><br><strong>Target audience:</strong> Java developers interested in IoT, embedded systems, and hardware programming. Basic Java knowledge is required, but no prior experience with Pi4J or electronics is needed.</p>
+                  </div>
                 </div>
-
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('delporte')" title="Click for Abstract"><h2 class="text-white"><a href="#delporteCard" class="text-primary d-block mb-3">The Wait is Over: Foreign Function & Memory (FFM) API brings modern Java to the Raspberry Pi</a>
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('mandrikov')" title="Click for Abstract"><h2 class="text-white"><a href="#mandrikovCard" class="text-primary d-block mb-3" >Java, Code Coverage and their best friend - bytecode: scandals, intrigues, investigations</a>
-                </div>
-
-                <span style="padding-left: 20px">Evgeny Mandrikov</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=ucIcIc1vAVU" target="_blank>">https://www.youtube.com/watch?v=ucIcIc1vAVU</a></p>
+                <span style="padding-left: 20px">Frank Delporte</span>
                 <br/>
-
               </div>
             </div>
           </div>
+          
 
 
-          <div id="cougilCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+          <div id="kousenCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session23Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="cougil" class="modal">
-
-                  <!-- Modal content -->
+                <div id="kousen" class="modal">
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>
-                      Permíteme compartir una historia acerca de cómo John -un desarrollador como otro cualquiera- empezó a entender (y a disfrutar) con eso de escribir Tests antes del código de Producción.
-                      <br/>
-                      Todos hemos sentido un cierto "tedio" a la hora de escribir tests, ¿no es cierto? Que si es aburrido, que si es complicado, que si no es necesario... ¿verdad? John también lo pensaba, y de hecho, por más que había escuchado acerca de escribir los tests antes del código de producción, nunca había conseguido llevarlo a la práctica e incluso cuando lo había intentado, se había frustrado aún más, al no haber conseguido entender el cómo llevarlo a la práctica fuera de algunas katas de ejemplo 🤷‍♂️
-                      <br/>
-                      Escucha esta historia en la que explicaré como John pasó de no entender Test Driven Development (TDD) a ser un apasionado del tema... tanto es así, ¡que ahora no quiere trabajar de otro modo 😅! Algunos beneficios se habrá encontrado a la hora de practicarlo, ¿no? Él dice que así encuentra que tiene más ventajas que al trabajar de otro modo: por ejemplo, que detectarás antes errores en tu código, tendrás un circuito de retroalimentación (feedback loop) más rápido o que será más fácil de refactorizarlo, pero mejor os lo explico en la sesión, ¿no?
-                      <br/>
-                      PS: Piensa en John como una persona cualquiera, ¡como si incluso fuera el ponente de esta charla 😉!
-
+                    <p>LLM agents are powerful, but no single one can cover every real-world task. This session shows what happens when you orchestrate multiple agents instead of relying on just one. We’ll explore four concrete experiments: running multiple agents in parallel with LangChain4j and Spring AI; manually coordinating Gemini CLI, Codex CLI, and Claude Code on the same code base; wrapping Gemini in an MCP server so it can be invoked by other tools; and creating a Claude Code sub-agent that delegates to Gemini while conserving context window tokens. You’ll see where orchestration pays off, where it gets messy, and what it suggests about the future of applied multi-agent AI.</p>
                   </div>
-
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('cougil')" title="Click for Abstract"><h2 class="text-white"><a href="#cougilCard" class="text-primary d-block mb-3" >Cómo a John empezó a gustarle TDD (en lugar de odiarlo)</a>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('kousen')" title="Click for Abstract"><h2 class="text-white"><a href="#kousenCard" class="text-primary d-block mb-3">When One Agent Isn’t Enough: Experiments with Multi-Agent AI</a>
                 </div>
-                <span style="padding-left: 20px">Nacho Cougil</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=py05PKniRzw" target="_blank>">https://www.youtube.com/watch?v=py05PKniRzw</a></p>
+                <span style="padding-left: 20px">Kenneth Kousen</span>
                 <br/>
-
               </div>
             </div>
           </div>
+         
 
 
-          <div id="mehmandarovCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+           <div id="tremblayCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session24Time"></span></div>
               <div class="col-lg-6">
-
                 <!-- The Modal -->
-                <div id="mehmandarov" class="modal">
-
-                  <!-- Modal content -->
+                <div id="tremblay" class="modal">
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>
-                      What does it mean to have cloud-native Java applications? What do you need to think about to be a good Cloud citizen?
-                      <br/><br/>
-                      It is not about the platform you run it on or the library/framework you want to use. It is about how you build scalable, observable, resilient applications while keeping in mind the application architecture, containers, builds, testing, automation, and standards.
-                      <br/><br/>
-                      Join us in exploring different tools for creating cloud-native Java apps. We will go through the whole life-cycle of an application – from the first lines of code to a fully operational and containerized application.
-
-                    </p>
-                    </div>
-
+                    <p>Virtual threads, pattern matching, garbage collector, value types, integrity by default, AOT. So much new cool stuff packed in this brand new Java 25.<br><br>Come have a look with me. Live coded.</p>
+                  </div>
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('mehmandarov')" title="Click for Abstract"><h2 class="text-white"><a href="#mehmandarovCard" class="text-primary d-block mb-3" >Your Cloud-Native Toolbox for Java</a>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('tremblay')" title="Click for Abstract"><h2 class="text-white"><a href="#tremblayCard" class="text-primary d-block mb-3">Java 25 (LTS): Virtually the best version ever</a>
                 </div>
-
-                <span style="padding-left: 20px">Rustam Mehmandarov</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=4QVJLqmlOVk" target="_blank>">https://www.youtube.com/watch?v=4QVJLqmlOVk</a></p>
+                <span style="padding-left: 20px">Henri Tremblay</span>
                 <br/>
-
               </div>
             </div>
           </div>
 
-          <div id="pepperdineCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+          <div id="fichtnerCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session25Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="pepperdine" class="modal">
-
-                  <!-- Modal content -->
+                <div id="fichtner" class="modal">
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>
-                      Automatic heap sizing (AHS) is new feature being introduced in Z, G1, and Serial GC. Traditionally, left on its own, max Java heap size has been limited to 25% of available RAM. The Adaptive Size Policy was introduced into the Parallel, G1, and Z GC collectors to dynamically adjust the size of heap. With AHS all of this will change and this talk will dive into the how and why.
-                  </p>
+                    <p>Java has been around for decades, and so has your codebase. Keeping up with the latest Java versions, frameworks, and best practices isn't just about staying current—it’s about making your applications easier to maintain, faster to develop, and more attractive to both developers and customers. But where do you start?<br><br>In this session, we’ll take a pragmatic approach to modernizing Java applications with minimal disruption and maximum value. We’ll cover:<br><br>Upgrading Java versions with OpenRewrite – Reduce technical debt, adopt the latest language features, and lower maintenance costs with automated refactoring.<br>Moving from Swing to Vaadin – Preserve your business logic while transitioning from legacy desktop applications to modern web frontends.<br>The human factor – Modernization isn’t just about code; it’s about people. Learn how to keep your current team engaged, avoid unnecessary retraining, and make your project more attractive to new talent.<br><br>With over two decades of Java experience, I’ll share hard-earned insights and real-world strategies that you can start applying today. If your Java applications feel stuck in the past, this talk will show you how to bring them into the future—without rewriting everything from scratch.</p>
                   </div>
-
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('pepperdine')" title="Click for Abstract"><h2 class="text-white"><a href="#pepperdineCard" class="text-primary d-block mb-3" >Automatic Heap Sizing</a>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('fichtner')" title="Click for Abstract"><h2 class="text-white"><a href="#fichtnerCard" class="text-primary d-block mb-3">Java Modernization: Breathe New Life into Your Codebase Without Breaking the Bank</a>
                 </div>
-                <span style="padding-left: 20px">Kirk Pepperdine, Saint Wesonga</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=CMzxmdpgbRE" target="_blank>">https://www.youtube.com/watch?v=CMzxmdpgbRE</a></p>
+                <span style="padding-left: 20px">Richard Fichtner</span>
                 <br/>
-
               </div>
             </div>
           </div>
+          
 
-
-
-          <div id="rahmanCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
-            <div class="row align-items-center speaker">
-              <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session26Time"></span></div>
-              <div class="col-lg-6">
-                <div id="rahman" class="modal">
-
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <h3 style="color: red;">Abstract</h3>
-                    <br/>
-                    <p>
-                      AI is revolutionizing the software landscape. However, for many Java developers, integrating these powerful AI tools into existing enterprise applications or a new one can feel daunting. In this hands-on session, we'll demystify the process and show you how to build LLM-powered features directly into your Java codebase.
-                      <br/><br/>
-                      Using JakartaEE and the LangChain4j library, we'll dive deep into Retrieval Augmented Generation (RAG), a cutting-edge technique that combines the vast knowledge of LLMs with the precision of your own data. We'll explore how to create both few-shot and zero-shot RAG models, and then add practical features like summarization and similarity search, backed by an Embedding database.
-                      <br/><br/>
-                      Through a live coding demo, we’ll walk you through constructing an AI-powered online store backend and provide practical insights into the architecture and code.
-                      <br/><br/>
-                      Whether you're familiar with AI or just getting started, this session will give you the confidence and skills to harness the potential of LLMs in your Java projects.
-                    </p>
-                  </div>
-
-                </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('rahman')" title="Click for Abstract"><h2 class="text-white"><a href="#rahmanCard" class="text-primary d-block mb-3" >Java + LLMs: A hands-on guide to building LLM Apps in Java with Jakarta</a>
-                </div>
-                <span style="padding-left: 20px">Bazlur Rahman, Syed M Shaaf</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=4fFZjtDAXW0" target="_blank>">https://www.youtube.com/watch?v=4fFZjtDAXW0</a></p>
-                <br/>
-
-              </div>
-            </div>
-          </div>
 
 
           <div id="cumminsCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
-              <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session27Time"></span></div>
+              <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session26Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
                 <div id="cummins" class="modal">
-
-                  <!-- Modal content -->
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
                     <p>
-                      What makes a platform efficient? Is it how quickly code executes, or is it how quickly developers can use it to solve problems? Quarkus makes both people and hardware more efficient. That’s cool, but how does it work? Usually, we expect to trade-off developer experience against runtime efficiency. In this session, Holly will dive into some of the technical underpinnings of Quarkus’s efficiency. She’ll give advice for those using or considering Quarkus - should you be doing reactive programming? Do native binaries run fastest? She’ll also share general principles and transferrable discoveries from the engineering team, such as knowing what you’re optimising for, avoiding cache pollution, and how to be static-but-dynamic.
+                      Let’s abuse the tools! Everyone knows Quarkus is computationally efficient, expressive, and rock-solid for production. But did you know that we can use Quarkus efficiency to build applications that shouldn’t go anywhere *near* production?
+                      <br><br>
+                      In this demo-driven session, Holly will put the joy into “developer joy”. She’ll show you all sorts of things you can do with Quarkus that you probably shouldn’t:
+                      <br><br>
+                      - Build an LLM-powered app that’s *guaranteed* to hallucinate, because you can do more than you think with guardrails,  and truth is so boring<br>
+                      - Write your business code in rockstarlang, because everything should be a hair metal ballad<br>
+                      - Use Minecraft as your observability client, because the LGTM stack doesn’t have enough explosions<br>
+                      - Write a CLI for generating memes faster, because everything is better on the command-line<br>
+                      - Benchmark an application against a grapefruit, because metric units aren’t tasty<br><br>
+                      Business value? Learning? If you insist. As well as absurd demos, you’ll leave this session with a deeper understanding of how to get the most out of Quarkus and Java. There will be  Quarkus best practices, powerful integrations, and nifty use cases alongside the silly explosions and grapefruit.
                     </p>
-                    </div>
-
+                  </div>
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('cummins')" title="Click for Abstract"><h2 class="text-white"><a href="#cumminsCard" class="text-primary d-block mb-3" >Zero Waste, Radical Magic, and Italian Graft – Quarkus Efficiency Secrets</a>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('cummins')" title="Click for Abstract"><h2 class="text-white"><a href="#cumminsCard" class="text-primary d-block mb-3">Six and a half ridiculous things to do with Quarkus</a>
                 </div>
                 <span style="padding-left: 20px">Holly Cummins</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=AHKoriBmHu8" target="_blank>">https://www.youtube.com/watch?v=AHKoriBmHu8</a></p>
-                  <br/>
-
+                <br/>
               </div>
             </div>
           </div>
+          
 
-          <div id="reimersCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+          <div id="rahmanCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session27Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="rahman" class="modal">
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p>Modern Java has evolved into a powerful, expressive language by quietly adopting the best ideas from its peers without compromising its core principles of readability, safety, and performance. In this talk, we'll explore how Java 25 now competes head-to-head with languages like Kotlin, Scala, Rust, and Go.<br><br>- Pattern Matching that's as expressive as Scala and Rust<br>- Virtual Threads, Java's lightweight concurrency mode, inspired by goroutines<br>- Structured Concurrency for safer, more predictable parallel programming<br>- Records for concise and immutable data modelling, akin to Kotlin's data classes<br>- Foreign Function & Memory API as a modern, safer alternative to JNI, rivalling Rust’s FFI<br><br>If you’ve ever dismissed Java as too verbose or outdated, this session will change your mind. See how Java 25 isn’t just catching up; it’s redefining what modern Java can be.</p>
+                  </div>
+                </div>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('rahman')" title="Click for Abstract"><h2 class="text-white"><a href="#rahmanCard" class="text-primary d-block mb-3">Old Dog, New Tricks: The Java 25 Reinvention</a>
+                </div>
+                <span style="padding-left: 20px">Bazlur Rahman</span>
+                <br/>
+              </div>
+            </div>
+          </div>
+          
+
+          <div id="coolsCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
             <div class="row align-items-center speaker">
               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session28Time"></span></div>
               <div class="col-lg-6">
                 <!-- The Modal -->
-                <div id="reimers" class="modal">
-
-                  <!-- Modal content -->
+                <div id="cools" class="modal">
                   <div class="modal-content">
                     <h3 style="color: red;">Abstract</h3>
                     <br/>
-                    <p>
-                      This session shows a new tool for interactive computing for Java developers. Up to now a couple of tools already exist for interactive computing or doing interactive experiments with Java:
-                    <br/><br/>
-                    JShell - terminal<br/>
-                    Jupyter with Java Kernel - Web based<br/>
-                    JDoodle - web based<br/>
-                    <br/><br/>
-                    The main idea for creating a new tool was to provide a seamless interactive experience to write Java code, interact with the results using a full graphical interface and all this without the tedious process of compiling and running every time you make a small change achieving a lightweight rapid development cycle. JTaccuino is based on running embedded JShell tooling for executing the Java code and provides a library and some packaged default tooling (JTaccuino Pad, JTaccuino Studio) to allow for maximum flexibility and for direct use or integration in existing environments. For the graphical frontend JTaccuino uses JavaFX.
-                    <br/><br/>
-                    JTaccuino uses the the Jupyter notebook format (ipynb) for persistence to leverage the source code rendering support e.g. on GitHub.
-                    <br/><br/>
-                    The session will demo the use of JTaccuino and shows different examples of Jupyter like notebooks in Java.
-                    <br/><br/>
-                    During the demo a special interest will be to show how a tight integration of a library, e.g. JavaFX charting solutions, can be achieved. This will enhance the overall user experience by adding magic things to the running JShell environment like the automatic display of special variable content.
-                    </p>
+                    <p>Every Christmas Eve, Santa faces a monumental challenge: delivering gifts to millions of children around the world in just one night. There’s no time for detours, and a well-crafted plan is essential!<br><br>In this talk, we’ll help Santa find the optimal travel route for his journey using Timefold, an open-source AI solver. By setting up some basic domain classes, you'll be able to tackle vehicle routing problems without getting lost in the magic (aka math).<br>Through a series of live demos, you'll see practical examples in action and leave with a powerful new tool in your problem-solving toolbox.<br><br>So join in and let's use our favorite programming language to make sure everyone gets their presents under the Christmas tree!</p>
                   </div>
-
                 </div>
-                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('reimers')" title="Click for Abstract"><h2 class="text-white"><a href="#reimersCard" class="text-primary d-block mb-3" >JTaccuino - A better Jupyter Experience for Java Developers</a>
+                <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('cools')" title="Click for Abstract"><h2 class="text-white"><a href="#coolsCard" class="text-primary d-block mb-3">Optimizing Santa's travels in Java with Timefold</a>
                 </div>
-                <span style="padding-left: 20px">Sven Reimers</span>
-                <p style="padding-left: 20px">Session URL: <a href="https://www.youtube.com/watch?v=R1gHQtBXfYk" target="_blank>">https://www.youtube.com/watch?v=R1gHQtBXfYk</a></p>
+                <span style="padding-left: 20px">Tom Cools</span>
                 <br/>
-
               </div>
             </div>
           </div>
-
+          
 
 
         </div> <!-- End Tuesday, January 27 2026 -->
