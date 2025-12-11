@@ -257,33 +257,28 @@ function changeTimezones(){
             </div>
           </div>
 
-          <div id="martinelliCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
-            <div class="row align-items-center speaker">
-              <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session2Time"></span></div>
-              <div class="col-lg-6">
-                <!-- The Modal -->
-                <div id="martinelli" class="modal">
+          <div id="grzesikCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+             <div class="row align-items-center speaker">
+               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session2Time"></span> </div>
+               <div class="col-lg-6">
+                 <!-- The Modal -->
+                 <div id="grzesik" class="modal">
+                   <!-- Modal content -->
+                   <div class="modal-content">
+                     <h3 style="color: red;">Abstract</h3>
+                     <br/>
+                     <p>Java, the runtime, likes memory.<br>It is a fact well known to those who know it well, that subtle differences in code, can lead to drastic changes to applications memory and runtime profiles.<br>I’ll take you through the memory lane part of my work, and show how do I approach analysis, problems and troubleshooting. Tools, what information can they surface, and how to navigate back to the code.<br>Techniques and libraries, how do they affect what the application does. Feel invited if you believe troubleshooting memory in Java is “magic”, or “only tuning the GC can save us”.</p>
+                   </div>
+                 </div>
+                 <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('grzesik')" title="Click for Abstract"><h2 class="text-white"><a href="#grzesikCard" class="text-primary d-block mb-3">Scooby RAM, where are you?</a>
+                 </div>
+                 <span style="padding-left: 20px">Andrzej Grzesik</span>
+                 <br/>
+               </div>
+             </div>
+           </div>
 
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <h3 style="color: red;">Abstract</h3>
-                    <br/>
-                    <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>Programming Architect</strong><br/><br/><strong>Simon Martinelli is a Java Champion, Vaadin Champion, and Oracle ACE Pro, with over three decades of experience as a software architect, developer, consultant, and trainer. 
-As the owner of Martinelli LLC, he specializes in optimizing full-stack development with Java using AI and has a deep focus on modern architectures and software modernization. 
-He frequently shares his expertise by speaking at international conferences, writing articles, and maintaining his blog, Keep IT Simple: https://martinelli.ch. 
-His passion for teaching is reflected in his work as a lecturer at two universities in Switzerland. </p>
-                  </div>
-
-                </div>
-                <div style="padding-left: 20px; width:500px;" onclick="openAbstract('martinelli')" title="Click for Abstract"><h2 class="text-white"><a href="#martinelliCard" class="text-primary d-block mb-3">Spec-driven Development: How AI Changed Everything (And Nothing)</a>
-                </div>
-                <span style="padding-left: 20px">Simon Martinelli</span>
-                <!--p style="padding-left: 20px" >Session URL: <a href="https://www.youtube.com/watch?v=r-vHAjHx4Gw" target="_blank>">https://www.youtube.com/watch?v=r-vHAjHx4Gw</a></p-->
-               
-
-              </div>
-            </div>
-          </div>
+          
 
 
           <div id="reynaCard" class="row align-items-center border-top border-bottom py-5" style="width: 100%;">
@@ -594,26 +589,33 @@ His passion for teaching is reflected in his work as a lecturer at two universit
            </div>
          </div>
 
-         <div id="grzesikCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
-             <div class="row align-items-center speaker">
-               <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session16Time"></span> </div>
-               <div class="col-lg-6">
-                 <!-- The Modal -->
-                 <div id="grzesik" class="modal">
-                   <!-- Modal content -->
-                   <div class="modal-content">
-                     <h3 style="color: red;">Abstract</h3>
-                     <br/>
-                     <p>Java, the runtime, likes memory.<br>It is a fact well known to those who know it well, that subtle differences in code, can lead to drastic changes to applications memory and runtime profiles.<br>I’ll take you through the memory lane part of my work, and show how do I approach analysis, problems and troubleshooting. Tools, what information can they surface, and how to navigate back to the code.<br>Techniques and libraries, how do they affect what the application does. Feel invited if you believe troubleshooting memory in Java is “magic”, or “only tuning the GC can save us”.</p>
-                   </div>
-                 </div>
-                 <div style="padding-left: 20px; width: 500px;" onclick="openAbstract('grzesik')" title="Click for Abstract"><h2 class="text-white"><a href="#grzesikCard" class="text-primary d-block mb-3">Scooby RAM, where are you?</a>
-                 </div>
-                 <span style="padding-left: 20px">Andrzej Grzesik</span>
-                 <br/>
-               </div>
-             </div>
-           </div>
+         <div id="martinelliCard" class="row align-items-center border-bottom py-5" style="width: 100%;">
+            <div class="row align-items-center speaker">
+              <div class="col-md-3 text-white mb-3 mb-md-0" style="width: 300px;"><span class="h4" id="session16Time"></span></div>
+              <div class="col-lg-6">
+                <!-- The Modal -->
+                <div id="martinelli" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <h3 style="color: red;">Abstract</h3>
+                    <br/>
+                    <p class="mb-4" data-aos="fade-right" data-aos-delay="400"><strong>Programming Architect</strong><br/><br/><strong>Simon Martinelli is a Java Champion, Vaadin Champion, and Oracle ACE Pro, with over three decades of experience as a software architect, developer, consultant, and trainer. 
+As the owner of Martinelli LLC, he specializes in optimizing full-stack development with Java using AI and has a deep focus on modern architectures and software modernization. 
+He frequently shares his expertise by speaking at international conferences, writing articles, and maintaining his blog, Keep IT Simple: https://martinelli.ch. 
+His passion for teaching is reflected in his work as a lecturer at two universities in Switzerland. </p>
+                  </div>
+
+                </div>
+                <div style="padding-left: 20px; width:500px;" onclick="openAbstract('martinelli')" title="Click for Abstract"><h2 class="text-white"><a href="#martinelliCard" class="text-primary d-block mb-3">Spec-driven Development: How AI Changed Everything (And Nothing)</a>
+                </div>
+                <span style="padding-left: 20px">Simon Martinelli</span>
+                <!--p style="padding-left: 20px" >Session URL: <a href="https://www.youtube.com/watch?v=r-vHAjHx4Gw" target="_blank>">https://www.youtube.com/watch?v=r-vHAjHx4Gw</a></p-->
+               
+
+              </div>
+            </div>
+          </div>
 
 
 
